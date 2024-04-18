@@ -1,7 +1,7 @@
 [gd_scene load_steps=18 format=3 uid="uid://bnbv8b0uo8nog"]
 
-[ext_resource type="Texture2D" uid="uid://x63d0rmnywve" path="res://Assets/houses/house2_tex1.png" id="1_4yqk7"]
-[ext_resource type="Texture2D" uid="uid://c3o46gta2jcyc" path="res://Assets/houses/house2_tex2.png" id="2_jvfd0"]
+[ext_resource type="Texture2D" uid="uid://x63d0rmnywve" path="res://Assets/houses/preset_houses/house2_tex1.png" id="1_4yqk7"]
+[ext_resource type="Texture2D" uid="uid://c3o46gta2jcyc" path="res://Assets/houses/preset_houses/house2_tex2.png" id="2_jvfd0"]
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_wtqpx"]
 resource_name = "house2"

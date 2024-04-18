@@ -1,6 +1,6 @@
-[gd_scene load_steps=6 format=3 uid="uid://ccaguikxgosp1"]
+[gd_scene load_steps=7 format=3 uid="uid://ccaguikxgosp1"]
 
-[ext_resource type="Texture2D" uid="uid://cwvt4oo6vlb83" path="res://Assets/foliage/bushes/bush1_summer.png" id="1_q1gjs"]
+[ext_resource type="Texture2D" uid="uid://cwvt4oo6vlb83" path="res://Assets/foliage/bushes/bush1_summer.png" id="1_608at"]
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_iexix"]
 resource_name = "bush1"
@@ -46,7 +46,9 @@ shadow_mesh = SubResource("ArrayMesh_kbwwm")
 transparency = 2
 alpha_scissor_threshold = 0.5
 alpha_antialiasing_mode = 0
-albedo_texture = ExtResource("1_q1gjs")
+albedo_texture = ExtResource("1_608at")
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_3t48o"]
 
 [node name="Root Scene" type="Node3D"]
 
@@ -56,3 +58,9 @@ albedo_texture = ExtResource("1_q1gjs")
 mesh = SubResource("ArrayMesh_ern5d")
 skeleton = NodePath("")
 surface_material_override/0 = SubResource("StandardMaterial3D_uxb1p")
+
+[node name="StaticBody3D" type="StaticBody3D" parent="RootNode/bush1"]
+
+[node name="collisionShape3d" type="CollisionShape3D" parent="RootNode/bush1/StaticBody3D"]
+transform = Transform3D(0.157357, 0, 0, 0, 0.944808, 0, 0, 0, 0.14265, 0, 0.520373, 0)
+shape = SubResource("BoxShape3D_3t48o")

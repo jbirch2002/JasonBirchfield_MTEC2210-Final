@@ -4,11 +4,14 @@
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_v3v3q"]
 
-[node name="CharacterBody3D" type="CharacterBody3D"]
+[node name="Player" type="CharacterBody3D"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.538051, 0)
+floor_max_angle = 1.309
 script = ExtResource("1_w5lcq")
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="."]
 shape = SubResource("BoxShape3D_v3v3q")
 
-[node name="Camera3D" type="Camera3D" parent="."]
+[node name="head" type="Node3D" parent="."]
+
+[node name="Camera3D" type="Camera3D" parent="head"]

@@ -1,4 +1,4 @@
-[gd_scene load_steps=6 format=3 uid="uid://n13amdswjk08"]
+[gd_scene load_steps=7 format=3 uid="uid://n13amdswjk08"]
 
 [ext_resource type="Texture2D" uid="uid://dvi4igdw40k6o" path="res://Assets/foliage/bushes/bush1_winter.png" id="1_xgxxq"]
 
@@ -46,6 +46,8 @@ alpha_scissor_threshold = 0.5
 alpha_antialiasing_mode = 0
 albedo_texture = ExtResource("1_xgxxq")
 
+[sub_resource type="BoxShape3D" id="BoxShape3D_eu8nc"]
+
 [node name="Root Scene" type="Node3D"]
 
 [node name="RootNode" type="Node3D" parent="."]
@@ -54,3 +56,9 @@ albedo_texture = ExtResource("1_xgxxq")
 mesh = SubResource("ArrayMesh_gdmd8")
 skeleton = NodePath("")
 surface_material_override/0 = SubResource("StandardMaterial3D_kv33o")
+
+[node name="StaticBody3D" type="StaticBody3D" parent="RootNode/bush1_winter"]
+
+[node name="collisionShape3d" type="CollisionShape3D" parent="RootNode/bush1_winter/StaticBody3D"]
+transform = Transform3D(0.157352, 0, 0, 0, 1, 0, 0, 0, 0.0419267, 0, 0.384904, 0)
+shape = SubResource("BoxShape3D_eu8nc")
