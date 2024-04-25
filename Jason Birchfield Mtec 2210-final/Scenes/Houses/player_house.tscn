@@ -1,7 +1,7 @@
 [gd_scene load_steps=33 format=3 uid="uid://b2kkjsavyliha"]
 
 [ext_resource type="Texture2D" uid="uid://cnpl1y5wxn78d" path="res://Assets/houses/preset_houses/house1_tex1.png" id="1_1lkla"]
-[ext_resource type="Script" path="res://Scenes/Houses/house1.gd" id="2_4ry3g"]
+[ext_resource type="Script" path="res://Scripts/Interactable.cs" id="3_52d6a"]
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_7h143"]
 albedo_texture = ExtResource("1_1lkla")
@@ -287,7 +287,6 @@ material_override = SubResource("StandardMaterial3D_7h143")
 mesh = SubResource("ArrayMesh_2ukri")
 skeleton = NodePath("")
 surface_material_override/0 = SubResource("StandardMaterial3D_0ns2p")
-script = ExtResource("2_4ry3g")
 
 [node name="StaticBody3D" type="StaticBody3D" parent="RootNode/house1"]
 
@@ -296,11 +295,14 @@ shape = SubResource("ConcavePolygonShape3D_j4lkc")
 
 [node name="house1_door1" type="MeshInstance3D" parent="RootNode/house1"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.5, 1, 4.9)
+layers = 2
 mesh = SubResource("ArrayMesh_vm180")
 skeleton = NodePath("")
 surface_material_override/0 = SubResource("StandardMaterial3D_21j8s")
 
-[node name="StaticBody3D" type="StaticBody3D" parent="RootNode/house1/house1_door1"]
+[node name="StaticBody3D" type="StaticBody3D" parent="RootNode/house1/house1_door1" groups=["EntranceDoor"]]
+script = ExtResource("3_52d6a")
+promptMessage = "Enter"
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="RootNode/house1/house1_door1/StaticBody3D"]
 shape = SubResource("ConcavePolygonShape3D_kjwvx")

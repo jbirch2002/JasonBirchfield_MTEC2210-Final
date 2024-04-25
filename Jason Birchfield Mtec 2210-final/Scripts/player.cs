@@ -5,10 +5,8 @@ public partial class player : CharacterBody3D
 {
 	Node3D head = null;
 	float currentSpeed = 5.0f;
-	[Export]
-	float walkingSpeed = 5.0f;
-	[Export]
-	float runningSpeed = 8.0f;
+	[Export] float walkingSpeed = 5.0f;
+	[Export] float runningSpeed = 8.0f;
 	float jumpVelocity = 4.5f;
 
 	public const float mouseSens = 3f;
@@ -75,7 +73,7 @@ public partial class player : CharacterBody3D
 			{
 				GetTree().Quit();
 			}
-			if(Godot.Input.IsActionJustPressed("interact"))
+			if(eventKey.Pressed && eventKey.Keycode == Key.E)
 			{
 			// interact logic here
 			}
@@ -97,6 +95,5 @@ public partial class player : CharacterBody3D
 		head.RotationDegrees = new Vector3(Mathf.Clamp(head.RotationDegrees.X, - 89, 89), head.RotationDegrees.Y, head.RotationDegrees.Z);
 		RotateY(Mathf.DegToRad(-mouse.Relative.X * mouseSens));
 	}
-
 	#endregion
 }

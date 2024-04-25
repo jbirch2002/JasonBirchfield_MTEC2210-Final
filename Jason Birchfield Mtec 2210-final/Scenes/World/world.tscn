@@ -1,0 +1,81 @@
+[gd_scene load_steps=19 format=3 uid="uid://rgjkqrdv4lhq"]
+
+[ext_resource type="PackedScene" uid="uid://bn14grvdecwll" path="res://Scenes/Player/player.tscn" id="1_5mpu5"]
+[ext_resource type="Texture2D" uid="uid://o13miw4liw3b" path="res://Assets/foliage/floortexture/12479.jpg" id="1_vud67"]
+[ext_resource type="PackedScene" uid="uid://b2kkjsavyliha" path="res://Scenes/Houses/player_house.tscn" id="2_t8ixg"]
+[ext_resource type="PackedScene" uid="uid://cjrs4vb51re2n" path="res://Scenes/Foliage/grass_patch.tscn" id="5_fjoxu"]
+[ext_resource type="PackedScene" uid="uid://pyclm1opnpiy" path="res://Scenes/Foliage/dead_grass_patch.tscn" id="6_u2pkk"]
+[ext_resource type="PackedScene" uid="uid://daifmg1w613sw" path="res://Scenes/Decoration/bone_asset_pack.tscn" id="7_bxwet"]
+[ext_resource type="PackedScene" uid="uid://n13amdswjk08" path="res://Scenes/Bushes/deadbush01.tscn" id="8_88fjv"]
+[ext_resource type="PackedScene" uid="uid://ccaguikxgosp1" path="res://Scenes/Bushes/bush01.tscn" id="9_swntm"]
+[ext_resource type="PackedScene" uid="uid://bg0c26x16wh05" path="res://Scenes/Animals/cow.tscn" id="10_51vve"]
+[ext_resource type="PackedScene" uid="uid://bq5lppnhnn11q" path="res://Scenes/Trees/deadtree01.tscn" id="11_ot1qs"]
+[ext_resource type="PackedScene" uid="uid://vu6mfmdxr4ek" path="res://Scenes/Trees/deadtree03.tscn" id="12_oi6rp"]
+[ext_resource type="PackedScene" uid="uid://p733h2j6anis" path="res://Scenes/Trees/tree01.tscn" id="13_lo40u"]
+[ext_resource type="PackedScene" uid="uid://ri70xwlu6enn" path="res://Scenes/Trees/tree02.tscn" id="14_35gxj"]
+[ext_resource type="PackedScene" uid="uid://d0sydkych26ag" path="res://Scenes/World/day_night_cycle.tscn" id="15_ew8w6"]
+[ext_resource type="PackedScene" uid="uid://o4gusyafhvcu" path="res://Scenes/Trees/tree03.tscn" id="15_fuae5"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_wy8cl"]
+albedo_texture = ExtResource("1_vud67")
+uv1_triplanar = true
+
+[sub_resource type="BoxMesh" id="BoxMesh_632fx"]
+material = SubResource("StandardMaterial3D_wy8cl")
+
+[sub_resource type="ConcavePolygonShape3D" id="ConcavePolygonShape3D_2lreb"]
+data = PackedVector3Array(-0.5, 0.5, 0.5, 0.5, 0.5, 0.5, -0.5, -0.5, 0.5, 0.5, 0.5, 0.5, 0.5, -0.5, 0.5, -0.5, -0.5, 0.5, 0.5, 0.5, -0.5, -0.5, 0.5, -0.5, 0.5, -0.5, -0.5, -0.5, 0.5, -0.5, -0.5, -0.5, -0.5, 0.5, -0.5, -0.5, 0.5, 0.5, 0.5, 0.5, 0.5, -0.5, 0.5, -0.5, 0.5, 0.5, 0.5, -0.5, 0.5, -0.5, -0.5, 0.5, -0.5, 0.5, -0.5, 0.5, -0.5, -0.5, 0.5, 0.5, -0.5, -0.5, -0.5, -0.5, 0.5, 0.5, -0.5, -0.5, 0.5, -0.5, -0.5, -0.5, 0.5, 0.5, 0.5, -0.5, 0.5, 0.5, 0.5, 0.5, -0.5, -0.5, 0.5, 0.5, -0.5, 0.5, -0.5, 0.5, 0.5, -0.5, -0.5, -0.5, 0.5, 0.5, -0.5, 0.5, -0.5, -0.5, -0.5, 0.5, -0.5, 0.5, 0.5, -0.5, -0.5, -0.5, -0.5, -0.5)
+
+[node name="Node3D" type="Node3D"]
+
+[node name="DayNightCycle" parent="." instance=ExtResource("15_ew8w6")]
+
+[node name="Map" type="Node3D" parent="."]
+
+[node name="meshInstance3d" type="MeshInstance3D" parent="."]
+transform = Transform3D(100, 0, 0, 0, 0.2, 0, 0, 0, 100, 0, 0, 0)
+mesh = SubResource("BoxMesh_632fx")
+
+[node name="StaticBody3D" type="StaticBody3D" parent="meshInstance3d"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="meshInstance3d/StaticBody3D"]
+shape = SubResource("ConcavePolygonShape3D_2lreb")
+
+[node name="CharacterBody3D" parent="." instance=ExtResource("1_5mpu5")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.3203, 0)
+
+[node name="player_house" parent="." instance=ExtResource("2_t8ixg")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -15.5886)
+
+[node name="Root Scene" parent="." instance=ExtResource("5_fjoxu")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 15.7913, 0.1, -7.03353)
+
+[node name="Root Scene2" parent="." instance=ExtResource("6_u2pkk")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 15.8918, 0.1, -4.31847)
+
+[node name="Bones" parent="." instance=ExtResource("7_bxwet")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 15.866, 0.1, 2.97419)
+
+[node name="Root Scene3" parent="." instance=ExtResource("8_88fjv")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 15.6406, 0.1, 8.26449)
+
+[node name="Root Scene4" parent="." instance=ExtResource("9_swntm")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 15.8401, 0.1, 10.282)
+
+[node name="cowanimateduntitled" parent="." groups=["Animals"] instance=ExtResource("10_51vve")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 16.5691, 0.1, 14.7745)
+
+[node name="Root Scene5" parent="." instance=ExtResource("11_ot1qs")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 16.9989, 0.1, 20.9602)
+
+[node name="Root Scene6" parent="." instance=ExtResource("12_oi6rp")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 16.7745, 0.1, 25.0602)
+
+[node name="Root Scene7" parent="." instance=ExtResource("13_lo40u")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 16.8501, 0.1, 29.4672)
+
+[node name="Root Scene8" parent="." instance=ExtResource("14_35gxj")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 16.8284, 0.1, 33.3217)
+
+[node name="Root Scene9" parent="." instance=ExtResource("15_fuae5")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 16.8084, 0.1, 37.0446)

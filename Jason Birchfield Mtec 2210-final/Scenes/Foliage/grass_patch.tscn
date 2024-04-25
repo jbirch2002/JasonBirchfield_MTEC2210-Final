@@ -46,7 +46,7 @@ alpha_scissor_threshold = 0.5
 alpha_antialiasing_mode = 0
 albedo_texture = ExtResource("1_kwonn")
 
-[node name="Root Scene" type="Node3D"]
+[node name="GrassPatch" type="Node3D"]
 
 [node name="RootNode" type="Node3D" parent="."]
 

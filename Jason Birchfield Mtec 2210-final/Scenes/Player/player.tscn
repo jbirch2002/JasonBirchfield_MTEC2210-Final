@@ -1,17 +1,91 @@
-[gd_scene load_steps=3 format=3 uid="uid://bn14grvdecwll"]
+[gd_scene load_steps=7 format=3 uid="uid://bn14grvdecwll"]
 
 [ext_resource type="Script" path="res://Scripts/player.cs" id="1_w5lcq"]
+[ext_resource type="Script" path="res://Scripts/InteractRay.cs" id="2_q4lpv"]
+[ext_resource type="Script" path="res://Scripts/crosshair.cs" id="3_cnjmk"]
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_v3v3q"]
 
-[node name="Player" type="CharacterBody3D"]
+[sub_resource type="FontFile" id="FontFile_ighe3"]
+subpixel_positioning = 0
+msdf_pixel_range = 14
+msdf_size = 128
+cache/0/8/0/ascent = 0.0
+cache/0/8/0/descent = 0.0
+cache/0/8/0/underline_position = 0.0
+cache/0/8/0/underline_thickness = 0.0
+cache/0/8/0/scale = 1.0
+cache/0/8/0/kerning_overrides/8/0 = Vector2(0, 0)
+cache/0/8/0/kerning_overrides/16/0 = Vector2(0, 0)
+cache/0/16/0/ascent = 0.0
+cache/0/16/0/descent = 0.0
+cache/0/16/0/underline_position = 0.0
+cache/0/16/0/underline_thickness = 0.0
+cache/0/16/0/scale = 1.0
+cache/0/16/0/kerning_overrides/8/0 = Vector2(0, 0)
+cache/0/16/0/kerning_overrides/16/0 = Vector2(0, 0)
+
+[sub_resource type="LabelSettings" id="LabelSettings_ilygu"]
+font = SubResource("FontFile_ighe3")
+font_size = 8
+
+[node name="Player" type="CharacterBody3D" groups=["Player"]]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.538051, 0)
 floor_max_angle = 1.309
 script = ExtResource("1_w5lcq")
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="."]
+transform = Transform3D(0.394302, 0, 0, 0, 1.43275, 0, 0, 0, 1, 0, 0.439752, 0)
 shape = SubResource("BoxShape3D_v3v3q")
 
 [node name="head" type="Node3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.10526, 0)
 
 [node name="Camera3D" type="Camera3D" parent="head"]
+
+[node name="InteractRay" type="RayCast3D" parent="head"]
+target_position = Vector3(0, 0, -1)
+script = ExtResource("2_q4lpv")
+
+[node name="Prompt" type="Label" parent="head/InteractRay"]
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -33.5
+offset_top = -3.5
+offset_right = 33.5
+offset_bottom = 45.5
+grow_horizontal = 2
+grow_vertical = 2
+text = "Message
+[Key]"
+label_settings = SubResource("LabelSettings_ilygu")
+horizontal_alignment = 1
+
+[node name="control" type="Control" parent="."]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 1
+
+[node name="centerContainer" type="CenterContainer" parent="control"]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.5
+anchor_top = 0.407
+anchor_right = 0.5
+anchor_bottom = 0.407
+offset_top = -0.0499992
+offset_right = 20.0
+offset_bottom = 19.95
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("3_cnjmk")
+dotColor = Color(1, 1, 1, 1)
+
+[node name="sprite2d" type="Sprite2D" parent="control"]

@@ -50,7 +50,7 @@ albedo_texture = ExtResource("1_608at")
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_3t48o"]
 
-[node name="Root Scene" type="Node3D"]
+[node name="Bush" type="Node3D"]
 
 [node name="RootNode" type="Node3D" parent="."]
 
