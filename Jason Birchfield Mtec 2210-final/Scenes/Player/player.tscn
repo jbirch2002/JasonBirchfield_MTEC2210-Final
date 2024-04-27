@@ -1,38 +1,19 @@
 [gd_scene load_steps=7 format=3 uid="uid://bn14grvdecwll"]
 
-[ext_resource type="Script" path="res://Scripts/player.cs" id="1_w5lcq"]
+[ext_resource type="Script" path="res://Scripts/Player.cs" id="1_64u7i"]
+[ext_resource type="AudioStream" uid="uid://bt5ifh5wl2bup" path="res://Sounds/Bones sound.mp3" id="2_1wcyp"]
 [ext_resource type="Script" path="res://Scripts/InteractRay.cs" id="2_q4lpv"]
-[ext_resource type="Script" path="res://Scripts/crosshair.cs" id="3_cnjmk"]
+[ext_resource type="Script" path="res://Scripts/Crosshair.cs" id="3_cnjmk"]
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_v3v3q"]
 
-[sub_resource type="FontFile" id="FontFile_ighe3"]
-subpixel_positioning = 0
-msdf_pixel_range = 14
-msdf_size = 128
-cache/0/8/0/ascent = 0.0
-cache/0/8/0/descent = 0.0
-cache/0/8/0/underline_position = 0.0
-cache/0/8/0/underline_thickness = 0.0
-cache/0/8/0/scale = 1.0
-cache/0/8/0/kerning_overrides/8/0 = Vector2(0, 0)
-cache/0/8/0/kerning_overrides/16/0 = Vector2(0, 0)
-cache/0/16/0/ascent = 0.0
-cache/0/16/0/descent = 0.0
-cache/0/16/0/underline_position = 0.0
-cache/0/16/0/underline_thickness = 0.0
-cache/0/16/0/scale = 1.0
-cache/0/16/0/kerning_overrides/8/0 = Vector2(0, 0)
-cache/0/16/0/kerning_overrides/16/0 = Vector2(0, 0)
-
-[sub_resource type="LabelSettings" id="LabelSettings_ilygu"]
-font = SubResource("FontFile_ighe3")
+[sub_resource type="LabelSettings" id="LabelSettings_y5dbo"]
 font_size = 8
 
 [node name="Player" type="CharacterBody3D" groups=["Player"]]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.538051, 0)
 floor_max_angle = 1.309
-script = ExtResource("1_w5lcq")
+script = ExtResource("1_64u7i")
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="."]
 transform = Transform3D(0.394302, 0, 0, 0, 1.43275, 0, 0, 0, 1, 0, 0.439752, 0)
@@ -48,21 +29,25 @@ target_position = Vector3(0, 0, -1)
 script = ExtResource("2_q4lpv")
 
 [node name="Prompt" type="Label" parent="head/InteractRay"]
-anchors_preset = 8
+anchors_preset = 7
 anchor_left = 0.5
-anchor_top = 0.5
+anchor_top = 1.0
 anchor_right = 0.5
-anchor_bottom = 0.5
-offset_left = -33.5
-offset_top = -3.5
-offset_right = 33.5
-offset_bottom = 45.5
+anchor_bottom = 1.0
+offset_left = -125.5
+offset_top = -67.0
+offset_right = 125.5
+offset_bottom = 102.0
 grow_horizontal = 2
-grow_vertical = 2
+grow_vertical = 0
 text = "Message
 [Key]"
-label_settings = SubResource("LabelSettings_ilygu")
+label_settings = SubResource("LabelSettings_y5dbo")
 horizontal_alignment = 1
+
+[node name="audioStreamPlayer3d" type="AudioStreamPlayer3D" parent="head/InteractRay"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -1.10526, 0)
+stream = ExtResource("2_1wcyp")
 
 [node name="control" type="Control" parent="."]
 layout_mode = 3
@@ -86,6 +71,6 @@ offset_bottom = 19.95
 grow_horizontal = 2
 grow_vertical = 2
 script = ExtResource("3_cnjmk")
-dotColor = Color(1, 1, 1, 1)
+dotColor = Color(0.627451, 0.34902, 0.992157, 1)
 
 [node name="sprite2d" type="Sprite2D" parent="control"]

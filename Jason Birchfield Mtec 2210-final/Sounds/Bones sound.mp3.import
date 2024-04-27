@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://bt5ifh5wl2bup"
+path="res://.godot/imported/Bones sound.mp3-b698809055896473f59ba46863a234ad.mp3str"
+
+[deps]
+
+source_file="res://Sounds/Bones sound.mp3"
+dest_files=["res://.godot/imported/Bones sound.mp3-b698809055896473f59ba46863a234ad.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

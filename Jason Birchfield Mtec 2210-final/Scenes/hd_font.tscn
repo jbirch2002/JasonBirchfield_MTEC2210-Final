@@ -1,0 +1,18 @@
+[gd_scene load_steps=3 format=3 uid="uid://bpj8la7njj68p"]
+
+[ext_resource type="Script" path="res://HDFont.cs" id="1_5m44n"]
+[ext_resource type="PackedScene" uid="uid://rgjkqrdv4lhq" path="res://Scenes/World/world.tscn" id="2_cyp48"]
+
+[node name="HDFont" type="Node"]
+script = ExtResource("1_5m44n")
+
+[node name="subViewportContainer" type="SubViewportContainer" parent="."]
+offset_right = 320.0
+offset_bottom = 180.0
+
+[node name="subViewport" type="SubViewport" parent="subViewportContainer"]
+handle_input_locally = false
+size = Vector2i(256, 144)
+render_target_update_mode = 4
+
+[node name="Node3D" parent="subViewportContainer/subViewport" instance=ExtResource("2_cyp48")]

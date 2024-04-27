@@ -1,7 +1,7 @@
 using Godot;
 using System;
 
-public partial class crosshair : CenterContainer
+public partial class Crosshair : CenterContainer
 {
 	[Export] float dotRadius = 1.0f;
 	[Export] Color dotColor = new Color(1, 0, 0);

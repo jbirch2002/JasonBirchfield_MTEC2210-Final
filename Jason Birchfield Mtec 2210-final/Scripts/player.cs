@@ -1,7 +1,7 @@
 using Godot;	
 using System;
 
-public partial class player : CharacterBody3D
+public partial class Player : CharacterBody3D
 {
 	Node3D head = null;
 	float currentSpeed = 5.0f;
