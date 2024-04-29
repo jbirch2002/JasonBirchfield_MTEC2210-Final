@@ -1,10 +1,20 @@
-[gd_scene load_steps=40 format=3 uid="uid://hofavx0e2sac"]
+[gd_scene load_steps=50 format=3 uid="uid://hofavx0e2sac"]
 
 [ext_resource type="Texture2D" uid="uid://cnpl1y5wxn78d" path="res://Assets/houses/preset_houses/house1_tex1.png" id="1_5mqmw"]
 [ext_resource type="Script" path="res://Scripts/Interactable.cs" id="2_rw0oy"]
 [ext_resource type="Script" path="res://Scripts/OpenDoors.cs" id="3_2jes1"]
 [ext_resource type="PackedScene" uid="uid://dr3svsefeldeh" path="res://Scenes/Decoration/trash_bin.tscn" id="4_dool2"]
+[ext_resource type="PackedScene" uid="uid://cjhry22ovx6kk" path="res://Scenes/Decoration/bed.tscn" id="6_6e8ri"]
 [ext_resource type="PackedScene" uid="uid://bn14grvdecwll" path="res://Scenes/Player/player.tscn" id="6_qi3dq"]
+[ext_resource type="PackedScene" uid="uid://dqb7kpm5y1kb0" path="res://Scenes/Decoration/key.tscn" id="7_hicbx"]
+[ext_resource type="PackedScene" uid="uid://djlr3p3tbdxha" path="res://Scenes/Decoration/sink.tscn" id="8_v3xfu"]
+[ext_resource type="PackedScene" uid="uid://bqypcc0u1w5u4" path="res://Scenes/Decoration/toilet.tscn" id="9_fu2pc"]
+[ext_resource type="PackedScene" uid="uid://brb42fn2mbi8i" path="res://Scenes/Decoration/table.tscn" id="10_em7pd"]
+[ext_resource type="PackedScene" uid="uid://daqmcst1gl8cr" path="res://Scenes/Decoration/fridge.tscn" id="11_sei4t"]
+[ext_resource type="PackedScene" uid="uid://duc4lag4obaxm" path="res://Scenes/Decoration/kitchen_sink.tscn" id="12_o0x6u"]
+[ext_resource type="PackedScene" uid="uid://c7rcbs0j6g0o5" path="res://Scenes/Decoration/oven.tscn" id="13_alf4x"]
+[ext_resource type="PackedScene" uid="uid://q81kfxrfqh51" path="res://Scenes/Decoration/couch.tscn" id="14_ief32"]
+[ext_resource type="PackedScene" uid="uid://p5kjkg3wbphp" path="res://Scenes/Decoration/cupboard.tscn" id="14_ppku2"]
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_7h143"]
 albedo_texture = ExtResource("1_5mqmw")
@@ -320,106 +330,141 @@ data = PackedVector3Array(2.7999, 2, 4.95, 2.7999, 3.2, 4.8998, 2.7999, 3.2, 4.9
 
 [node name="player_house" type="Node3D"]
 
-[node name="RootNode" type="Node3D" parent="."]
+[node name="House" type="Node3D" parent="."]
 
-[node name="house1" type="MeshInstance3D" parent="RootNode"]
+[node name="house1" type="MeshInstance3D" parent="House"]
 material_override = SubResource("StandardMaterial3D_7h143")
 mesh = SubResource("ArrayMesh_2ukri")
 skeleton = NodePath("")
 surface_material_override/0 = SubResource("StandardMaterial3D_0ns2p")
 
-[node name="StaticBody3D" type="StaticBody3D" parent="RootNode/house1"]
+[node name="StaticBody3D" type="StaticBody3D" parent="House/house1"]
 
-[node name="CollisionShape3D" type="CollisionShape3D" parent="RootNode/house1/StaticBody3D"]
+[node name="CollisionShape3D" type="CollisionShape3D" parent="House/house1/StaticBody3D"]
 shape = SubResource("ConcavePolygonShape3D_j4lkc")
 
-[node name="house1_door1" type="MeshInstance3D" parent="RootNode/house1"]
+[node name="house1_door1" type="MeshInstance3D" parent="House/house1"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.5, 1, 4.9)
 layers = 2
 mesh = SubResource("ArrayMesh_vm180")
 skeleton = NodePath("")
 surface_material_override/0 = SubResource("StandardMaterial3D_21j8s")
 
-[node name="StaticBody3D" type="StaticBody3D" parent="RootNode/house1/house1_door1" groups=["ExitDoor"]]
+[node name="StaticBody3D" type="StaticBody3D" parent="House/house1/house1_door1" groups=["ExitDoor"]]
 script = ExtResource("2_rw0oy")
 promptMessage = "Enter"
 
-[node name="CollisionShape3D" type="CollisionShape3D" parent="RootNode/house1/house1_door1/StaticBody3D"]
+[node name="CollisionShape3D" type="CollisionShape3D" parent="House/house1/house1_door1/StaticBody3D"]
 shape = SubResource("ConcavePolygonShape3D_kjwvx")
 
-[node name="DoorHinge" type="Node3D" parent="RootNode/house1"]
+[node name="DoorHinge" type="Node3D" parent="House/house1"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.5, 1, -0.0999999)
 script = ExtResource("3_2jes1")
 animationPlayerPath = NodePath("DoorAnimation")
 
-[node name="house1_door2" type="MeshInstance3D" parent="RootNode/house1/DoorHinge"]
+[node name="house1_door2" type="MeshInstance3D" parent="House/house1/DoorHinge"]
 mesh = SubResource("ArrayMesh_cuq6p")
 skeleton = NodePath("")
 surface_material_override/0 = SubResource("StandardMaterial3D_mfjj2")
 
-[node name="StaticBody3D" type="StaticBody3D" parent="RootNode/house1/DoorHinge/house1_door2" groups=["Doors"]]
+[node name="StaticBody3D" type="StaticBody3D" parent="House/house1/DoorHinge/house1_door2" groups=["Doors"]]
 script = ExtResource("2_rw0oy")
 promptMessage = "Enter"
 
-[node name="CollisionShape3D" type="CollisionShape3D" parent="RootNode/house1/DoorHinge/house1_door2/StaticBody3D"]
+[node name="CollisionShape3D" type="CollisionShape3D" parent="House/house1/DoorHinge/house1_door2/StaticBody3D"]
 shape = SubResource("ConcavePolygonShape3D_gs2gj")
 
-[node name="DoorAnimation" type="AnimationPlayer" parent="RootNode/house1/DoorHinge"]
+[node name="DoorAnimation" type="AnimationPlayer" parent="House/house1/DoorHinge"]
 libraries = {
 "": SubResource("AnimationLibrary_adwh7")
 }
 
-[node name="area3d" type="Area3D" parent="RootNode/house1/DoorHinge"]
+[node name="area3d" type="Area3D" parent="House/house1/DoorHinge"]
 
-[node name="collisionShape3d" type="CollisionShape3D" parent="RootNode/house1/DoorHinge/area3d"]
+[node name="collisionShape3d" type="CollisionShape3D" parent="House/house1/DoorHinge/area3d"]
 transform = Transform3D(-4.49688e-07, 0, 0.999996, 0, 0.799506, 0, -0.124223, 0, -3.61997e-06, 0.49936, 1.05786, 0.0484409)
 shape = SubResource("BoxShape3D_63cqb")
 
-[node name="house1_door_closet1" type="MeshInstance3D" parent="RootNode/house1"]
+[node name="house1_door_closet1" type="MeshInstance3D" parent="House/house1"]
 transform = Transform3D(5.96046e-08, 0, -1, 0, 1, 0, 1, 0, 5.96046e-08, 0.9, 1, -4.325)
 mesh = SubResource("ArrayMesh_b8p67")
 skeleton = NodePath("")
 surface_material_override/0 = SubResource("StandardMaterial3D_4rhy5")
 
-[node name="StaticBody3D" type="StaticBody3D" parent="RootNode/house1/house1_door_closet1"]
+[node name="StaticBody3D" type="StaticBody3D" parent="House/house1/house1_door_closet1"]
 
-[node name="CollisionShape3D" type="CollisionShape3D" parent="RootNode/house1/house1_door_closet1/StaticBody3D"]
+[node name="CollisionShape3D" type="CollisionShape3D" parent="House/house1/house1_door_closet1/StaticBody3D"]
 shape = SubResource("ConcavePolygonShape3D_7spv2")
 
-[node name="house1_door_closet2" type="MeshInstance3D" parent="RootNode/house1"]
+[node name="house1_door_closet2" type="MeshInstance3D" parent="House/house1"]
 transform = Transform3D(5.96046e-08, 0, -1, 0, 1, 0, 1, 0, 5.96046e-08, 0.9, 1, -3.675)
 mesh = SubResource("ArrayMesh_10yp7")
 skeleton = NodePath("")
 surface_material_override/0 = SubResource("StandardMaterial3D_6y778")
 
-[node name="StaticBody3D" type="StaticBody3D" parent="RootNode/house1/house1_door_closet2"]
+[node name="StaticBody3D" type="StaticBody3D" parent="House/house1/house1_door_closet2"]
 
-[node name="CollisionShape3D" type="CollisionShape3D" parent="RootNode/house1/house1_door_closet2/StaticBody3D"]
+[node name="CollisionShape3D" type="CollisionShape3D" parent="House/house1/house1_door_closet2/StaticBody3D"]
 shape = SubResource("ConcavePolygonShape3D_o0kt5")
 
-[node name="house1_door3" type="MeshInstance3D" parent="RootNode/house1"]
+[node name="house1_door3" type="MeshInstance3D" parent="House/house1"]
 transform = Transform3D(5.96046e-08, 0, -1, 0, 1, 0, 1, 0, 5.96046e-08, 1.1, 1, -2)
 mesh = SubResource("ArrayMesh_siqap")
 skeleton = NodePath("")
 surface_material_override/0 = SubResource("StandardMaterial3D_73hjv")
 
-[node name="StaticBody3D" type="StaticBody3D" parent="RootNode/house1/house1_door3"]
+[node name="StaticBody3D" type="StaticBody3D" parent="House/house1/house1_door3"]
 
-[node name="CollisionShape3D" type="CollisionShape3D" parent="RootNode/house1/house1_door3/StaticBody3D"]
+[node name="CollisionShape3D" type="CollisionShape3D" parent="House/house1/house1_door3/StaticBody3D"]
 shape = SubResource("ConcavePolygonShape3D_y2p75")
 
-[node name="house1_windows" type="MeshInstance3D" parent="RootNode/house1"]
+[node name="house1_windows" type="MeshInstance3D" parent="House/house1"]
 mesh = SubResource("ArrayMesh_3wpwf")
 skeleton = NodePath("")
 surface_material_override/0 = SubResource("StandardMaterial3D_kkd14")
 
-[node name="StaticBody3D" type="StaticBody3D" parent="RootNode/house1/house1_windows"]
+[node name="StaticBody3D" type="StaticBody3D" parent="House/house1/house1_windows"]
 
-[node name="CollisionShape3D" type="CollisionShape3D" parent="RootNode/house1/house1_windows/StaticBody3D"]
+[node name="CollisionShape3D" type="CollisionShape3D" parent="House/house1/house1_windows/StaticBody3D"]
 shape = SubResource("ConcavePolygonShape3D_lr41g")
 
-[node name="Player" parent="." instance=ExtResource("6_qi3dq")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.043085, 1.32018, 4.29576)
+[node name="Decoration" type="Node3D" parent="."]
+transform = Transform3D(-3.49691e-08, 0, -0.8, 0, 0.8, 0, 0.8, 0, -3.49691e-08, -3.36003, 1.45314, 2.36809)
 
-[node name="TrashBin" parent="." instance=ExtResource("4_dool2")]
-transform = Transform3D(0.6, 0, 0, 0, 0.592478, 0, 0, 0, 0.4, 1.43337, 0.961422, -0.476713)
+[node name="TrashBin" parent="Decoration" instance=ExtResource("4_dool2")]
+transform = Transform3D(-3.27835e-08, 0, 0.5, 0, 0.740597, 0, -0.75, 0, -2.18557e-08, -3.55601, -0.61465, -5.99175)
+
+[node name="Bed" parent="Decoration" instance=ExtResource("6_6e8ri")]
+transform = Transform3D(-2.73196e-08, 0, 0.625, 0, 0.625, 0, -0.625, 0, -2.73196e-08, -7.91977, -0.209224, -0.646061)
+
+[node name="Key" parent="Decoration" instance=ExtResource("7_hicbx")]
+transform = Transform3D(-5.46392e-08, 1.25, 2.03651e-07, -1.25, -5.46392e-08, 0, 9.04969e-15, -2.03651e-07, 1.25, -8.18381, -0.472957, -8.16868)
+
+[node name="Sink" parent="Decoration" instance=ExtResource("8_v3xfu")]
+transform = Transform3D(-0.625, 0, -5.46392e-08, 0, 0.625, 0, 5.46392e-08, 0, -0.625, -6.03317, -0.137318, -8.85939)
+
+[node name="Toilet" parent="Decoration" instance=ExtResource("9_fu2pc")]
+transform = Transform3D(-0.875, 0, -7.64949e-08, 0, 0.875, 0, 7.64949e-08, 0, -0.875, -3.6683, -0.117226, -8.36488)
+
+[node name="Table" parent="Decoration" instance=ExtResource("10_em7pd")]
+transform = Transform3D(-2.73196e-08, 0, 0.625, 0, 0.625, 0, -0.625, 0, -2.73196e-08, -4.16238, 0.187445, -0.427709)
+
+[node name="Fridge" parent="Decoration" instance=ExtResource("11_sei4t")]
+transform = Transform3D(8.19589e-08, 0, -0.625, 0, 0.625, 0, 0.625, 0, 8.19589e-08, -2.49827, 0.570752, -6.22038)
+
+[node name="KitchenSink" parent="Decoration" instance=ExtResource("12_o0x6u")]
+transform = Transform3D(-0.5, 0, -4.37114e-08, 0, 0.5, 0, 4.37114e-08, 0, -0.5, -2.20063, 0.0119463, -8.78087)
+
+[node name="Oven" parent="Decoration" instance=ExtResource("13_alf4x")]
+transform = Transform3D(-0.75, 0, -5.49831e-08, 0, 0.75, 0, 6.55671e-08, 0, -0.628934, 0.652431, 0.204734, -8.57775)
+
+[node name="Cupboard" parent="Decoration" instance=ExtResource("14_ppku2")]
+transform = Transform3D(-0.5625, 0, -4.91753e-08, 0, 0.5625, 0, 4.91753e-08, 0, -0.5625, -0.810944, -0.43086, -8.4392)
+
+[node name="Cupboard2" parent="Decoration" instance=ExtResource("14_ppku2")]
+transform = Transform3D(-0.5625, 0, -4.91753e-08, 0, 0.5625, 0, 4.91753e-08, 0, -0.5625, 1.90515, -0.43086, -8.4392)
+
+[node name="Couch" parent="Decoration" instance=ExtResource("14_ief32")]
+
+[node name="Player" parent="." instance=ExtResource("6_qi3dq")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.51585, 4.03048)

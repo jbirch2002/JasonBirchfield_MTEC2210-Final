@@ -1,4 +1,4 @@
-[gd_scene load_steps=24 format=3 uid="uid://rgjkqrdv4lhq"]
+[gd_scene load_steps=25 format=3 uid="uid://rgjkqrdv4lhq"]
 
 [ext_resource type="PackedScene" uid="uid://bn14grvdecwll" path="res://Scenes/Player/player.tscn" id="1_5mpu5"]
 [ext_resource type="Texture2D" uid="uid://o13miw4liw3b" path="res://Assets/foliage/floortexture/12479.jpg" id="1_vud67"]
@@ -16,6 +16,7 @@
 [ext_resource type="PackedScene" uid="uid://o4gusyafhvcu" path="res://Scenes/Trees/tree03.tscn" id="15_fuae5"]
 [ext_resource type="Script" path="res://Scripts/Interactable.cs" id="16_batf2"]
 [ext_resource type="PackedScene" uid="uid://cy76kmqt0qln7" path="res://Scenes/Decoration/bell.tscn" id="16_jmud8"]
+[ext_resource type="PackedScene" uid="uid://dvl5a4qilg2co" path="res://Scenes/NPC/npc.tscn" id="17_pj1or"]
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_wy8cl"]
 albedo_texture = ExtResource("1_vud67")
@@ -85,9 +86,6 @@ mesh = SubResource("BoxMesh_632fx")
 [node name="CollisionShape3D" type="CollisionShape3D" parent="meshInstance3d/StaticBody3D"]
 shape = SubResource("ConcavePolygonShape3D_2lreb")
 
-[node name="CharacterBody3D" parent="." instance=ExtResource("1_5mpu5")]
-transform = Transform3D(-1, 0, 8.74228e-08, 0, 1, 0, -8.74228e-08, 0, -1, -0.0109169, 1.33746, -9.43528)
-
 [node name="player_house" parent="." instance=ExtResource("2_t8ixg")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -15.5886)
 
@@ -135,3 +133,9 @@ shape = SubResource("BoxShape3D_keqg8")
 
 [node name="Root Scene10" parent="." instance=ExtResource("16_jmud8")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 6.35093, 1.46716, 0)
+
+[node name="Player" parent="." instance=ExtResource("1_5mpu5")]
+transform = Transform3D(-1, 0, 8.74228e-08, 0, 1, 0, -8.74228e-08, 0, -1, -0.052263, 1.66864, -9.60455)
+
+[node name="Root Scene11" parent="." instance=ExtResource("17_pj1or")]
+transform = Transform3D(-2.18557e-08, 0, -0.5, 0, 0.5, 0, 0.5, 0, -2.18557e-08, 10.399, 0.1, 0.247428)

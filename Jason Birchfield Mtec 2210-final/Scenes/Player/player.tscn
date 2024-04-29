@@ -71,6 +71,5 @@ offset_bottom = 19.95
 grow_horizontal = 2
 grow_vertical = 2
 script = ExtResource("3_cnjmk")
-dotColor = Color(0.627451, 0.34902, 0.992157, 1)
 
 [node name="sprite2d" type="Sprite2D" parent="control"]

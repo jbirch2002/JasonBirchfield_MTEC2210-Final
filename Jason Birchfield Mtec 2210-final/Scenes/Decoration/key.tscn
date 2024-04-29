@@ -1,4 +1,4 @@
-[gd_scene load_steps=6 format=3 uid="uid://dqb7kpm5y1kb0"]
+[gd_scene load_steps=7 format=3 uid="uid://dqb7kpm5y1kb0"]
 
 [ext_resource type="Texture2D" uid="uid://bv0espg7q45va" path="res://Assets/decoration/key/textures/DefaultMaterial_BaseColor.png" id="1_11f5w"]
 
@@ -45,13 +45,22 @@ shadow_mesh = SubResource("ArrayMesh_nrfki")
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_enmqn"]
 albedo_texture = ExtResource("1_11f5w")
 
+[sub_resource type="BoxShape3D" id="BoxShape3D_hh1qi"]
+size = Vector3(0.1026, 0.139282, 0.113403)
+
 [node name="Key" type="Node3D"]
 
 [node name="RootNode" type="Node3D" parent="."]
 transform = Transform3D(1, 0, 0, 0, 0.263268, 0, 0, 0, 0.17521, 0, 0, 0)
 
 [node name="Cube" type="MeshInstance3D" parent="RootNode"]
-transform = Transform3D(4.63651, 0, 0, 0, -3.88279e-06, 12.8731, 0, -16.2856, -3.06919e-06, 8.07587e-10, 0.554182, -0.0317936)
+transform = Transform3D(4.63651, 0, 0, 0, -7.11866e-07, 12.8731, 0, -16.2856, -5.62701e-07, 8.07587e-10, 0.554182, -0.0317936)
 mesh = SubResource("ArrayMesh_1b8v5")
 skeleton = NodePath("")
 surface_material_override/0 = SubResource("StandardMaterial3D_enmqn")
+
+[node name="area3d" type="Area3D" parent="."]
+
+[node name="collisionShape3d" type="CollisionShape3D" parent="area3d"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.0093689, 0.152405, -0.012146)
+shape = SubResource("BoxShape3D_hh1qi")
