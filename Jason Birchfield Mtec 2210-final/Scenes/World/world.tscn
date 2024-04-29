@@ -1,4 +1,4 @@
-[gd_scene load_steps=23 format=3 uid="uid://rgjkqrdv4lhq"]
+[gd_scene load_steps=24 format=3 uid="uid://rgjkqrdv4lhq"]
 
 [ext_resource type="PackedScene" uid="uid://bn14grvdecwll" path="res://Scenes/Player/player.tscn" id="1_5mpu5"]
 [ext_resource type="Texture2D" uid="uid://o13miw4liw3b" path="res://Assets/foliage/floortexture/12479.jpg" id="1_vud67"]
@@ -15,6 +15,7 @@
 [ext_resource type="PackedScene" uid="uid://d0sydkych26ag" path="res://Scenes/World/day_night_cycle.tscn" id="15_ew8w6"]
 [ext_resource type="PackedScene" uid="uid://o4gusyafhvcu" path="res://Scenes/Trees/tree03.tscn" id="15_fuae5"]
 [ext_resource type="Script" path="res://Scripts/Interactable.cs" id="16_batf2"]
+[ext_resource type="PackedScene" uid="uid://cy76kmqt0qln7" path="res://Scenes/Decoration/bell.tscn" id="16_jmud8"]
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_wy8cl"]
 albedo_texture = ExtResource("1_vud67")
@@ -131,3 +132,6 @@ script = ExtResource("16_batf2")
 [node name="collisionShape3d" type="CollisionShape3D" parent="Bone_3/StaticBody3D"]
 transform = Transform3D(0.00277435, 0, 0, 0, 0.0258812, -6.66134e-16, 0, 1.89848e-13, 0.0157541, 0, -0.000345161, 0.000841421)
 shape = SubResource("BoxShape3D_keqg8")
+
+[node name="Root Scene10" parent="." instance=ExtResource("16_jmud8")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 6.35093, 1.46716, 0)

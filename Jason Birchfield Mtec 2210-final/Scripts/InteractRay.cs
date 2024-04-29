@@ -15,8 +15,6 @@ public partial class InteractRay : RayCast3D
 	public override void _Ready()
 	{
 		audioStreamPlayer3D = GetNode<AudioStreamPlayer3D>("audioStreamPlayer3d");
-		openAudio = ResourceLoader.Load<AudioStream>("res://Sounds/Doors Opening.mp3");
-        closeAudio = ResourceLoader.Load<AudioStream>("res://Sounds/Doors Closing.mp3");
 		prompt = GetNode<Label>("Prompt");
 		player = GetNode<CharacterBody3D>("../..");
 		AddException(player);
@@ -37,14 +35,14 @@ public partial class InteractRay : RayCast3D
 				{
 					if (detected.IsInGroup("EntranceDoor"))
 					{
-						var newScene = (PackedScene)ResourceLoader.Load("res://Scenes/Houses/player_house.tscn"); 
+						var newScene = (PackedScene)ResourceLoader.Load("res://Scenes/Houses/player_house_inside.tscn"); 
 						if (newScene != null)
 						{
 							GetTree().ChangeSceneToPacked(newScene);
 						}
 					}
 
-					else if (detected.IsInGroup("ExitDoor"))
+					if (detected.IsInGroup("ExitDoor"))
 					{
 						var newScene = (PackedScene)ResourceLoader.Load("res://Scenes/World/world.tscn"); 
 						if (newScene != null)
@@ -53,21 +51,13 @@ public partial class InteractRay : RayCast3D
 							GetTree().ChangeSceneToPacked(newScene);
 						}
 					}
-					else if (detected.IsInGroup("Doors"))
+					if (detected.IsInGroup("Doors"))
 					{
-						isOpen = !isOpen;
-					
-						if (openAudio != null && isOpen)
-						{
-							audioStreamPlayer3D.Stream = openAudio;
-							audioStreamPlayer3D.Play();
-						}
-						else if (closeAudio != null && !isOpen)
-						{
-							audioStreamPlayer3D.Stream = closeAudio;
-							audioStreamPlayer3D.Play();
-						}
-						detected.Interact(Owner);
+						var doorScript = detected.GetNodeOrNull<OpenDoors>(".");
+							if (doorScript != null)
+							{
+								doorScript.ToggleDoor();  // Call ToggleDoor on interaction button press
+							}
 					}
 					else if (detected.IsInGroup("NPCs"))
 					{

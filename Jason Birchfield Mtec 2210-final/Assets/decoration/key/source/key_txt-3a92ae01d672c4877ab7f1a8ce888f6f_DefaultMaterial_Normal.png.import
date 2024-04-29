@@ -1,0 +1,36 @@
+[remap]
+
+importer="texture"
+type="CompressedTexture2D"
+uid="uid://c78kflkt8dq1x"
+path.s3tc="res://.godot/imported/key_txt-3a92ae01d672c4877ab7f1a8ce888f6f_DefaultMaterial_Normal.png-7cc628cda1336ba23b20b96a28d0813b.s3tc.ctex"
+metadata={
+"imported_formats": ["s3tc_bptc"],
+"vram_texture": true
+}
+generator_parameters={}
+
+[deps]
+
+source_file="res://Assets/decoration/key/source/key_txt-3a92ae01d672c4877ab7f1a8ce888f6f_DefaultMaterial_Normal.png"
+dest_files=["res://.godot/imported/key_txt-3a92ae01d672c4877ab7f1a8ce888f6f_DefaultMaterial_Normal.png-7cc628cda1336ba23b20b96a28d0813b.s3tc.ctex"]
+
+[params]
+
+compress/mode=2
+compress/high_quality=false
+compress/lossy_quality=0.7
+compress/hdr_compression=1
+compress/normal_map=1
+compress/channel_pack=0
+mipmaps/generate=true
+mipmaps/limit=-1
+roughness/mode=1
+roughness/src_normal="res://Assets/decoration/key/source/key_txt-3a92ae01d672c4877ab7f1a8ce888f6f_DefaultMaterial_Normal.png"
+process/fix_alpha_border=true
+process/premult_alpha=false
+process/normal_map_invert_y=false
+process/hdr_as_srgb=false
+process/hdr_clamp_exposure=false
+process/size_limit=0
+detect_3d/compress_to=0
