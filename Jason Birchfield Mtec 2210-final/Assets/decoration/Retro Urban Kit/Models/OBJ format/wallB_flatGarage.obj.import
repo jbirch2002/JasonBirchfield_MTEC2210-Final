@@ -1,0 +1,22 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://4sm0ifm8v0sy"
+path="res://.godot/imported/wallB_flatGarage.obj-ae0ccbb8b27c82a074336489e4561ffc.mesh"
+
+[deps]
+
+files=["res://.godot/imported/wallB_flatGarage.obj-ae0ccbb8b27c82a074336489e4561ffc.mesh"]
+
+source_file="res://Assets/decoration/Retro Urban Kit/Models/OBJ format/wallB_flatGarage.obj"
+dest_files=["res://.godot/imported/wallB_flatGarage.obj-ae0ccbb8b27c82a074336489e4561ffc.mesh", "res://.godot/imported/wallB_flatGarage.obj-ae0ccbb8b27c82a074336489e4561ffc.mesh"]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+optimize_mesh=true
+force_disable_mesh_compression=false

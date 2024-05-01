@@ -1,0 +1,22 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://bnx0xyw13y7ei"
+path="res://.godot/imported/wallA_detail.obj-876f2044f006173b8e9f0dd9b02ae050.mesh"
+
+[deps]
+
+files=["res://.godot/imported/wallA_detail.obj-876f2044f006173b8e9f0dd9b02ae050.mesh"]
+
+source_file="res://Assets/decoration/Retro Urban Kit/Models/OBJ format/wallA_detail.obj"
+dest_files=["res://.godot/imported/wallA_detail.obj-876f2044f006173b8e9f0dd9b02ae050.mesh", "res://.godot/imported/wallA_detail.obj-876f2044f006173b8e9f0dd9b02ae050.mesh"]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+optimize_mesh=true
+force_disable_mesh_compression=false

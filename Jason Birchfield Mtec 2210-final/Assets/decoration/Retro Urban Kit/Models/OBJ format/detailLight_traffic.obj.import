@@ -1,0 +1,22 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://4njo20dak0os"
+path="res://.godot/imported/detailLight_traffic.obj-349d1c0dab24ffda6fdbaf02448d2272.mesh"
+
+[deps]
+
+files=["res://.godot/imported/detailLight_traffic.obj-349d1c0dab24ffda6fdbaf02448d2272.mesh"]
+
+source_file="res://Assets/decoration/Retro Urban Kit/Models/OBJ format/detailLight_traffic.obj"
+dest_files=["res://.godot/imported/detailLight_traffic.obj-349d1c0dab24ffda6fdbaf02448d2272.mesh", "res://.godot/imported/detailLight_traffic.obj-349d1c0dab24ffda6fdbaf02448d2272.mesh"]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+optimize_mesh=true
+force_disable_mesh_compression=false

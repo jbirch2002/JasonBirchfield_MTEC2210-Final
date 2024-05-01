@@ -1,0 +1,22 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://donura6gsj00o"
+path="res://.godot/imported/roadAsphalt_straight.obj-2ba0009895368f62ad58d9aed578a2df.mesh"
+
+[deps]
+
+files=["res://.godot/imported/roadAsphalt_straight.obj-2ba0009895368f62ad58d9aed578a2df.mesh"]
+
+source_file="res://Assets/decoration/Retro Urban Kit/Models/OBJ format/roadAsphalt_straight.obj"
+dest_files=["res://.godot/imported/roadAsphalt_straight.obj-2ba0009895368f62ad58d9aed578a2df.mesh", "res://.godot/imported/roadAsphalt_straight.obj-2ba0009895368f62ad58d9aed578a2df.mesh"]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+optimize_mesh=true
+force_disable_mesh_compression=false

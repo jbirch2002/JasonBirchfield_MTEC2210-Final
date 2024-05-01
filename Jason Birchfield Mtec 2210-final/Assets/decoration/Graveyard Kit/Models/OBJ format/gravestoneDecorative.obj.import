@@ -1,0 +1,22 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://xyubrbgbytl"
+path="res://.godot/imported/gravestoneDecorative.obj-d1a1a2cff7c2834d8c6d47a96fd43306.mesh"
+
+[deps]
+
+files=["res://.godot/imported/gravestoneDecorative.obj-d1a1a2cff7c2834d8c6d47a96fd43306.mesh"]
+
+source_file="res://Assets/decoration/Graveyard Kit/Models/OBJ format/gravestoneDecorative.obj"
+dest_files=["res://.godot/imported/gravestoneDecorative.obj-d1a1a2cff7c2834d8c6d47a96fd43306.mesh", "res://.godot/imported/gravestoneDecorative.obj-d1a1a2cff7c2834d8c6d47a96fd43306.mesh"]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+optimize_mesh=true
+force_disable_mesh_compression=false

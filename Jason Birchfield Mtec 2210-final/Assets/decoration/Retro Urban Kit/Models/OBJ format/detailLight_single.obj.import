@@ -1,0 +1,22 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://bn55xohdj4fbv"
+path="res://.godot/imported/detailLight_single.obj-e30d9273f2ad144eafadebfddcfb133a.mesh"
+
+[deps]
+
+files=["res://.godot/imported/detailLight_single.obj-e30d9273f2ad144eafadebfddcfb133a.mesh"]
+
+source_file="res://Assets/decoration/Retro Urban Kit/Models/OBJ format/detailLight_single.obj"
+dest_files=["res://.godot/imported/detailLight_single.obj-e30d9273f2ad144eafadebfddcfb133a.mesh", "res://.godot/imported/detailLight_single.obj-e30d9273f2ad144eafadebfddcfb133a.mesh"]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+optimize_mesh=true
+force_disable_mesh_compression=false

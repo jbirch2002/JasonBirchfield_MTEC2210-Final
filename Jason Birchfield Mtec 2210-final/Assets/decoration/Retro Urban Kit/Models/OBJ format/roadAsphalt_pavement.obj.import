@@ -1,0 +1,22 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://cwjanxm2trvgx"
+path="res://.godot/imported/roadAsphalt_pavement.obj-3fdb0ac18584d1d8115074e7f7ff9aed.mesh"
+
+[deps]
+
+files=["res://.godot/imported/roadAsphalt_pavement.obj-3fdb0ac18584d1d8115074e7f7ff9aed.mesh"]
+
+source_file="res://Assets/decoration/Retro Urban Kit/Models/OBJ format/roadAsphalt_pavement.obj"
+dest_files=["res://.godot/imported/roadAsphalt_pavement.obj-3fdb0ac18584d1d8115074e7f7ff9aed.mesh", "res://.godot/imported/roadAsphalt_pavement.obj-3fdb0ac18584d1d8115074e7f7ff9aed.mesh"]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+optimize_mesh=true
+force_disable_mesh_compression=false

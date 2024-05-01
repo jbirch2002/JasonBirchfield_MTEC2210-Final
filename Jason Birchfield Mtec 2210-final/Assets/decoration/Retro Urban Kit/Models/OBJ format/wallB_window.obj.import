@@ -1,0 +1,22 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://dpv1c7y7xrurv"
+path="res://.godot/imported/wallB_window.obj-bd2b1c6427123e23b88e3371edb6e89e.mesh"
+
+[deps]
+
+files=["res://.godot/imported/wallB_window.obj-bd2b1c6427123e23b88e3371edb6e89e.mesh"]
+
+source_file="res://Assets/decoration/Retro Urban Kit/Models/OBJ format/wallB_window.obj"
+dest_files=["res://.godot/imported/wallB_window.obj-bd2b1c6427123e23b88e3371edb6e89e.mesh", "res://.godot/imported/wallB_window.obj-bd2b1c6427123e23b88e3371edb6e89e.mesh"]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+optimize_mesh=true
+force_disable_mesh_compression=false

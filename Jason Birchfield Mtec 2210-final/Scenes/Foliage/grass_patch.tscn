@@ -47,6 +47,7 @@ alpha_antialiasing_mode = 0
 albedo_texture = ExtResource("1_kwonn")
 
 [node name="GrassPatch" type="Node3D"]
+transform = Transform3D(10, 0, 0, 0, 10, 0, 0, 0, 10, 0, 0, 0)
 
 [node name="RootNode" type="Node3D" parent="."]
 

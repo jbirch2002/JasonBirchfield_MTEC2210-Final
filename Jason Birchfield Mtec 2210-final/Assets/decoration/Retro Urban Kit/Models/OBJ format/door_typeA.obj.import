@@ -1,0 +1,22 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://5yqr2pr8deot"
+path="res://.godot/imported/door_typeA.obj-e4ff5530a11196396e5565a2a35bf934.mesh"
+
+[deps]
+
+files=["res://.godot/imported/door_typeA.obj-e4ff5530a11196396e5565a2a35bf934.mesh"]
+
+source_file="res://Assets/decoration/Retro Urban Kit/Models/OBJ format/door_typeA.obj"
+dest_files=["res://.godot/imported/door_typeA.obj-e4ff5530a11196396e5565a2a35bf934.mesh", "res://.godot/imported/door_typeA.obj-e4ff5530a11196396e5565a2a35bf934.mesh"]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+optimize_mesh=true
+force_disable_mesh_compression=false

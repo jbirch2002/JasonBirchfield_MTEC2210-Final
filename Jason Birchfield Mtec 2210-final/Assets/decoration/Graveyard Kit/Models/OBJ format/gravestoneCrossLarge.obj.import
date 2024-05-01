@@ -1,0 +1,22 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://by7c65cfc826x"
+path="res://.godot/imported/gravestoneCrossLarge.obj-f46b03c14a6f74ea32d74a8a08db4141.mesh"
+
+[deps]
+
+files=["res://.godot/imported/gravestoneCrossLarge.obj-f46b03c14a6f74ea32d74a8a08db4141.mesh"]
+
+source_file="res://Assets/decoration/Graveyard Kit/Models/OBJ format/gravestoneCrossLarge.obj"
+dest_files=["res://.godot/imported/gravestoneCrossLarge.obj-f46b03c14a6f74ea32d74a8a08db4141.mesh", "res://.godot/imported/gravestoneCrossLarge.obj-f46b03c14a6f74ea32d74a8a08db4141.mesh"]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+optimize_mesh=true
+force_disable_mesh_compression=false

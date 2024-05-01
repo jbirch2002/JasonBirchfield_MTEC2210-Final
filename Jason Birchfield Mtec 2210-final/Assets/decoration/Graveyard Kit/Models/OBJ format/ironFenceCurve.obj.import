@@ -1,0 +1,22 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://db1emaufk4d6c"
+path="res://.godot/imported/ironFenceCurve.obj-1778cc2a8a602ccddac4cee8f49e1889.mesh"
+
+[deps]
+
+files=["res://.godot/imported/ironFenceCurve.obj-1778cc2a8a602ccddac4cee8f49e1889.mesh"]
+
+source_file="res://Assets/decoration/Graveyard Kit/Models/OBJ format/ironFenceCurve.obj"
+dest_files=["res://.godot/imported/ironFenceCurve.obj-1778cc2a8a602ccddac4cee8f49e1889.mesh", "res://.godot/imported/ironFenceCurve.obj-1778cc2a8a602ccddac4cee8f49e1889.mesh"]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+optimize_mesh=true
+force_disable_mesh_compression=false

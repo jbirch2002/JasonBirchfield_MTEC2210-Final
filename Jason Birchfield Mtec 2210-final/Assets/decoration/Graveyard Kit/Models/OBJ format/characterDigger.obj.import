@@ -1,0 +1,22 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://bwx1ukkw4fkd6"
+path="res://.godot/imported/characterDigger.obj-7f260758b4f84efa504db8d5035c4a7d.mesh"
+
+[deps]
+
+files=["res://.godot/imported/characterDigger.obj-7f260758b4f84efa504db8d5035c4a7d.mesh"]
+
+source_file="res://Assets/decoration/Graveyard Kit/Models/OBJ format/characterDigger.obj"
+dest_files=["res://.godot/imported/characterDigger.obj-7f260758b4f84efa504db8d5035c4a7d.mesh", "res://.godot/imported/characterDigger.obj-7f260758b4f84efa504db8d5035c4a7d.mesh"]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+optimize_mesh=true
+force_disable_mesh_compression=false

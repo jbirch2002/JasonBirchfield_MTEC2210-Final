@@ -1,0 +1,22 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://cf37bw55vln60"
+path="res://.godot/imported/crypt.obj-5c286b1fca5002a2c304a4fdf089bdd8.mesh"
+
+[deps]
+
+files=["res://.godot/imported/crypt.obj-5c286b1fca5002a2c304a4fdf089bdd8.mesh"]
+
+source_file="res://Assets/decoration/Graveyard Kit/Models/OBJ format/crypt.obj"
+dest_files=["res://.godot/imported/crypt.obj-5c286b1fca5002a2c304a4fdf089bdd8.mesh", "res://.godot/imported/crypt.obj-5c286b1fca5002a2c304a4fdf089bdd8.mesh"]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+optimize_mesh=true
+force_disable_mesh_compression=false

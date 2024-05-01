@@ -1,0 +1,22 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://dcrfetp0m4xtd"
+path="res://.godot/imported/detailCables_typeA.obj-cd5a340cebafcb54d76d3ea664da6102.mesh"
+
+[deps]
+
+files=["res://.godot/imported/detailCables_typeA.obj-cd5a340cebafcb54d76d3ea664da6102.mesh"]
+
+source_file="res://Assets/decoration/Retro Urban Kit/Models/OBJ format/detailCables_typeA.obj"
+dest_files=["res://.godot/imported/detailCables_typeA.obj-cd5a340cebafcb54d76d3ea664da6102.mesh", "res://.godot/imported/detailCables_typeA.obj-cd5a340cebafcb54d76d3ea664da6102.mesh"]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+optimize_mesh=true
+force_disable_mesh_compression=false

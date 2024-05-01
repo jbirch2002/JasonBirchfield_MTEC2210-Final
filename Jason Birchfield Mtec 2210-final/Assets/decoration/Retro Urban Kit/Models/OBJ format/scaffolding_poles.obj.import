@@ -1,0 +1,22 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://bi2yldsi7030u"
+path="res://.godot/imported/scaffolding_poles.obj-773f6903f3ac74fc0e12b4d567fb85ac.mesh"
+
+[deps]
+
+files=["res://.godot/imported/scaffolding_poles.obj-773f6903f3ac74fc0e12b4d567fb85ac.mesh"]
+
+source_file="res://Assets/decoration/Retro Urban Kit/Models/OBJ format/scaffolding_poles.obj"
+dest_files=["res://.godot/imported/scaffolding_poles.obj-773f6903f3ac74fc0e12b4d567fb85ac.mesh", "res://.godot/imported/scaffolding_poles.obj-773f6903f3ac74fc0e12b4d567fb85ac.mesh"]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+optimize_mesh=true
+force_disable_mesh_compression=false

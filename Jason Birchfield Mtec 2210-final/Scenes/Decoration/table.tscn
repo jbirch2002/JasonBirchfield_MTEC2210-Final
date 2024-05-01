@@ -5,12 +5,10 @@
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_t2g8t"]
 resource_name = "Wood_05"
-albedo_color = Color(1, 1, 1, 1)
 metallic = 0.4
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_8h44e"]
 resource_name = "Wood_02"
-albedo_color = Color(1, 1, 1, 1)
 metallic = 0.4
 
 [sub_resource type="ArrayMesh" id="ArrayMesh_x8q75"]

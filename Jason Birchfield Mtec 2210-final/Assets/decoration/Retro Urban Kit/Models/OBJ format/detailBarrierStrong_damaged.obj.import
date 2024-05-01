@@ -1,0 +1,22 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://2undy1d20mr"
+path="res://.godot/imported/detailBarrierStrong_damaged.obj-09569bf4e40dc1470e58905c94f827da.mesh"
+
+[deps]
+
+files=["res://.godot/imported/detailBarrierStrong_damaged.obj-09569bf4e40dc1470e58905c94f827da.mesh"]
+
+source_file="res://Assets/decoration/Retro Urban Kit/Models/OBJ format/detailBarrierStrong_damaged.obj"
+dest_files=["res://.godot/imported/detailBarrierStrong_damaged.obj-09569bf4e40dc1470e58905c94f827da.mesh", "res://.godot/imported/detailBarrierStrong_damaged.obj-09569bf4e40dc1470e58905c94f827da.mesh"]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+optimize_mesh=true
+force_disable_mesh_compression=false

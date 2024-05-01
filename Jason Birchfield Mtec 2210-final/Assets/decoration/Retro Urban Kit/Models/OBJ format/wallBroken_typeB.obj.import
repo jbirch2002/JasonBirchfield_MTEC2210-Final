@@ -1,0 +1,22 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://cbbrrr4ht0pki"
+path="res://.godot/imported/wallBroken_typeB.obj-d187ef0aa2eee2d09324630983066668.mesh"
+
+[deps]
+
+files=["res://.godot/imported/wallBroken_typeB.obj-d187ef0aa2eee2d09324630983066668.mesh"]
+
+source_file="res://Assets/decoration/Retro Urban Kit/Models/OBJ format/wallBroken_typeB.obj"
+dest_files=["res://.godot/imported/wallBroken_typeB.obj-d187ef0aa2eee2d09324630983066668.mesh", "res://.godot/imported/wallBroken_typeB.obj-d187ef0aa2eee2d09324630983066668.mesh"]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+optimize_mesh=true
+force_disable_mesh_compression=false

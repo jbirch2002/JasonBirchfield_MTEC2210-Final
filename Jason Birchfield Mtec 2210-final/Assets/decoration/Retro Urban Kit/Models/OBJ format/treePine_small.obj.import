@@ -1,0 +1,22 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://dd4pb15c4b0av"
+path="res://.godot/imported/treePine_small.obj-496d5f31f2b0f76555d26bb2b85bf496.mesh"
+
+[deps]
+
+files=["res://.godot/imported/treePine_small.obj-496d5f31f2b0f76555d26bb2b85bf496.mesh"]
+
+source_file="res://Assets/decoration/Retro Urban Kit/Models/OBJ format/treePine_small.obj"
+dest_files=["res://.godot/imported/treePine_small.obj-496d5f31f2b0f76555d26bb2b85bf496.mesh", "res://.godot/imported/treePine_small.obj-496d5f31f2b0f76555d26bb2b85bf496.mesh"]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+optimize_mesh=true
+force_disable_mesh_compression=false

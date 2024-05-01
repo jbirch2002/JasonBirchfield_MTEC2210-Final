@@ -1,0 +1,22 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://dnk5n3kv81pyu"
+path="res://.godot/imported/urn.obj-3528f7c4af24adbaac6efe5579d884dc.mesh"
+
+[deps]
+
+files=["res://.godot/imported/urn.obj-3528f7c4af24adbaac6efe5579d884dc.mesh"]
+
+source_file="res://Assets/decoration/Graveyard Kit/Models/OBJ format/urn.obj"
+dest_files=["res://.godot/imported/urn.obj-3528f7c4af24adbaac6efe5579d884dc.mesh", "res://.godot/imported/urn.obj-3528f7c4af24adbaac6efe5579d884dc.mesh"]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+optimize_mesh=true
+force_disable_mesh_compression=false

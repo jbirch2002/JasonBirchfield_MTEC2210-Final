@@ -7,11 +7,11 @@ public partial class Player : CharacterBody3D
 	float currentSpeed = 5.0f;
 	[Export] float walkingSpeed = 5.0f;
 	[Export] float runningSpeed = 8.0f;
-	float jumpVelocity = 4.5f;
+	[Export] float jumpVelocity = 4.5f;
 
 	public const float mouseSens = 3f;
 
-	public float gravity = ProjectSettings.GetSetting("physics/3d/default_gravity").AsSingle();
+	public float gravity = 900f;
 
 	public override void _Ready()
 	{

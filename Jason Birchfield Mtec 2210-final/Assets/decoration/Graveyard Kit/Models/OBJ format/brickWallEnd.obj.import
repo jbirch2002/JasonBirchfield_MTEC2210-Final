@@ -1,0 +1,22 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://bj1eso8gd0w7r"
+path="res://.godot/imported/brickWallEnd.obj-aa36fcd47dfe29ba71d64abfcd834ae2.mesh"
+
+[deps]
+
+files=["res://.godot/imported/brickWallEnd.obj-aa36fcd47dfe29ba71d64abfcd834ae2.mesh"]
+
+source_file="res://Assets/decoration/Graveyard Kit/Models/OBJ format/brickWallEnd.obj"
+dest_files=["res://.godot/imported/brickWallEnd.obj-aa36fcd47dfe29ba71d64abfcd834ae2.mesh", "res://.godot/imported/brickWallEnd.obj-aa36fcd47dfe29ba71d64abfcd834ae2.mesh"]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+optimize_mesh=true
+force_disable_mesh_compression=false

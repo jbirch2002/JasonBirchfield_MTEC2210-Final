@@ -1,0 +1,22 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://b6y1nicjc51cm"
+path="res://.godot/imported/roadAsphalt_cornerInner.obj-569f8fbbe486c840ecd8230df2fa1342.mesh"
+
+[deps]
+
+files=["res://.godot/imported/roadAsphalt_cornerInner.obj-569f8fbbe486c840ecd8230df2fa1342.mesh"]
+
+source_file="res://Assets/decoration/Retro Urban Kit/Models/OBJ format/roadAsphalt_cornerInner.obj"
+dest_files=["res://.godot/imported/roadAsphalt_cornerInner.obj-569f8fbbe486c840ecd8230df2fa1342.mesh", "res://.godot/imported/roadAsphalt_cornerInner.obj-569f8fbbe486c840ecd8230df2fa1342.mesh"]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+optimize_mesh=true
+force_disable_mesh_compression=false

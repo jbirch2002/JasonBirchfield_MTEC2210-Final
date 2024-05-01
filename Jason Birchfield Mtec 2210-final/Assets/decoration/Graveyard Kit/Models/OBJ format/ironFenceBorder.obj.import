@@ -1,0 +1,22 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://jqangox86w0y"
+path="res://.godot/imported/ironFenceBorder.obj-4f52a6979bdc9781044f29791d39139e.mesh"
+
+[deps]
+
+files=["res://.godot/imported/ironFenceBorder.obj-4f52a6979bdc9781044f29791d39139e.mesh"]
+
+source_file="res://Assets/decoration/Graveyard Kit/Models/OBJ format/ironFenceBorder.obj"
+dest_files=["res://.godot/imported/ironFenceBorder.obj-4f52a6979bdc9781044f29791d39139e.mesh", "res://.godot/imported/ironFenceBorder.obj-4f52a6979bdc9781044f29791d39139e.mesh"]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+optimize_mesh=true
+force_disable_mesh_compression=false

@@ -1,0 +1,22 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://ib3w726i2lke"
+path="res://.godot/imported/windowSmall_typeB.obj-19ed4649e9ce526fd5b7ecbfceb47f5f.mesh"
+
+[deps]
+
+files=["res://.godot/imported/windowSmall_typeB.obj-19ed4649e9ce526fd5b7ecbfceb47f5f.mesh"]
+
+source_file="res://Assets/decoration/Retro Urban Kit/Models/OBJ format/windowSmall_typeB.obj"
+dest_files=["res://.godot/imported/windowSmall_typeB.obj-19ed4649e9ce526fd5b7ecbfceb47f5f.mesh", "res://.godot/imported/windowSmall_typeB.obj-19ed4649e9ce526fd5b7ecbfceb47f5f.mesh"]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+optimize_mesh=true
+force_disable_mesh_compression=false

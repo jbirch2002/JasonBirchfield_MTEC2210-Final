@@ -1,0 +1,22 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://dbs1si1ph0jqd"
+path="res://.godot/imported/trunk.obj-420b29585d22dcc4b9ed1ccac16ecebb.mesh"
+
+[deps]
+
+files=["res://.godot/imported/trunk.obj-420b29585d22dcc4b9ed1ccac16ecebb.mesh"]
+
+source_file="res://Assets/decoration/Graveyard Kit/Models/OBJ format/trunk.obj"
+dest_files=["res://.godot/imported/trunk.obj-420b29585d22dcc4b9ed1ccac16ecebb.mesh", "res://.godot/imported/trunk.obj-420b29585d22dcc4b9ed1ccac16ecebb.mesh"]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+optimize_mesh=true
+force_disable_mesh_compression=false

@@ -1,0 +1,22 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://bs4ovkrip5xug"
+path="res://.godot/imported/wallB_door.obj-eeed4c831db9209b1d6155ee3dce84fa.mesh"
+
+[deps]
+
+files=["res://.godot/imported/wallB_door.obj-eeed4c831db9209b1d6155ee3dce84fa.mesh"]
+
+source_file="res://Assets/decoration/Retro Urban Kit/Models/OBJ format/wallB_door.obj"
+dest_files=["res://.godot/imported/wallB_door.obj-eeed4c831db9209b1d6155ee3dce84fa.mesh", "res://.godot/imported/wallB_door.obj-eeed4c831db9209b1d6155ee3dce84fa.mesh"]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+optimize_mesh=true
+force_disable_mesh_compression=false

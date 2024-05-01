@@ -1,0 +1,54 @@
+[gd_scene load_steps=7 format=3 uid="uid://2c3fffmnel4f"]
+
+[ext_resource type="Texture2D" uid="uid://dmqpmstvpmfts" path="res://Assets/decoration/Models pack psx/Texture/Metal_05.jpg" id="1_wptyb"]
+[ext_resource type="PackedScene" uid="uid://40d3r4rmgsp4" path="res://Scenes/Decoration/door old metal.tscn" id="2_tgpt8"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_gycjy"]
+resource_name = "Boxs_11"
+metallic = 0.4
+
+[sub_resource type="ArrayMesh" id="ArrayMesh_3fshs"]
+_surfaces = [{
+"aabb": AABB(-0.0385363, -0.019209, -0.0212588, 0.0770726, 0.0334485, 0.043315),
+"format": 34896613377,
+"index_count": 36,
+"index_data": PackedByteArray(0, 0, 2, 0, 1, 0, 1, 0, 3, 0, 0, 0, 4, 0, 0, 0, 3, 0, 3, 0, 5, 0, 4, 0, 6, 0, 4, 0, 5, 0, 5, 0, 7, 0, 6, 0, 2, 0, 6, 0, 7, 0, 7, 0, 1, 0, 2, 0, 7, 0, 3, 0, 1, 0, 7, 0, 5, 0, 3, 0, 4, 0, 2, 0, 0, 0, 4, 0, 6, 0, 2, 0),
+"name": "Boxs_11",
+"primitive": 3,
+"uv_scale": Vector4(0, 0, 0, 0),
+"vertex_count": 8,
+"vertex_data": PackedByteArray(0, 0, 235, 255, 239, 255, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 239, 255, 0, 0, 0, 0, 235, 255, 0, 0, 0, 0, 255, 255, 235, 255, 239, 255, 0, 0, 255, 255, 235, 255, 0, 0, 0, 0, 255, 255, 0, 0, 239, 255, 0, 0, 255, 255, 0, 0, 0, 0, 0, 0)
+}]
+blend_shape_mode = 0
+
+[sub_resource type="ArrayMesh" id="ArrayMesh_7hmmw"]
+resource_name = "Root Scene_C_012"
+_surfaces = [{
+"aabb": AABB(-0.0385363, -0.019209, -0.0212588, 0.0770726, 0.0334485, 0.043315),
+"attribute_data": PackedByteArray(136, 113, 0, 0, 174, 4, 158, 250, 174, 4, 0, 0, 136, 113, 158, 250, 114, 253, 0, 0, 140, 2, 158, 250, 140, 2, 0, 0, 114, 253, 158, 250, 174, 4, 0, 0, 136, 113, 158, 250, 136, 113, 0, 0, 174, 4, 158, 250, 140, 2, 0, 0, 114, 253, 158, 250, 114, 253, 0, 0, 140, 2, 158, 250, 81, 165, 150, 251, 209, 160, 150, 251, 209, 160, 29, 248, 81, 165, 29, 248, 39, 254, 116, 1, 140, 2, 116, 1, 140, 2, 72, 104, 39, 254, 72, 104),
+"format": 34896613399,
+"index_count": 36,
+"index_data": PackedByteArray(0, 0, 2, 0, 1, 0, 1, 0, 3, 0, 0, 0, 4, 0, 6, 0, 5, 0, 5, 0, 7, 0, 4, 0, 8, 0, 10, 0, 9, 0, 9, 0, 11, 0, 8, 0, 12, 0, 14, 0, 13, 0, 13, 0, 15, 0, 12, 0, 16, 0, 18, 0, 17, 0, 16, 0, 19, 0, 18, 0, 20, 0, 22, 0, 21, 0, 20, 0, 23, 0, 22, 0),
+"material": SubResource("StandardMaterial3D_gycjy"),
+"name": "Boxs_11",
+"primitive": 3,
+"uv_scale": Vector4(0, 0, 0, 0),
+"vertex_count": 24,
+"vertex_data": PackedByteArray(0, 0, 235, 255, 239, 255, 170, 42, 0, 0, 0, 0, 0, 0, 170, 42, 0, 0, 0, 0, 239, 255, 170, 42, 0, 0, 235, 255, 0, 0, 170, 42, 255, 255, 235, 255, 239, 255, 255, 63, 0, 0, 235, 255, 0, 0, 255, 63, 0, 0, 235, 255, 239, 255, 255, 63, 255, 255, 235, 255, 0, 0, 255, 63, 255, 255, 0, 0, 239, 255, 84, 213, 255, 255, 235, 255, 0, 0, 84, 213, 255, 255, 235, 255, 239, 255, 84, 213, 255, 255, 0, 0, 0, 0, 84, 213, 0, 0, 0, 0, 239, 255, 255, 191, 255, 255, 0, 0, 0, 0, 255, 191, 255, 255, 0, 0, 239, 255, 255, 191, 0, 0, 0, 0, 0, 0, 255, 191, 255, 255, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 235, 255, 0, 0, 0, 0, 255, 255, 235, 255, 0, 0, 0, 0, 255, 255, 235, 255, 239, 255, 255, 127, 0, 0, 235, 255, 239, 255, 255, 127, 0, 0, 0, 0, 239, 255, 255, 127, 255, 255, 0, 0, 239, 255, 255, 127, 84, 213, 84, 213, 84, 213, 84, 213, 84, 213, 84, 213, 84, 213, 84, 213, 255, 255, 255, 127, 255, 255, 255, 127, 255, 255, 255, 127, 255, 255, 255, 127, 170, 42, 170, 42, 170, 42, 170, 42, 170, 42, 170, 42, 170, 42, 170, 42, 0, 0, 255, 127, 0, 0, 255, 127, 0, 0, 255, 127, 0, 0, 255, 127, 255, 255, 255, 127, 255, 255, 255, 127, 255, 255, 255, 127, 255, 255, 255, 127, 255, 127, 255, 255, 255, 127, 255, 255, 255, 127, 255, 255, 255, 127, 255, 255)
+}]
+blend_shape_mode = 0
+shadow_mesh = SubResource("ArrayMesh_3fshs")
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_18vvj"]
+albedo_texture = ExtResource("1_wptyb")
+
+[node name="ShaftEntrance" type="Node3D"]
+
+[node name="C_012" type="MeshInstance3D" parent="."]
+transform = Transform3D(300, 0, 0, 0, -1.31134e-05, 300, 0, -300, -1.31134e-05, 0, 0, 0)
+mesh = SubResource("ArrayMesh_7hmmw")
+skeleton = NodePath("")
+surface_material_override/0 = SubResource("StandardMaterial3D_18vvj")
+
+[node name="MineDoor" parent="." instance=ExtResource("2_tgpt8")]
+transform = Transform3D(-1.57361e-09, -4.29154e-09, 0.06, 4.29154e-09, 0.036, 7.15256e-09, -0.036, 4.29154e-09, -2.62268e-09, 11.6902, -5.71175, 0.551038)

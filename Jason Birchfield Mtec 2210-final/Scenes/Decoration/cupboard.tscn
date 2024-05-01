@@ -6,12 +6,10 @@
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_ms6xa"]
 resource_name = "Tiles"
-albedo_color = Color(1, 1, 1, 1)
 metallic = 0.4
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_5fq3y"]
 resource_name = "Wood_04"
-albedo_color = Color(1, 1, 1, 1)
 metallic = 0.4
 
 [sub_resource type="ArrayMesh" id="ArrayMesh_3lj2b"]
@@ -79,7 +77,6 @@ albedo_texture = ExtResource("3_5jh26")
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_8h44e"]
 resource_name = "Wood_02"
-albedo_color = Color(1, 1, 1, 1)
 metallic = 0.4
 
 [sub_resource type="ArrayMesh" id="ArrayMesh_qy3xu"]

@@ -1,0 +1,22 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://cvdwdf3ese3sk"
+path="res://.godot/imported/fenceDamaged.obj-4096c1b444c6c8b6705abb80e43cb185.mesh"
+
+[deps]
+
+files=["res://.godot/imported/fenceDamaged.obj-4096c1b444c6c8b6705abb80e43cb185.mesh"]
+
+source_file="res://Assets/decoration/Graveyard Kit/Models/OBJ format/fenceDamaged.obj"
+dest_files=["res://.godot/imported/fenceDamaged.obj-4096c1b444c6c8b6705abb80e43cb185.mesh", "res://.godot/imported/fenceDamaged.obj-4096c1b444c6c8b6705abb80e43cb185.mesh"]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+optimize_mesh=true
+force_disable_mesh_compression=false
