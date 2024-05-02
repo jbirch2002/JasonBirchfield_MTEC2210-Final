@@ -1,6 +1,7 @@
-[gd_scene load_steps=23 format=3 uid="uid://dksn5g6khypq6"]
+[gd_scene load_steps=24 format=3 uid="uid://dksn5g6khypq6"]
 
 [ext_resource type="Texture2D" uid="uid://cfipv208lae60" path="res://Assets/houses/preset_houses/house3_tex3.png" id="1_np60w"]
+[ext_resource type="PackedScene" uid="uid://2c3fffmnel4f" path="res://Scenes/Decoration/shaft_entrance.tscn" id="2_c1xwk"]
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_jm1ii"]
 resource_name = "house3"
@@ -225,6 +226,7 @@ shadow_mesh = SubResource("ArrayMesh_kbeay")
 albedo_texture = ExtResource("1_np60w")
 
 [node name="House2" type="Node3D"]
+transform = Transform3D(10, 0, 0, 0, 10, 0, 0, 0, 10, 0, 0, 0)
 
 [node name="RootNode" type="Node3D" parent="."]
 
@@ -271,3 +273,6 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.6, 1, -1.5)
 mesh = SubResource("ArrayMesh_ik4hf")
 skeleton = NodePath("")
 surface_material_override/0 = SubResource("StandardMaterial3D_tryh3")
+
+[node name="ShaftEntrance" parent="." instance=ExtResource("2_c1xwk")]
+transform = Transform3D(-8.74228e-09, 0, -0.2, 0, 0.2, 0, 0.2, 0, -8.74228e-09, -0.852953, 2.13277, -7.01745)
