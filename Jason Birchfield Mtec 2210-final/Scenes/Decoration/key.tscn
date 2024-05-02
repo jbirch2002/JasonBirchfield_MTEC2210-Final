@@ -46,9 +46,10 @@ shadow_mesh = SubResource("ArrayMesh_nrfki")
 albedo_texture = ExtResource("1_11f5w")
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_hh1qi"]
-size = Vector3(0.1026, 0.139282, 0.113403)
+size = Vector3(0.0310745, 0.166809, 0.0445861)
 
 [node name="Key" type="Node3D"]
+transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, 0, 0, 0)
 
 [node name="RootNode" type="Node3D" parent="."]
 transform = Transform3D(1, 0, 0, 0, 0.263268, 0, 0, 0, 0.17521, 0, 0, 0)
@@ -62,5 +63,5 @@ surface_material_override/0 = SubResource("StandardMaterial3D_enmqn")
 [node name="area3d" type="Area3D" parent="."]
 
 [node name="collisionShape3d" type="CollisionShape3D" parent="area3d"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.0093689, 0.152405, -0.012146)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.00146865, 0.138642, 0.00135799)
 shape = SubResource("BoxShape3D_hh1qi")

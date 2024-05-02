@@ -3,6 +3,7 @@ using System;
 
 public partial class Interactable : StaticBody3D
 {
+    public delegate void InteractedWithArguementEventHandler(Variant body);
 	[Export] public string promptMessage;
 	[Export] public string promptAction = "interact";
 
@@ -21,15 +22,8 @@ public partial class Interactable : StaticBody3D
         return $"{promptMessage} \n [{keyName}]";
     }
 
-        public void Interact(object body)
+        public void Interact(Variant body)
         {
-            if (body is Node node)
-            {
-                GD.Print(node.Name + " interacted");
-            }
-            else
-            {
-                GD.Print("Interacted with a non-Node body or null.");
-            }
+            EmitSignal("Interacted", body);
         }
 }

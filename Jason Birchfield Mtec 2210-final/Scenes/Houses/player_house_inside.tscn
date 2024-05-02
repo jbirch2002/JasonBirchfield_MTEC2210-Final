@@ -1,8 +1,7 @@
-[gd_scene load_steps=50 format=3 uid="uid://hofavx0e2sac"]
+[gd_scene load_steps=42 format=3 uid="uid://hofavx0e2sac"]
 
 [ext_resource type="Texture2D" uid="uid://cnpl1y5wxn78d" path="res://Assets/houses/preset_houses/house1_tex1.png" id="1_5mqmw"]
 [ext_resource type="Script" path="res://Scripts/Interactable.cs" id="2_rw0oy"]
-[ext_resource type="Script" path="res://Scripts/OpenDoors.cs" id="3_2jes1"]
 [ext_resource type="PackedScene" uid="uid://dr3svsefeldeh" path="res://Scenes/Decoration/trash_bin.tscn" id="4_dool2"]
 [ext_resource type="PackedScene" uid="uid://cjhry22ovx6kk" path="res://Scenes/Decoration/bed.tscn" id="6_6e8ri"]
 [ext_resource type="PackedScene" uid="uid://bn14grvdecwll" path="res://Scenes/Player/player.tscn" id="6_qi3dq"]
@@ -15,6 +14,7 @@
 [ext_resource type="PackedScene" uid="uid://c7rcbs0j6g0o5" path="res://Scenes/Decoration/oven.tscn" id="13_alf4x"]
 [ext_resource type="PackedScene" uid="uid://q81kfxrfqh51" path="res://Scenes/Decoration/couch.tscn" id="14_ief32"]
 [ext_resource type="PackedScene" uid="uid://p5kjkg3wbphp" path="res://Scenes/Decoration/cupboard.tscn" id="14_ppku2"]
+[ext_resource type="PackedScene" uid="uid://c0m73fs7sq680" path="res://Scenes/OpenableDoors.tscn" id="15_33npw"]
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_7h143"]
 albedo_texture = ExtResource("1_5mqmw")
@@ -100,81 +100,6 @@ albedo_texture = ExtResource("1_5mqmw")
 
 [sub_resource type="ConcavePolygonShape3D" id="ConcavePolygonShape3D_kjwvx"]
 data = PackedVector3Array(0, 0, 0.1, 0, 0, 0, 0, 2.15, 0.1, 0, 2.15, 0, 0, 2.15, 0.1, 0, 0, 0, 0, 2.15, 0, 1, 2.15, 0, 1, 2.15, 0.1, 1, 2.15, 0.1, 0, 2.15, 0.1, 0, 2.15, 0, 1, 0, 0.1, 0, 0, 0.1, 0, 2.15, 0.1, 0, 2.15, 0.1, 1, 2.15, 0.1, 1, 0, 0.1, 0, 0, 0, 1, 0, 0, 1, 0, 0.1, 1, 0, 0.1, 0, 0, 0.1, 0, 0, 0, 1, 2.15, 0.1, 1, 0, 0, 1, 0, 0.1, 1, 2.15, 0.1, 1, 2.15, 0, 1, 0, 0, 0, 0, 0, 1, 2.15, 0, 0, 2.15, 0, 1, 2.15, 0, 0, 0, 0, 1, 0, 0)
-
-[sub_resource type="ArrayMesh" id="ArrayMesh_xiie2"]
-_surfaces = [{
-"aabb": AABB(0, 0, 0, 1, 2.15, 0.10001),
-"format": 34896613377,
-"index_count": 36,
-"index_data": PackedByteArray(0, 0, 2, 0, 1, 0, 3, 0, 1, 0, 2, 0, 3, 0, 5, 0, 4, 0, 4, 0, 1, 0, 3, 0, 6, 0, 0, 0, 1, 0, 1, 0, 4, 0, 6, 0, 2, 0, 7, 0, 6, 0, 6, 0, 0, 0, 2, 0, 4, 0, 7, 0, 6, 0, 4, 0, 5, 0, 7, 0, 2, 0, 5, 0, 3, 0, 5, 0, 2, 0, 7, 0),
-"name": "house1",
-"primitive": 3,
-"uv_scale": Vector4(0, 0, 0, 0),
-"vertex_count": 8,
-"vertex_data": PackedByteArray(0, 0, 0, 0, 248, 255, 0, 0, 0, 0, 255, 255, 248, 255, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 255, 255, 0, 0, 0, 0, 255, 255, 255, 255, 248, 255, 0, 0, 255, 255, 255, 255, 0, 0, 0, 0, 255, 255, 0, 0, 248, 255, 0, 0, 255, 255, 0, 0, 0, 0, 0, 0)
-}]
-blend_shape_mode = 0
-
-[sub_resource type="ArrayMesh" id="ArrayMesh_cuq6p"]
-resource_name = "Root Scene_house1_door2"
-_surfaces = [{
-"aabb": AABB(0, 0, 0, 1, 2.15, 0.10001),
-"attribute_data": PackedByteArray(46, 95, 156, 2, 219, 184, 81, 115, 153, 76, 156, 2, 219, 184, 224, 151, 46, 95, 121, 3, 142, 186, 81, 115, 153, 76, 121, 3, 142, 186, 224, 151, 210, 103, 111, 5, 94, 185, 79, 156, 46, 95, 145, 4, 178, 187, 231, 114, 46, 95, 111, 5, 94, 185, 231, 114, 210, 103, 145, 4, 178, 187, 79, 156, 178, 81, 118, 17, 228, 140, 186, 216, 1, 62, 159, 26, 2, 189, 208, 52, 178, 81, 159, 26, 54, 189, 120, 217, 1, 62, 118, 17, 64, 140, 135, 53, 121, 81, 75, 1, 178, 187, 231, 114, 1, 89, 138, 0, 94, 185, 79, 156, 1, 89, 75, 1, 178, 187, 79, 156, 121, 81, 138, 0, 94, 185, 231, 114, 46, 95, 145, 4, 142, 186, 224, 151, 153, 76, 145, 4, 142, 186, 81, 115, 153, 76, 111, 5, 219, 184, 81, 115, 46, 95, 111, 5, 219, 184, 224, 151, 139, 102, 118, 17, 54, 189, 120, 217, 219, 82, 118, 17, 2, 189, 208, 52, 219, 82, 159, 26, 64, 140, 135, 53, 139, 102, 159, 26, 228, 140, 186, 216),
-"format": 34896613431,
-"index_count": 36,
-"index_data": PackedByteArray(0, 0, 2, 0, 1, 0, 3, 0, 1, 0, 2, 0, 4, 0, 6, 0, 5, 0, 5, 0, 7, 0, 4, 0, 8, 0, 10, 0, 9, 0, 9, 0, 11, 0, 8, 0, 12, 0, 14, 0, 13, 0, 13, 0, 15, 0, 12, 0, 16, 0, 18, 0, 17, 0, 16, 0, 19, 0, 18, 0, 20, 0, 22, 0, 21, 0, 22, 0, 20, 0, 23, 0),
-"material": SubResource("StandardMaterial3D_ecrwx"),
-"name": "house1",
-"primitive": 3,
-"uv_scale": Vector4(0, 0, 0, 0),
-"vertex_count": 24,
-"vertex_data": PackedByteArray(0, 0, 0, 0, 248, 255, 84, 213, 0, 0, 255, 255, 248, 255, 84, 213, 0, 0, 0, 0, 0, 0, 84, 213, 0, 0, 255, 255, 0, 0, 84, 213, 0, 0, 255, 255, 0, 0, 255, 255, 255, 255, 255, 255, 248, 255, 255, 255, 255, 255, 255, 255, 0, 0, 255, 255, 0, 0, 255, 255, 248, 255, 255, 255, 255, 255, 0, 0, 248, 255, 255, 191, 0, 0, 255, 255, 248, 255, 255, 191, 0, 0, 0, 0, 248, 255, 255, 191, 255, 255, 255, 255, 248, 255, 255, 191, 0, 0, 0, 0, 0, 0, 255, 63, 255, 255, 0, 0, 248, 255, 255, 63, 255, 255, 0, 0, 0, 0, 255, 63, 0, 0, 0, 0, 248, 255, 255, 63, 255, 255, 255, 255, 248, 255, 84, 213, 255, 255, 0, 0, 248, 255, 84, 213, 255, 255, 0, 0, 0, 0, 84, 213, 255, 255, 255, 255, 0, 0, 84, 213, 0, 0, 0, 0, 0, 0, 255, 255, 0, 0, 255, 255, 0, 0, 255, 255, 255, 255, 255, 255, 0, 0, 255, 255, 255, 255, 0, 0, 0, 0, 255, 255, 84, 85, 170, 170, 84, 85, 170, 170, 84, 85, 170, 170, 84, 85, 170, 170, 255, 127, 255, 191, 255, 127, 255, 191, 255, 127, 255, 191, 255, 127, 255, 191, 255, 127, 255, 127, 255, 127, 255, 127, 255, 127, 255, 127, 255, 127, 255, 127, 255, 255, 255, 127, 255, 255, 255, 127, 255, 255, 255, 127, 255, 255, 255, 127, 170, 42, 170, 42, 170, 42, 170, 42, 170, 42, 170, 42, 170, 42, 170, 42, 255, 63, 255, 191, 255, 63, 255, 191, 255, 63, 255, 191, 255, 63, 255, 191)
-}]
-blend_shape_mode = 0
-shadow_mesh = SubResource("ArrayMesh_xiie2")
-
-[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_mfjj2"]
-albedo_texture = ExtResource("1_5mqmw")
-
-[sub_resource type="ConcavePolygonShape3D" id="ConcavePolygonShape3D_gs2gj"]
-data = PackedVector3Array(0, 0, 0.1, 0, 0, 0, 0, 2.15, 0.1, 0, 2.15, 0, 0, 2.15, 0.1, 0, 0, 0, 0, 2.15, 0, 1, 2.15, 0, 1, 2.15, 0.1, 1, 2.15, 0.1, 0, 2.15, 0.1, 0, 2.15, 0, 1, 0, 0.1, 0, 0, 0.1, 0, 2.15, 0.1, 0, 2.15, 0.1, 1, 2.15, 0.1, 1, 0, 0.1, 0, 0, 0, 1, 0, 0, 1, 0, 0.1, 1, 0, 0.1, 0, 0, 0.1, 0, 0, 0, 1, 2.15, 0.1, 1, 0, 0, 1, 0, 0.1, 1, 2.15, 0.1, 1, 2.15, 0, 1, 0, 0, 0, 0, 0, 1, 2.15, 0, 0, 2.15, 0, 1, 2.15, 0, 0, 0, 0, 1, 0, 0)
-
-[sub_resource type="Animation" id="Animation_3l06b"]
-resource_name = "OpenDoor"
-tracks/0/type = "bezier"
-tracks/0/imported = false
-tracks/0/enabled = true
-tracks/0/path = NodePath(".:rotation:y")
-tracks/0/interp = 1
-tracks/0/loop_wrap = true
-tracks/0/keys = {
-"handle_modes": PackedInt32Array(0, 0),
-"points": PackedFloat32Array(0, -0.25, 0, 0.25, 0, -1.5708, -0.25, 0, 0.25, 0),
-"times": PackedFloat32Array(0, 1)
-}
-
-[sub_resource type="Animation" id="Animation_uvrc0"]
-length = 0.001
-tracks/0/type = "bezier"
-tracks/0/imported = false
-tracks/0/enabled = true
-tracks/0/path = NodePath(".:rotation:y")
-tracks/0/interp = 1
-tracks/0/loop_wrap = true
-tracks/0/keys = {
-"handle_modes": PackedInt32Array(0),
-"points": PackedFloat32Array(0, -0.25, 0, 0.25, 0),
-"times": PackedFloat32Array(0)
-}
-
-[sub_resource type="AnimationLibrary" id="AnimationLibrary_adwh7"]
-_data = {
-"OpenDoor": SubResource("Animation_3l06b"),
-"RESET": SubResource("Animation_uvrc0")
-}
-
-[sub_resource type="BoxShape3D" id="BoxShape3D_63cqb"]
-size = Vector3(1, 2.74023, 1)
 
 [sub_resource type="ArrayMesh" id="ArrayMesh_ajhdx"]
 _surfaces = [{
@@ -331,6 +256,7 @@ data = PackedVector3Array(2.7999, 2, 4.95, 2.7999, 3.2, 4.8998, 2.7999, 3.2, 4.9
 [node name="player_house" type="Node3D"]
 
 [node name="House" type="Node3D" parent="."]
+transform = Transform3D(10, 0, 0, 0, 10, 0, 0, 0, 10, 0, 0, 0)
 
 [node name="house1" type="MeshInstance3D" parent="House"]
 material_override = SubResource("StandardMaterial3D_7h143")
@@ -356,34 +282,6 @@ promptMessage = "Enter"
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="House/house1/house1_door1/StaticBody3D"]
 shape = SubResource("ConcavePolygonShape3D_kjwvx")
-
-[node name="DoorHinge" type="Node3D" parent="House/house1"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.5, 1, -0.0999999)
-script = ExtResource("3_2jes1")
-animationPlayerPath = NodePath("DoorAnimation")
-
-[node name="house1_door2" type="MeshInstance3D" parent="House/house1/DoorHinge"]
-mesh = SubResource("ArrayMesh_cuq6p")
-skeleton = NodePath("")
-surface_material_override/0 = SubResource("StandardMaterial3D_mfjj2")
-
-[node name="StaticBody3D" type="StaticBody3D" parent="House/house1/DoorHinge/house1_door2" groups=["Doors"]]
-script = ExtResource("2_rw0oy")
-promptMessage = "Enter"
-
-[node name="CollisionShape3D" type="CollisionShape3D" parent="House/house1/DoorHinge/house1_door2/StaticBody3D"]
-shape = SubResource("ConcavePolygonShape3D_gs2gj")
-
-[node name="DoorAnimation" type="AnimationPlayer" parent="House/house1/DoorHinge"]
-libraries = {
-"": SubResource("AnimationLibrary_adwh7")
-}
-
-[node name="area3d" type="Area3D" parent="House/house1/DoorHinge"]
-
-[node name="collisionShape3d" type="CollisionShape3D" parent="House/house1/DoorHinge/area3d"]
-transform = Transform3D(-4.49688e-07, 0, 0.999996, 0, 0.799506, 0, -0.124223, 0, -3.61997e-06, 0.49936, 1.05786, 0.0484409)
-shape = SubResource("BoxShape3D_63cqb")
 
 [node name="house1_door_closet1" type="MeshInstance3D" parent="House/house1"]
 transform = Transform3D(5.96046e-08, 0, -1, 0, 1, 0, 1, 0, 5.96046e-08, 0.9, 1, -4.325)
@@ -429,42 +327,43 @@ surface_material_override/0 = SubResource("StandardMaterial3D_kkd14")
 shape = SubResource("ConcavePolygonShape3D_lr41g")
 
 [node name="Decoration" type="Node3D" parent="."]
-transform = Transform3D(-3.49691e-08, 0, -0.8, 0, 0.8, 0, 0.8, 0, -3.49691e-08, -3.36003, 1.45314, 2.36809)
+transform = Transform3D(-4.28372e-07, 0, -9.8, 0, 9.8, 0, 9.8, 0, -4.28372e-07, -22.1782, 16.6286, 27.8052)
 
 [node name="TrashBin" parent="Decoration" instance=ExtResource("4_dool2")]
-transform = Transform3D(-3.27835e-08, 0, 0.5, 0, 0.740597, 0, -0.75, 0, -2.18557e-08, -3.55601, -0.61465, -5.99175)
+transform = Transform3D(-3.27835e-08, 0, 0.5, 0, 0.740597, 0, -0.75, 0, -2.18557e-08, -3.30104, -0.61465, -5.82967)
 
 [node name="Bed" parent="Decoration" instance=ExtResource("6_6e8ri")]
-transform = Transform3D(-2.73196e-08, 0, 0.625, 0, 0.625, 0, -0.625, 0, -2.73196e-08, -7.91977, -0.209224, -0.646061)
-
-[node name="Key" parent="Decoration" instance=ExtResource("7_hicbx")]
-transform = Transform3D(-5.46392e-08, 1.25, 2.03651e-07, -1.25, -5.46392e-08, 0, 9.04969e-15, -2.03651e-07, 1.25, -8.18381, -0.472957, -8.16868)
+transform = Transform3D(-2.73196e-08, 0, 0.625, 0, 0.625, 0, -0.625, 0, -2.73196e-08, -7.07114, -0.326123, 0.46382)
 
 [node name="Sink" parent="Decoration" instance=ExtResource("8_v3xfu")]
-transform = Transform3D(-0.625, 0, -5.46392e-08, 0, 0.625, 0, 5.46392e-08, 0, -0.625, -6.03317, -0.137318, -8.85939)
+transform = Transform3D(-0.55, 0, -8.30477e-08, 0, 0.55, 0, 8.30477e-08, 0, -0.55, -5.26558, -0.518361, -5.63095)
 
 [node name="Toilet" parent="Decoration" instance=ExtResource("9_fu2pc")]
-transform = Transform3D(-0.875, 0, -7.64949e-08, 0, 0.875, 0, 7.64949e-08, 0, -0.875, -3.6683, -0.117226, -8.36488)
+transform = Transform3D(-0.6, 0, -9.05975e-08, 0, 0.6, 0, 9.05975e-08, 0, -0.6, -4.1524, -0.37168, -5.73708)
 
 [node name="Table" parent="Decoration" instance=ExtResource("10_em7pd")]
-transform = Transform3D(-2.73196e-08, 0, 0.625, 0, 0.625, 0, -0.625, 0, -2.73196e-08, -4.16238, 0.187445, -0.427709)
+transform = Transform3D(-2.73196e-08, 0, 0.625, 0, 0.625, 0, -0.625, 0, -2.73196e-08, -4.16238, 0.0635151, 0.836957)
 
 [node name="Fridge" parent="Decoration" instance=ExtResource("11_sei4t")]
-transform = Transform3D(8.19589e-08, 0, -0.625, 0, 0.625, 0, 0.625, 0, 8.19589e-08, -2.49827, 0.570752, -6.22038)
-
-[node name="KitchenSink" parent="Decoration" instance=ExtResource("12_o0x6u")]
-transform = Transform3D(-0.5, 0, -4.37114e-08, 0, 0.5, 0, 4.37114e-08, 0, -0.5, -2.20063, 0.0119463, -8.78087)
+transform = Transform3D(8.19589e-08, 0, -0.625, 0, 0.625, 0, 0.625, 0, 8.19589e-08, -2.49827, 0.570752, -4.06258)
 
 [node name="Oven" parent="Decoration" instance=ExtResource("13_alf4x")]
-transform = Transform3D(-0.75, 0, -5.49831e-08, 0, 0.75, 0, 6.55671e-08, 0, -0.628934, 0.652431, 0.204734, -8.57775)
+transform = Transform3D(-0.75, 0, -5.49831e-08, 0, 0.75, 0, 6.55671e-08, 0, -0.628934, 0.525002, 0.204734, -5.48932)
+
+[node name="KitchenSink" parent="Decoration" instance=ExtResource("12_o0x6u")]
+transform = Transform3D(-0.5, 0, -4.37114e-08, 0, 0.5, 0, 4.37114e-08, 0, -0.5, -2.20063, -0.0769895, -5.69244)
 
 [node name="Cupboard" parent="Decoration" instance=ExtResource("14_ppku2")]
-transform = Transform3D(-0.5625, 0, -4.91753e-08, 0, 0.5625, 0, 4.91753e-08, 0, -0.5625, -0.810944, -0.43086, -8.4392)
-
-[node name="Cupboard2" parent="Decoration" instance=ExtResource("14_ppku2")]
-transform = Transform3D(-0.5625, 0, -4.91753e-08, 0, 0.5625, 0, 4.91753e-08, 0, -0.5625, 1.90515, -0.43086, -8.4392)
+transform = Transform3D(-0.5625, 0, -4.91753e-08, 0, 0.5625, 0, 4.91753e-08, 0, -0.5625, -0.924226, -0.519796, -5.35077)
 
 [node name="Couch" parent="Decoration" instance=ExtResource("14_ief32")]
+transform = Transform3D(0.8, 0, 3.55271e-15, 0, 0.8, 0, -3.55271e-15, 0, 0.8, -0.272988, -0.19039, 1.11206)
+
+[node name="Key" parent="Decoration" instance=ExtResource("7_hicbx")]
+transform = Transform3D(-8.74228e-08, 2, 8.74229e-08, -2, -8.74228e-08, 8.74228e-08, 8.74228e-08, -8.74229e-08, 2, -7.25084, -0.640941, -5.78335)
 
 [node name="Player" parent="." instance=ExtResource("6_qi3dq")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.51585, 4.03048)
+transform = Transform3D(10, 0, 0, 0, 10, 0, 0, 0, 10, 0, 13.1535, 41.7645)
+
+[node name="DoorHinge" parent="." instance=ExtResource("15_33npw")]
+transform = Transform3D(10, 0, 0, 0, 10, 0, 0, 0, 10, -4.86465, 9.90298, -0.0999999)

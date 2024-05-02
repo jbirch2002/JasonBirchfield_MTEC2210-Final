@@ -269,6 +269,8 @@ mesh = SubResource("ArrayMesh_hsdjg")
 skeleton = NodePath("")
 surface_material_override/0 = SubResource("StandardMaterial3D_3rhf0")
 
-[node name="CollisionShape3D" type="CollisionShape3D" parent="."]
-transform = Transform3D(100, 0, 0, 0, -1.19209e-05, 70.9328, 0, -100, -8.45585e-06, 0, 0, 0)
+[node name="staticBody3d" type="StaticBody3D" parent="Cube_099"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Cube_099/staticBody3d"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0)
 shape = SubResource("ConvexPolygonShape3D_tmrko")

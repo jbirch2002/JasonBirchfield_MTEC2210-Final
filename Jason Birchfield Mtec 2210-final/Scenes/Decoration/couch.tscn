@@ -1,11 +1,10 @@
-[gd_scene load_steps=10 format=3 uid="uid://q81kfxrfqh51"]
+[gd_scene load_steps=11 format=3 uid="uid://q81kfxrfqh51"]
 
 [ext_resource type="Texture2D" uid="uid://b0hlbjw47o284" path="res://Assets/decoration/Models pack psx/Texture/Leather.jpg" id="1_fnrul"]
 [ext_resource type="Texture2D" uid="uid://5yi4t0tut11" path="res://Assets/decoration/Models pack psx/Texture/Fabric_02.jpg" id="2_f3rhg"]
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_i781u"]
 resource_name = "Fabric_01"
-albedo_color = Color(1, 1, 1, 1)
 metallic = 0.4
 
 [sub_resource type="ArrayMesh" id="ArrayMesh_0f66h"]
@@ -42,6 +41,9 @@ shadow_mesh = SubResource("ArrayMesh_0f66h")
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_h5s6r"]
 albedo_texture = ExtResource("1_fnrul")
+
+[sub_resource type="ConvexPolygonShape3D" id="ConvexPolygonShape3D_0d46a"]
+points = PackedVector3Array(-0.0183126, -0.00659084, -0.00638348, -0.0183126, -0.00659084, 0.00828152, -0.0183126, 0.00938826, -0.00638348, 0.0183125, -0.00659084, -0.00638348, -0.0183126, -0.00530982, 0.010369, 0.0183125, -0.00659084, 0.00828152, -0.0183126, 0.00938826, 0.00346206, 0.0183125, 0.00938826, -0.00638348, -0.0183126, -0.00266332, 0.010369, 0.0183125, -0.00530982, 0.010369, -0.0169108, 0.00938826, 0.0046001, 0.0183125, 0.00938826, 0.00346206, 0.0183125, -0.00266332, 0.010369, 0.0169072, 0.00938826, 0.0046001)
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_w7tad"]
 albedo_texture = ExtResource("2_f3rhg")
@@ -87,6 +89,11 @@ transform = Transform3D(100, 0, 0, 0, -1.19209e-05, 100, 0, -100, -1.19209e-05, 
 mesh = SubResource("ArrayMesh_pb3y0")
 skeleton = NodePath("")
 surface_material_override/0 = SubResource("StandardMaterial3D_h5s6r")
+
+[node name="StaticBody3D" type="StaticBody3D" parent="Cube_205"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Cube_205/StaticBody3D"]
+shape = SubResource("ConvexPolygonShape3D_0d46a")
 
 [node name="Cube_202" type="MeshInstance3D" parent="."]
 transform = Transform3D(210.168, -1.52128e-08, 0.101216, -0.212752, -1.50281e-05, 99.987, 0, -126.065, -1.19194e-05, -0.000418365, -0.0826611, -0.356057)

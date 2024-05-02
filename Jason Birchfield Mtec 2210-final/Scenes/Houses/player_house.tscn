@@ -335,7 +335,7 @@ mesh = SubResource("ArrayMesh_vm180")
 skeleton = NodePath("")
 surface_material_override/0 = SubResource("StandardMaterial3D_21j8s")
 
-[node name="StaticBody3D" type="StaticBody3D" parent="RootNode/house1/house1_door1" groups=["EntranceDoor"]]
+[node name="StaticBody3D" type="StaticBody3D" parent="RootNode/house1/house1_door1" groups=["PlayerHouseEntranceDoor"]]
 script = ExtResource("3_52d6a")
 promptMessage = "Enter"
 
@@ -345,7 +345,6 @@ shape = SubResource("ConcavePolygonShape3D_kjwvx")
 [node name="DoorHinge" type="Node3D" parent="RootNode/house1"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.5, 1, -0.0999999)
 script = ExtResource("3_o7aix")
-animationPlayerPath = NodePath("DoorAnimation")
 
 [node name="house1_door2" type="MeshInstance3D" parent="RootNode/house1/DoorHinge"]
 mesh = SubResource("ArrayMesh_cuq6p")

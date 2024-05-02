@@ -7,8 +7,9 @@ public partial class InteractRay : RayCast3D
 	Label prompt;
 	CharacterBody3D player;
 	AudioStreamPlayer3D audioStreamPlayer3D;
-	 private AudioStream openAudio;
+	private AudioStream openAudio;
     private AudioStream closeAudio;
+	OpenDoors openDoors;
 	private float timeHeld = 0.0f;
 	private const float threshold = 1.0f;
 	bool isOpen = false;
@@ -33,7 +34,7 @@ public partial class InteractRay : RayCast3D
                 prompt.Text = detected.GetPrompt();
 				if (Input.IsActionJustPressed(detected.promptAction))
 				{
-					if (detected.IsInGroup("EntranceDoor"))
+					if (detected.IsInGroup("PlayerHouseEntranceDoor"))
 					{
 						var newScene = (PackedScene)ResourceLoader.Load("res://Scenes/Houses/player_house_inside.tscn"); 
 						if (newScene != null)
@@ -42,22 +43,28 @@ public partial class InteractRay : RayCast3D
 						}
 					}
 
+					if (detected.IsInGroup("House2EntranceDoor"))
+					{
+						var newScene = (PackedScene)ResourceLoader.Load("res://Scenes/Houses/house2_inside.tscn"); 
+						if (newScene != null)
+						{
+							GetTree().ChangeSceneToPacked(newScene);
+						}
+					}
+
 					if (detected.IsInGroup("ExitDoor"))
 					{
-						var newScene = (PackedScene)ResourceLoader.Load("res://Scenes/World/world.tscn"); 
+						var newScene = (PackedScene)ResourceLoader.Load("res://WorldDay1.tscn"); 
 						if (newScene != null)
 						{
 							GD.Print("Exiting");
 							GetTree().ChangeSceneToPacked(newScene);
 						}
 					}
-					if (detected.IsInGroup("Doors"))
+
+					if (detected.IsInGroup("Doors") && detected.HasMethod("OpenDoor"))
 					{
-						var doorScript = detected.GetNodeOrNull<OpenDoors>(".");
-							if (doorScript != null)
-							{
-								doorScript.ToggleDoor();  // Call ToggleDoor on interaction button press
-							}
+						openDoors.OpenDoor();  // Call ToggleDoor on interaction button press
 					}
 					else if (detected.IsInGroup("NPCs"))
 					{

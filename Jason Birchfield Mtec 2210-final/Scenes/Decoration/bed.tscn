@@ -1,4 +1,4 @@
-[gd_scene load_steps=11 format=3 uid="uid://cjhry22ovx6kk"]
+[gd_scene load_steps=13 format=3 uid="uid://cjhry22ovx6kk"]
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_30k5f"]
 resource_name = "Material.130"
@@ -39,6 +39,9 @@ shadow_mesh = SubResource("ArrayMesh_q4663")
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_xx7j0"]
 albedo_color = Color(0.768627, 0.498039, 0, 1)
 
+[sub_resource type="ConvexPolygonShape3D" id="ConvexPolygonShape3D_6dqtr"]
+points = PackedVector3Array(-0.0108111, -0.0185494, -0.00549164, 0.0107411, -0.0185494, -0.00549164, -0.0108111, -0.0185494, 0.00161966, -0.0108111, 0.0186013, -0.00549164, 0.0107411, -0.0185494, 0.00161966, 0.0107411, 0.0186013, -0.00549164, -0.0108111, 0.0186013, 0.00161966, 0.0107411, 0.0186013, 0.00161966)
+
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_h2kts"]
 resource_name = "Fabric_02"
 metallic = 0.4
@@ -76,6 +79,9 @@ _surfaces = [{
 }]
 blend_shape_mode = 0
 shadow_mesh = SubResource("ArrayMesh_wq2ew")
+
+[sub_resource type="ConvexPolygonShape3D" id="ConvexPolygonShape3D_sa87t"]
+points = PackedVector3Array(-0.011518, -0.0176074, -0.00427827, -0.0105371, -0.0192464, -0.00427827, -0.011518, -0.0176074, 0.000322994, -0.011518, 0.017603, -0.00427827, -0.0105371, -0.0192464, 0.000322994, 0.0105349, -0.0192464, -0.00427827, -0.0105371, -0.0176074, 0.00127937, -0.011518, 0.017603, 0.000322994, -0.0105371, 0.0192457, -0.00427827, 0.0105349, -0.0192464, 0.000322994, 0.011518, -0.0176074, -0.00427827, 0.0105349, -0.0176074, 0.00127937, -0.0105371, 0.017603, 0.00127937, -0.0105371, 0.0192457, 0.000322994, 0.0105349, 0.0192457, -0.00427827, 0.011518, -0.0176074, 0.000322994, 0.011518, 0.017603, -0.00427827, 0.0105349, 0.017603, 0.00127937, 0.0105349, 0.0192457, 0.000322994, 0.011518, 0.017603, 0.000322994)
 
 [sub_resource type="ArrayMesh" id="ArrayMesh_dlmc7"]
 _surfaces = [{
@@ -123,10 +129,22 @@ mesh = SubResource("ArrayMesh_vpumk")
 skeleton = NodePath("")
 surface_material_override/0 = SubResource("StandardMaterial3D_xx7j0")
 
+[node name="StaticBody3D" type="StaticBody3D" parent="Bedframe"]
+
+[node name="CollisionShape3D2" type="CollisionShape3D" parent="Bedframe/StaticBody3D"]
+transform = Transform3D(1, 0, 0, 0, 1, -1.77635e-15, 0, -5.29396e-23, 1, 0, 0, 0)
+shape = SubResource("ConvexPolygonShape3D_6dqtr")
+
 [node name="Mattress" type="MeshInstance3D" parent="."]
 transform = Transform3D(5.96046e-06, -100, -2.98023e-06, 2.98023e-06, 0, 100, -100, -2.98023e-06, 5.96046e-06, 0, 0.585728, 0)
 mesh = SubResource("ArrayMesh_sm8c6")
 skeleton = NodePath("")
+
+[node name="StaticBody3D" type="StaticBody3D" parent="Mattress"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Mattress/StaticBody3D"]
+transform = Transform3D(1, 0, 0, 0, 1, -3.55271e-15, 0, -1.05879e-22, 1, 0, 0, 0)
+shape = SubResource("ConvexPolygonShape3D_sa87t")
 
 [node name="Pillow" type="MeshInstance3D" parent="."]
 transform = Transform3D(5.96046e-06, -100, -2.98023e-06, 2.98023e-06, 0, 100, -100, -2.98023e-06, 5.96046e-06, -1.17903, 0.86827, 0)

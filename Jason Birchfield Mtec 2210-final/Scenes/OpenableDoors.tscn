@@ -1,0 +1,110 @@
+[gd_scene load_steps=12 format=3 uid="uid://c0m73fs7sq680"]
+
+[ext_resource type="Script" path="res://Scripts/OpenDoors.cs" id="1_fgaj0"]
+[ext_resource type="Texture2D" uid="uid://cnpl1y5wxn78d" path="res://Assets/houses/preset_houses/house1_tex1.png" id="2_072yx"]
+[ext_resource type="Script" path="res://Scripts/Interactable.cs" id="3_etdnb"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_ecrwx"]
+resource_name = "house1"
+albedo_color = Color(0.906332, 0.906332, 0.906332, 1)
+metallic = 0.4
+roughness = 0.229416
+
+[sub_resource type="ArrayMesh" id="ArrayMesh_xiie2"]
+_surfaces = [{
+"aabb": AABB(0, 0, 0, 1, 2.15, 0.10001),
+"format": 34896613377,
+"index_count": 36,
+"index_data": PackedByteArray(0, 0, 2, 0, 1, 0, 3, 0, 1, 0, 2, 0, 3, 0, 5, 0, 4, 0, 4, 0, 1, 0, 3, 0, 6, 0, 0, 0, 1, 0, 1, 0, 4, 0, 6, 0, 2, 0, 7, 0, 6, 0, 6, 0, 0, 0, 2, 0, 4, 0, 7, 0, 6, 0, 4, 0, 5, 0, 7, 0, 2, 0, 5, 0, 3, 0, 5, 0, 2, 0, 7, 0),
+"name": "house1",
+"primitive": 3,
+"uv_scale": Vector4(0, 0, 0, 0),
+"vertex_count": 8,
+"vertex_data": PackedByteArray(0, 0, 0, 0, 248, 255, 0, 0, 0, 0, 255, 255, 248, 255, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 255, 255, 0, 0, 0, 0, 255, 255, 255, 255, 248, 255, 0, 0, 255, 255, 255, 255, 0, 0, 0, 0, 255, 255, 0, 0, 248, 255, 0, 0, 255, 255, 0, 0, 0, 0, 0, 0)
+}]
+blend_shape_mode = 0
+
+[sub_resource type="ArrayMesh" id="ArrayMesh_cuq6p"]
+resource_name = "Root Scene_house1_door2"
+_surfaces = [{
+"aabb": AABB(0, 0, 0, 1, 2.15, 0.10001),
+"attribute_data": PackedByteArray(46, 95, 156, 2, 219, 184, 81, 115, 153, 76, 156, 2, 219, 184, 224, 151, 46, 95, 121, 3, 142, 186, 81, 115, 153, 76, 121, 3, 142, 186, 224, 151, 210, 103, 111, 5, 94, 185, 79, 156, 46, 95, 145, 4, 178, 187, 231, 114, 46, 95, 111, 5, 94, 185, 231, 114, 210, 103, 145, 4, 178, 187, 79, 156, 178, 81, 118, 17, 228, 140, 186, 216, 1, 62, 159, 26, 2, 189, 208, 52, 178, 81, 159, 26, 54, 189, 120, 217, 1, 62, 118, 17, 64, 140, 135, 53, 121, 81, 75, 1, 178, 187, 231, 114, 1, 89, 138, 0, 94, 185, 79, 156, 1, 89, 75, 1, 178, 187, 79, 156, 121, 81, 138, 0, 94, 185, 231, 114, 46, 95, 145, 4, 142, 186, 224, 151, 153, 76, 145, 4, 142, 186, 81, 115, 153, 76, 111, 5, 219, 184, 81, 115, 46, 95, 111, 5, 219, 184, 224, 151, 139, 102, 118, 17, 54, 189, 120, 217, 219, 82, 118, 17, 2, 189, 208, 52, 219, 82, 159, 26, 64, 140, 135, 53, 139, 102, 159, 26, 228, 140, 186, 216),
+"format": 34896613431,
+"index_count": 36,
+"index_data": PackedByteArray(0, 0, 2, 0, 1, 0, 3, 0, 1, 0, 2, 0, 4, 0, 6, 0, 5, 0, 5, 0, 7, 0, 4, 0, 8, 0, 10, 0, 9, 0, 9, 0, 11, 0, 8, 0, 12, 0, 14, 0, 13, 0, 13, 0, 15, 0, 12, 0, 16, 0, 18, 0, 17, 0, 16, 0, 19, 0, 18, 0, 20, 0, 22, 0, 21, 0, 22, 0, 20, 0, 23, 0),
+"material": SubResource("StandardMaterial3D_ecrwx"),
+"name": "house1",
+"primitive": 3,
+"uv_scale": Vector4(0, 0, 0, 0),
+"vertex_count": 24,
+"vertex_data": PackedByteArray(0, 0, 0, 0, 248, 255, 84, 213, 0, 0, 255, 255, 248, 255, 84, 213, 0, 0, 0, 0, 0, 0, 84, 213, 0, 0, 255, 255, 0, 0, 84, 213, 0, 0, 255, 255, 0, 0, 255, 255, 255, 255, 255, 255, 248, 255, 255, 255, 255, 255, 255, 255, 0, 0, 255, 255, 0, 0, 255, 255, 248, 255, 255, 255, 255, 255, 0, 0, 248, 255, 255, 191, 0, 0, 255, 255, 248, 255, 255, 191, 0, 0, 0, 0, 248, 255, 255, 191, 255, 255, 255, 255, 248, 255, 255, 191, 0, 0, 0, 0, 0, 0, 255, 63, 255, 255, 0, 0, 248, 255, 255, 63, 255, 255, 0, 0, 0, 0, 255, 63, 0, 0, 0, 0, 248, 255, 255, 63, 255, 255, 255, 255, 248, 255, 84, 213, 255, 255, 0, 0, 248, 255, 84, 213, 255, 255, 0, 0, 0, 0, 84, 213, 255, 255, 255, 255, 0, 0, 84, 213, 0, 0, 0, 0, 0, 0, 255, 255, 0, 0, 255, 255, 0, 0, 255, 255, 255, 255, 255, 255, 0, 0, 255, 255, 255, 255, 0, 0, 0, 0, 255, 255, 84, 85, 170, 170, 84, 85, 170, 170, 84, 85, 170, 170, 84, 85, 170, 170, 255, 127, 255, 191, 255, 127, 255, 191, 255, 127, 255, 191, 255, 127, 255, 191, 255, 127, 255, 127, 255, 127, 255, 127, 255, 127, 255, 127, 255, 127, 255, 127, 255, 255, 255, 127, 255, 255, 255, 127, 255, 255, 255, 127, 255, 255, 255, 127, 170, 42, 170, 42, 170, 42, 170, 42, 170, 42, 170, 42, 170, 42, 170, 42, 255, 63, 255, 191, 255, 63, 255, 191, 255, 63, 255, 191, 255, 63, 255, 191)
+}]
+blend_shape_mode = 0
+shadow_mesh = SubResource("ArrayMesh_xiie2")
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_mfjj2"]
+albedo_texture = ExtResource("2_072yx")
+
+[sub_resource type="ConcavePolygonShape3D" id="ConcavePolygonShape3D_gs2gj"]
+data = PackedVector3Array(0, 0, 0.1, 0, 0, 0, 0, 2.15, 0.1, 0, 2.15, 0, 0, 2.15, 0.1, 0, 0, 0, 0, 2.15, 0, 1, 2.15, 0, 1, 2.15, 0.1, 1, 2.15, 0.1, 0, 2.15, 0.1, 0, 2.15, 0, 1, 0, 0.1, 0, 0, 0.1, 0, 2.15, 0.1, 0, 2.15, 0.1, 1, 2.15, 0.1, 1, 0, 0.1, 0, 0, 0, 1, 0, 0, 1, 0, 0.1, 1, 0, 0.1, 0, 0, 0.1, 0, 0, 0, 1, 2.15, 0.1, 1, 0, 0, 1, 0, 0.1, 1, 2.15, 0.1, 1, 2.15, 0, 1, 0, 0, 0, 0, 0, 1, 2.15, 0, 0, 2.15, 0, 1, 2.15, 0, 0, 0, 0, 1, 0, 0)
+
+[sub_resource type="Animation" id="Animation_3l06b"]
+resource_name = "OpenDoor"
+tracks/0/type = "bezier"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:rotation:y")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"handle_modes": PackedInt32Array(0, 0),
+"points": PackedFloat32Array(0, -0.25, 0, 0.25, 0, -1.5708, -0.25, 0, 0.25, 0),
+"times": PackedFloat32Array(0, 1)
+}
+
+[sub_resource type="Animation" id="Animation_uvrc0"]
+length = 0.001
+tracks/0/type = "bezier"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:rotation:y")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"handle_modes": PackedInt32Array(0),
+"points": PackedFloat32Array(0, -0.25, 0, 0.25, 0),
+"times": PackedFloat32Array(0)
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_adwh7"]
+_data = {
+"OpenDoor": SubResource("Animation_3l06b"),
+"RESET": SubResource("Animation_uvrc0")
+}
+
+[node name="DoorHinge" type="Node3D" node_paths=PackedStringArray("animationPlayer")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.5, 1, -0.0999999)
+script = ExtResource("1_fgaj0")
+animationPlayer = NodePath("DoorAnimation")
+
+[node name="house1_door2" type="MeshInstance3D" parent="."]
+mesh = SubResource("ArrayMesh_cuq6p")
+skeleton = NodePath("")
+surface_material_override/0 = SubResource("StandardMaterial3D_mfjj2")
+
+[node name="StaticBody3D" type="StaticBody3D" parent="house1_door2" groups=["Doors"]]
+script = ExtResource("3_etdnb")
+promptMessage = "Enter"
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="house1_door2/StaticBody3D"]
+shape = SubResource("ConcavePolygonShape3D_gs2gj")
+
+[node name="DoorAnimation" type="AnimationPlayer" parent="."]
+libraries = {
+"": SubResource("AnimationLibrary_adwh7")
+}
+speed_scale = 2.5
+
+[node name="timer" type="Timer" parent="."]
+
+[connection signal="timeout" from="timer" to="." method="_OnTimerTimeout"]

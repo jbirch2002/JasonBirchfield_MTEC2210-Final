@@ -34,7 +34,7 @@ public partial class Player : CharacterBody3D
 		if (!IsOnFloor())
 			velocity.Y -= gravity * (float)delta;
 
-		if (Godot.Input.IsActionJustPressed("jump") && IsOnFloor())
+		if (Godot.Input.IsActionPressed("jump") && IsOnFloor())
 			velocity.Y = jumpVelocity;
 
 		if (direction != Vector3.Zero)
