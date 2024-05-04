@@ -367,3 +367,6 @@ transform = Transform3D(10, 0, 0, 0, 10, 0, 0, 0, 10, 0, 13.1535, 41.7645)
 
 [node name="DoorHinge" parent="." instance=ExtResource("15_33npw")]
 transform = Transform3D(10, 0, 0, 0, 10, 0, 0, 0, 10, -4.86465, 9.90298, -0.0999999)
+
+[node name="DoorHinge2" parent="." instance=ExtResource("15_33npw")]
+transform = Transform3D(10, 0, 0, 0, 10, 0, 0, 0, 10, -15.4509, 12.1946, 18.5585)

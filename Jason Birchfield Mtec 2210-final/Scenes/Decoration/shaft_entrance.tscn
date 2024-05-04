@@ -1,4 +1,4 @@
-[gd_scene load_steps=7 format=3 uid="uid://2c3fffmnel4f"]
+[gd_scene load_steps=8 format=3 uid="uid://2c3fffmnel4f"]
 
 [ext_resource type="Texture2D" uid="uid://dmqpmstvpmfts" path="res://Assets/decoration/Models pack psx/Texture/Metal_05.jpg" id="1_wptyb"]
 [ext_resource type="PackedScene" uid="uid://40d3r4rmgsp4" path="res://Scenes/Decoration/door old metal.tscn" id="2_tgpt8"]
@@ -42,6 +42,9 @@ shadow_mesh = SubResource("ArrayMesh_3fshs")
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_18vvj"]
 albedo_texture = ExtResource("1_wptyb")
 
+[sub_resource type="ConvexPolygonShape3D" id="ConvexPolygonShape3D_0dacb"]
+points = PackedVector3Array(-0.0385363, -0.019209, -0.0212588, -0.0385363, 0.0142293, -0.0212588, 0.0385363, -0.019209, -0.0212588, -0.0385363, -0.019209, 0.0220456, -0.0385363, 0.0142293, 0.0220456, 0.0385363, 0.0142293, -0.0212588, 0.0385363, -0.019209, 0.0220456, 0.0385363, 0.0142293, 0.0220456)
+
 [node name="ShaftEntrance" type="Node3D"]
 
 [node name="C_012" type="MeshInstance3D" parent="."]
@@ -49,6 +52,12 @@ transform = Transform3D(300, 0, 0, 0, -1.31134e-05, 300, 0, -300, -1.31134e-05, 
 mesh = SubResource("ArrayMesh_7hmmw")
 skeleton = NodePath("")
 surface_material_override/0 = SubResource("StandardMaterial3D_18vvj")
+
+[node name="staticBody3d" type="StaticBody3D" parent="C_012"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="C_012/staticBody3d"]
+transform = Transform3D(1, 0, 0, 0, 1, -3.55271e-15, 0, 3.55271e-15, 1, 0, 0, 0)
+shape = SubResource("ConvexPolygonShape3D_0dacb")
 
 [node name="MineDoor" parent="." instance=ExtResource("2_tgpt8")]
 transform = Transform3D(-1.57361e-09, -4.29154e-09, 0.06, 4.29154e-09, 0.036, 7.15256e-09, -0.036, 4.29154e-09, -2.62268e-09, 11.6902, -5.71175, 0.551038)
