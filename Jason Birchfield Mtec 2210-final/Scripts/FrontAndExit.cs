@@ -24,7 +24,7 @@ public partial class FrontAndExit : Node3D
             if (IsInGroup("EntranceDoorHouse2"))
             {
                 EmitSignal("DoorToggled", "EntranceDoorHouse2");
-                GetTree().ChangeSceneToPacked(ResourceLoader.Load<PackedScene>("res://Scenes/Houses/player_house_inside.tscn"));
+                GetTree().ChangeSceneToPacked(ResourceLoader.Load<PackedScene>("res://Scenes/Houses/house2_inside.tscn"));
             }
             if (IsInGroup("ExitDoorHouse2"))
             {

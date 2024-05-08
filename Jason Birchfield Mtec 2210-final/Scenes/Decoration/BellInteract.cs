@@ -15,7 +15,7 @@ public partial class BellInteract : Node3D
 	{
 		if(!hasBeenRung)
 		{
-			animationPlayer.Play();
+			animationPlayer.Play("Ring");
 			hasBeenRung = true;
 		}
 	}

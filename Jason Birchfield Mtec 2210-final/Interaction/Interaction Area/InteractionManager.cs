@@ -50,7 +50,7 @@ public partial class InteractionManager : Node
             {
                 if (interactable != null && interactable.HasMethod("Interact"))
                 {
-                    interactionLabel.Text = "";
+                    interactionLabel.Text = "[E]";
                 }
             }
             if(interactable.IsInGroup("Bell"))
