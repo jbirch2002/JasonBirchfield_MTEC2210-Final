@@ -2,7 +2,7 @@
 
 [ext_resource type="Texture2D" uid="uid://bgagl225u4ix4" path="res://Assets/decoration/gramophone/textures/DefaultMaterial_Base_color.png" id="1_yf60u"]
 [ext_resource type="Script" path="res://Scripts/PlayGramophone.cs" id="2_w7fap"]
-[ext_resource type="AudioStream" uid="uid://c41cvsfa4d4rw" path="res://4jj2.wav" id="3_k13p2"]
+[ext_resource type="AudioStream" uid="uid://c41cvsfa4d4rw" path="res://GramophoneSong.wav" id="3_k13p2"]
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_w3t0g"]
 resource_name = "DefaultMaterial"

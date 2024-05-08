@@ -264,21 +264,6 @@ albedo_texture = ExtResource("13_r3x5p")
 [sub_resource type="BoxShape3D" id="BoxShape3D_1qysc"]
 size = Vector3(0.013588, 0.0124512, 0.0136738)
 
-[sub_resource type="Animation" id="Animation_bikol"]
-resource_name = "Ring"
-tracks/0/type = "value"
-tracks/0/imported = false
-tracks/0/enabled = true
-tracks/0/path = NodePath("Bar_Bell_Circle_005:rotation")
-tracks/0/interp = 1
-tracks/0/loop_wrap = true
-tracks/0/keys = {
-"times": PackedFloat32Array(0, 0.2, 0.5, 0.7, 1),
-"transitions": PackedFloat32Array(1, 1, 1, 1, 1),
-"update": 0,
-"values": [Vector3(-7.54979e-08, 0, 0), Vector3(-0.523599, 1.35243e-08, -5.04736e-08), Vector3(-9.15527e-08, -9.09495e-15, -1.36424e-14), Vector3(0.523599, 1.35243e-08, 5.04736e-08), Vector3(6.36085e-22, -9.09495e-15, -4.09273e-15)]
-}
-
 [sub_resource type="Animation" id="Animation_fn710"]
 length = 0.001
 tracks/0/type = "value"
@@ -292,6 +277,21 @@ tracks/0/keys = {
 "transitions": PackedFloat32Array(1),
 "update": 0,
 "values": [Vector3(-7.54979e-08, 0, 0)]
+}
+
+[sub_resource type="Animation" id="Animation_bikol"]
+resource_name = "Ring"
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Bar_Bell_Circle_005:rotation")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.2, 0.5, 0.7, 1),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1),
+"update": 0,
+"values": [Vector3(-7.54979e-08, 0, 0), Vector3(-0.523599, 1.35243e-08, -5.04736e-08), Vector3(-9.15527e-08, -9.09495e-15, -1.36424e-14), Vector3(0.523599, 1.35243e-08, 5.04736e-08), Vector3(6.36085e-22, -9.09495e-15, -4.09273e-15)]
 }
 
 [sub_resource type="AnimationLibrary" id="AnimationLibrary_vg8lr"]

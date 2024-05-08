@@ -3,8 +3,8 @@
 [ext_resource type="Script" path="res://Scripts/Player.cs" id="1_64u7i"]
 [ext_resource type="AudioStream" uid="uid://bt5ifh5wl2bup" path="res://Sounds/Bones sound.mp3" id="2_1wcyp"]
 [ext_resource type="PackedScene" uid="uid://c2pf5628tx2g7" path="res://Interaction/Interaction Area/InteractionArea.tscn" id="2_i84db"]
+[ext_resource type="Script" path="res://Interaction/Interaction Area/InteractionComponent.cs" id="3_2arcc"]
 [ext_resource type="Script" path="res://Scripts/Crosshair.cs" id="3_cnjmk"]
-[ext_resource type="Script" path="res://Interaction/Interaction Area/InteractionManager.cs" id="3_lyfgn"]
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_or6r1"]
 
@@ -19,8 +19,8 @@ walkingSpeed = 40.0
 runningSpeed = 48.0
 jumpVelocity = 68.0
 
-[node name="InteractionManager" parent="." instance=ExtResource("2_i84db")]
-script = ExtResource("3_lyfgn")
+[node name="InteractionComponent" parent="." instance=ExtResource("2_i84db")]
+script = ExtResource("3_2arcc")
 interactionRaycastPath = NodePath("../head/InteractRay")
 interactionLabelPath = NodePath("../head/InteractRay/Prompt")
 interactionAudioPath = NodePath("../head/InteractRay/Audio")

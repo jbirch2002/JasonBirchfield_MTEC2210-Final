@@ -4,25 +4,33 @@ using System;
 public partial class OpenDoors : Node3D
 {
     [Export] NodePath animationPlayerPath;
-    AnimationPlayer ap;
+    [Export] NodePath audioStreamPlayer3DPath;
+    [Export] NodePath audioStreamPlayer3DPath2;
+    AnimationPlayer animationPlayer;
+    AudioStreamPlayer3D audioStreamPlayer3D;
+    AudioStreamPlayer3D audioStreamPlayer3D2;
     bool isDoorOpen = false;
 
     public override void _Ready()
     {
-        ap = GetNode<AnimationPlayer>(animationPlayerPath);
+        animationPlayer = GetNode<AnimationPlayer>(animationPlayerPath);
+        audioStreamPlayer3D = GetNode<AudioStreamPlayer3D>(audioStreamPlayer3DPath);
+        audioStreamPlayer3D2 = GetNode<AudioStreamPlayer3D>(audioStreamPlayer3DPath2);
     }
 
     public void ToggleDoor()
     {
         if (!isDoorOpen)
         {
-            ap.Play("Open");
-            isDoorOpen = true; // Set to true when the door opens
+            animationPlayer.Play("Open");
+            isDoorOpen = true;
+            audioStreamPlayer3D.Play();
         }
         else
         {
-            ap.Play("Close");
-            isDoorOpen = false; // Set to false when the door closes
+            animationPlayer.Play("Close");
+            isDoorOpen = false;
+            audioStreamPlayer3D2.Play();
         }
     }
 
