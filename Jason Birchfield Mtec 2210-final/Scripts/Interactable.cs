@@ -3,27 +3,18 @@ using System;
 
 public partial class Interactable : StaticBody3D
 {
-    public delegate void InteractedWithArguementEventHandler(Variant body);
-	[Export] public string promptMessage;
-	[Export] public string promptAction = "interact";
+    [Signal] public delegate void InteractedEventHandler(Variant arg);
+
+    [Export] public string promptMessage;
+    [Export] public string promptAction = "interact";
 
     public string GetPrompt()
     {
-        string keyName = "";
-        foreach (InputEvent action in InputMap.ActionGetEvents(promptAction))
-        {
-			if (action is InputEventKey inputEvent)
-            {
-				keyName = "E";
-				break;
-            }
-        }
-
-        return $"{promptMessage} \n [{keyName}]";
+        return $"{promptMessage}\n[E]";
     }
 
-        public void Interact(Variant body)
-        {
-            EmitSignal("Interacted", body);
-        }
+    public void Interact(Variant body)
+    {
+        EmitSignal(nameof(Interacted), body);
+    }
 }

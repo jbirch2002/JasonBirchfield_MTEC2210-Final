@@ -62,9 +62,9 @@ public partial class InteractRay : RayCast3D
 						}
 					}
 
-					if (detected.IsInGroup("Doors") && detected.HasMethod("OpenDoor"))
+					if (detected.IsInGroup("Doors"))
 					{
-						openDoors.OpenDoor();  // Call ToggleDoor on interaction button press
+						// openDoors.OpenDoor();  // Call ToggleDoor on interaction button press
 					}
 					else if (detected.IsInGroup("NPCs"))
 					{

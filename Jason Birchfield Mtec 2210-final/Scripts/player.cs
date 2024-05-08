@@ -16,7 +16,7 @@ public partial class Player : CharacterBody3D
 	public override void _Ready()
 	{
 		head = GetNode<Node3D>("head");
-        Godot.Input.MouseMode = Godot.Input.MouseModeEnum.Captured;
+        Input.MouseMode = Input.MouseModeEnum.Captured;
 	}
 
 	#region PlayerMovement
@@ -28,13 +28,13 @@ public partial class Player : CharacterBody3D
 	public void ProcessPlayerInput(double delta)
 	{
 		Vector3 velocity = Velocity;
-        Vector2 inputDir = Godot.Input.GetVector("left", "right", "up", "down");
+        Vector2 inputDir = Input.GetVector("left", "right", "up", "down");
 		Vector3 direction = (Transform.Basis * new Vector3(inputDir.X, 0, inputDir.Y)).Normalized();
 
 		if (!IsOnFloor())
 			velocity.Y -= gravity * (float)delta;
 
-		if (Godot.Input.IsActionPressed("jump") && IsOnFloor())
+		if (Input.IsActionPressed("jump") && IsOnFloor())
 			velocity.Y = jumpVelocity;
 
 		if (direction != Vector3.Zero)
@@ -48,7 +48,7 @@ public partial class Player : CharacterBody3D
 			velocity.Z = Mathf.MoveToward(Velocity.Z, 0, currentSpeed);
 		}
 
-		if(Godot.Input.IsActionPressed("sprint") && IsOnFloor())
+		if(Input.IsActionPressed("sprint") && IsOnFloor())
 		{
             currentSpeed = runningSpeed;
 		}
@@ -73,13 +73,9 @@ public partial class Player : CharacterBody3D
 			{
 				GetTree().Quit();
 			}
-			if(eventKey.Pressed && eventKey.Keycode == Key.E)
-			{
-			// interact logic here
-			}
 		}
 
-		if(Input.MouseMode == Godot.Input.MouseModeEnum.Captured)
+		if(Input.MouseMode == Input.MouseModeEnum.Captured)
 		{
 			InputEventMouseMotion mouseMotion = @event as InputEventMouseMotion;
 			if (mouseMotion != null)
@@ -95,5 +91,9 @@ public partial class Player : CharacterBody3D
 		head.RotationDegrees = new Vector3(Mathf.Clamp(head.RotationDegrees.X, - 89, 89), head.RotationDegrees.Y, head.RotationDegrees.Z);
 		RotateY(Mathf.DegToRad(-mouse.Relative.X * mouseSens));
 	}
+	#endregion
+
+	#region Spawns
+
 	#endregion
 }

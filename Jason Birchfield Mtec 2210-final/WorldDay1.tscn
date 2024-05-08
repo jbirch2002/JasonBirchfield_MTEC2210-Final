@@ -1,4 +1,4 @@
-[gd_scene load_steps=13 format=3 uid="uid://cvrb6sg5ja8hw"]
+[gd_scene load_steps=12 format=3 uid="uid://cvrb6sg5ja8hw"]
 
 [ext_resource type="PackedScene" uid="uid://d0sydkych26ag" path="res://Scenes/World/day_night_cycle.tscn" id="1_7gc6d"]
 [ext_resource type="PackedScene" uid="uid://p733h2j6anis" path="res://Scenes/NPC/Trees/tree01.tscn" id="1_tch2r"]
@@ -6,11 +6,10 @@
 [ext_resource type="PackedScene" uid="uid://cjrs4vb51re2n" path="res://Scenes/Foliage/grass_patch.tscn" id="3_tyv35"]
 [ext_resource type="PackedScene" uid="uid://b2kkjsavyliha" path="res://Scenes/Houses/player_house.tscn" id="4_kly6o"]
 [ext_resource type="PackedScene" uid="uid://bnbv8b0uo8nog" path="res://Scenes/Houses/house1.tscn" id="5_3t0ov"]
-[ext_resource type="PackedScene" uid="uid://dksn5g6khypq6" path="res://Scenes/Houses/house2.tscn" id="6_67vwd"]
-[ext_resource type="PackedScene" uid="uid://cwl5em728pgen" path="res://Scenes/Houses/house3.tscn" id="7_mu0je"]
+[ext_resource type="PackedScene" uid="uid://dksn5g6khypq6" path="res://Scenes/Houses/house2.tscn" id="7_mu0je"]
 [ext_resource type="Terrain3DStorage" uid="uid://hwvm6wqejttr" path="res://new_terrain_3d_storage.res" id="8_lwqsl"]
 [ext_resource type="Terrain3DMaterial" uid="uid://dwqwclqp5tp41" path="res://new_terrain_3d_material.tres" id="9_s27bb"]
-[ext_resource type="Terrain3DTextureList" uid="uid://syrtoqawfln1" path="res://new_terrain_3d_texture_list.tres" id="10_4mlmo"]
+[ext_resource type="Terrain3DTextureList" uid="uid://cdq1x5gbkk5aw" path="res://texture_list.tres" id="10_4mlmo"]
 [ext_resource type="PackedScene" uid="uid://bn14grvdecwll" path="res://Scenes/Player/player.tscn" id="11_m86le"]
 
 [node name="World1" type="Node3D"]
@@ -59,11 +58,11 @@ transform = Transform3D(10, 0, 0, 0, 10, 0, 0, 0, 10, 5.56559, 0, -504.182)
 [node name="House1" parent="Houses" instance=ExtResource("5_3t0ov")]
 transform = Transform3D(-4.37114e-07, 0, -10, 0, 10, 0, 10, 0, -4.37114e-07, 561.643, 0.81235, -273.63)
 
-[node name="House2" parent="Houses" instance=ExtResource("6_67vwd")]
+[node name="House2" parent="Houses" instance=ExtResource("7_mu0je")]
 transform = Transform3D(-10, 0, 8.74228e-07, 0, 10, 0, -8.74228e-07, 0, -10, -232.527, -0.260742, -75.4248)
 
 [node name="house3" parent="Houses" instance=ExtResource("7_mu0je")]
-transform = Transform3D(10, 0, 0, 0, 10, 0, 0, 0, 10, 333.398, -0.101612, -437.053)
+transform = Transform3D(10, 0, 0, 0, 10, 0, 0, 0, 10, 347.315, -0.101612, -444.943)
 
 [node name="terrain3d" type="Terrain3D" parent="."]
 storage = ExtResource("8_lwqsl")
@@ -72,3 +71,11 @@ texture_list = ExtResource("10_4mlmo")
 
 [node name="Player" parent="." instance=ExtResource("11_m86le")]
 transform = Transform3D(-10, 0, 8.74228e-07, 0, 10, 0, -8.74228e-07, 0, -10, 5.71808, 12.9537, -441.477)
+
+[node name="Spawns" type="Node3D" parent="."]
+
+[node name="House2Spawn" type="Marker3D" parent="Spawns"]
+transform = Transform3D(-1, 0, 8.74228e-08, 0, 1, 0, -8.74228e-08, 0, -1, -217.048, 20.3288, -113.06)
+
+[node name="PlayerHouseSpawn" type="Marker3D" parent="Spawns"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4.8061, 14.532, -449.431)

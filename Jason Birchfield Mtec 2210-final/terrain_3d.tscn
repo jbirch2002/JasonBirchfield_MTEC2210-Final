@@ -1,7 +1,7 @@
 [gd_scene load_steps=7 format=3 uid="uid://b07yicrqkgn6s"]
 
 [ext_resource type="Terrain3DStorage" uid="uid://hwvm6wqejttr" path="res://new_terrain_3d_storage.res" id="1_uubh8"]
-[ext_resource type="Terrain3DTextureList" uid="uid://syrtoqawfln1" path="res://new_terrain_3d_texture_list.tres" id="2_nnhw4"]
+[ext_resource type="Terrain3DTextureList" path="res://poop.tres" id="2_nnhw4"]
 
 [sub_resource type="Gradient" id="Gradient_35u64"]
 offsets = PackedFloat32Array(0.2, 1)

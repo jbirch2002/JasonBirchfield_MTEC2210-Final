@@ -1,8 +1,8 @@
 [gd_scene load_steps=37 format=3 uid="uid://b2kkjsavyliha"]
 
 [ext_resource type="Texture2D" uid="uid://cnpl1y5wxn78d" path="res://Assets/houses/preset_houses/house1_tex1.png" id="1_1lkla"]
-[ext_resource type="Script" path="res://Scripts/Interactable.cs" id="3_52d6a"]
-[ext_resource type="Script" path="res://Scripts/OpenDoors.cs" id="3_o7aix"]
+[ext_resource type="Script" path="res://Scripts/FrontAndExit.cs" id="2_7it8o"]
+[ext_resource type="Script" path="res://OpenDoors.cs" id="3_o7aix"]
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_7h143"]
 albedo_texture = ExtResource("1_1lkla")
@@ -323,7 +323,8 @@ mesh = SubResource("ArrayMesh_2ukri")
 skeleton = NodePath("")
 surface_material_override/0 = SubResource("StandardMaterial3D_0ns2p")
 
-[node name="StaticBody3D" type="StaticBody3D" parent="RootNode/house1"]
+[node name="StaticBody3D" type="StaticBody3D" parent="RootNode/house1" groups=["EntranceDoorPlayerHouse"]]
+script = ExtResource("2_7it8o")
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="RootNode/house1/StaticBody3D"]
 shape = SubResource("ConcavePolygonShape3D_j4lkc")
@@ -336,8 +337,6 @@ skeleton = NodePath("")
 surface_material_override/0 = SubResource("StandardMaterial3D_21j8s")
 
 [node name="StaticBody3D" type="StaticBody3D" parent="RootNode/house1/house1_door1" groups=["PlayerHouseEntranceDoor"]]
-script = ExtResource("3_52d6a")
-promptMessage = "Enter"
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="RootNode/house1/house1_door1/StaticBody3D"]
 shape = SubResource("ConcavePolygonShape3D_kjwvx")
@@ -352,8 +351,6 @@ skeleton = NodePath("")
 surface_material_override/0 = SubResource("StandardMaterial3D_mfjj2")
 
 [node name="StaticBody3D" type="StaticBody3D" parent="RootNode/house1/DoorHinge/house1_door2" groups=["Doors"]]
-script = ExtResource("3_52d6a")
-promptMessage = "Enter"
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="RootNode/house1/DoorHinge/house1_door2/StaticBody3D"]
 shape = SubResource("ConcavePolygonShape3D_gs2gj")

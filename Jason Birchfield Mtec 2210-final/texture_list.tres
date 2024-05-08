@@ -1,0 +1,31 @@
+[gd_resource type="Terrain3DTextureList" load_steps=10 format=3 uid="uid://cdq1x5gbkk5aw"]
+
+[ext_resource type="Texture2D" path="res://Assets/foliage/floortexture/ground037_alb_ht.dds" id="1_kalx7"]
+[ext_resource type="Texture2D" path="res://Assets/foliage/floortexture/ground037_nrm_rgh.dds" id="2_i7onp"]
+[ext_resource type="Texture2D" path="res://Assets/foliage/floortexture/ground048_alb_ht.dds" id="3_3d4jt"]
+[ext_resource type="Texture2D" path="res://Assets/foliage/floortexture/ground048_nrm_rgh.dds" id="4_0hlbu"]
+[ext_resource type="Texture2D" path="res://Assets/foliage/floortexture/rock051_alb_ht.dds" id="5_qpy7m"]
+[ext_resource type="Texture2D" path="res://Assets/foliage/floortexture/rock051_nrm_rgh.dds" id="6_3bp8t"]
+
+[sub_resource type="Terrain3DTexture" id="Terrain3DTexture_e704n"]
+name = "Grass"
+albedo_texture = ExtResource("1_kalx7")
+normal_texture = ExtResource("2_i7onp")
+uv_scale = 0.01
+
+[sub_resource type="Terrain3DTexture" id="Terrain3DTexture_s8lao"]
+name = "Ground"
+texture_id = 1
+albedo_texture = ExtResource("3_3d4jt")
+normal_texture = ExtResource("4_0hlbu")
+uv_scale = 0.01
+
+[sub_resource type="Terrain3DTexture" id="Terrain3DTexture_kisj4"]
+name = "Rock"
+texture_id = 2
+albedo_texture = ExtResource("5_qpy7m")
+normal_texture = ExtResource("6_3bp8t")
+uv_scale = 0.01
+
+[resource]
+textures = Array[Terrain3DTexture]([SubResource("Terrain3DTexture_e704n"), SubResource("Terrain3DTexture_s8lao"), SubResource("Terrain3DTexture_kisj4")])

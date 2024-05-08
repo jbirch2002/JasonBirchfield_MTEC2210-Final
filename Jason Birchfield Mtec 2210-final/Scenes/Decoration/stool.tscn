@@ -1,0 +1,22 @@
+[gd_scene load_steps=5 format=3 uid="uid://dwkqtseqht3sg"]
+
+[ext_resource type="ArrayMesh" uid="uid://c7tf4l70pinlk" path="res://Assets/decoration/stool/stool.obj" id="1_jvw4s"]
+[ext_resource type="Texture2D" uid="uid://0raih4lga61v" path="res://Assets/decoration/stool/stool_lores.png" id="2_lqe24"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_0khjn"]
+albedo_texture = ExtResource("2_lqe24")
+
+[sub_resource type="ConvexPolygonShape3D" id="ConvexPolygonShape3D_hiwh0"]
+points = PackedVector3Array(-0.175, 0, -0.175, 0.174999, 0, -0.175, -0.175, 0, 0.174999, -0.175, 0.479995, -0.175, 0.174999, 0, 0.174999, 0.174999, 0.479995, -0.175, -0.175, 0.479995, 0.174999, 0.174999, 0.479995, 0.174999)
+
+[node name="Stool" type="Node3D"]
+
+[node name="StoolShape" type="MeshInstance3D" parent="."]
+transform = Transform3D(10, 0, 0, 0, 10, 0, 0, 0, 10, 0.105119, 0, 0.180804)
+mesh = ExtResource("1_jvw4s")
+surface_material_override/0 = SubResource("StandardMaterial3D_0khjn")
+
+[node name="StaticBody3D" type="StaticBody3D" parent="StoolShape"]
+
+[node name="CollisionShape3D2" type="CollisionShape3D" parent="StoolShape/StaticBody3D"]
+shape = SubResource("ConvexPolygonShape3D_hiwh0")
