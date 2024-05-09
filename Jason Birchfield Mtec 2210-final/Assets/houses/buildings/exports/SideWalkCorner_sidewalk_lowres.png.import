@@ -4,8 +4,9 @@ importer="texture"
 type="CompressedTexture2D"
 uid="uid://cwcima0n8isie"
 path.s3tc="res://.godot/imported/SideWalkCorner_sidewalk_lowres.png-3d392aa4d445d96c04a8951646ef0dcd.s3tc.ctex"
+path.etc2="res://.godot/imported/SideWalkCorner_sidewalk_lowres.png-3d392aa4d445d96c04a8951646ef0dcd.etc2.ctex"
 metadata={
-"imported_formats": ["s3tc_bptc"],
+"imported_formats": ["s3tc_bptc", "etc2_astc"],
 "vram_texture": true
 }
 generator_parameters={}
@@ -13,7 +14,7 @@ generator_parameters={}
 [deps]
 
 source_file="res://Assets/houses/buildings/exports/SideWalkCorner_sidewalk_lowres.png"
-dest_files=["res://.godot/imported/SideWalkCorner_sidewalk_lowres.png-3d392aa4d445d96c04a8951646ef0dcd.s3tc.ctex"]
+dest_files=["res://.godot/imported/SideWalkCorner_sidewalk_lowres.png-3d392aa4d445d96c04a8951646ef0dcd.s3tc.ctex", "res://.godot/imported/SideWalkCorner_sidewalk_lowres.png-3d392aa4d445d96c04a8951646ef0dcd.etc2.ctex"]
 
 [params]
 

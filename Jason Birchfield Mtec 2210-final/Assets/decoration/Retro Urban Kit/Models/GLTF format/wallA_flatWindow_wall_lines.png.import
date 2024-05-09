@@ -4,8 +4,9 @@ importer="texture"
 type="CompressedTexture2D"
 uid="uid://71vav73umcsm"
 path.s3tc="res://.godot/imported/wallA_flatWindow_wall_lines.png-d49fdde557de1f6baf3589829978d7b6.s3tc.ctex"
+path.etc2="res://.godot/imported/wallA_flatWindow_wall_lines.png-d49fdde557de1f6baf3589829978d7b6.etc2.ctex"
 metadata={
-"imported_formats": ["s3tc_bptc"],
+"imported_formats": ["s3tc_bptc", "etc2_astc"],
 "vram_texture": true
 }
 generator_parameters={}
@@ -13,7 +14,7 @@ generator_parameters={}
 [deps]
 
 source_file="res://Assets/decoration/Retro Urban Kit/Models/GLTF format/wallA_flatWindow_wall_lines.png"
-dest_files=["res://.godot/imported/wallA_flatWindow_wall_lines.png-d49fdde557de1f6baf3589829978d7b6.s3tc.ctex"]
+dest_files=["res://.godot/imported/wallA_flatWindow_wall_lines.png-d49fdde557de1f6baf3589829978d7b6.s3tc.ctex", "res://.godot/imported/wallA_flatWindow_wall_lines.png-d49fdde557de1f6baf3589829978d7b6.etc2.ctex"]
 
 [params]
 

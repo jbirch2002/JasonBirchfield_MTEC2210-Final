@@ -4,15 +4,16 @@ importer="texture"
 type="CompressedTexture2D"
 uid="uid://dvq4qc8wn74sv"
 path.s3tc="res://.godot/imported/Shelf_Store.png-b073e01aac246b6462c1acd7ac9a2f22.s3tc.ctex"
+path.etc2="res://.godot/imported/Shelf_Store.png-b073e01aac246b6462c1acd7ac9a2f22.etc2.ctex"
 metadata={
-"imported_formats": ["s3tc_bptc"],
+"imported_formats": ["s3tc_bptc", "etc2_astc"],
 "vram_texture": true
 }
 
 [deps]
 
 source_file="res://Assets/decoration/Models pack psx/Texture/Shelf_Store.png"
-dest_files=["res://.godot/imported/Shelf_Store.png-b073e01aac246b6462c1acd7ac9a2f22.s3tc.ctex"]
+dest_files=["res://.godot/imported/Shelf_Store.png-b073e01aac246b6462c1acd7ac9a2f22.s3tc.ctex", "res://.godot/imported/Shelf_Store.png-b073e01aac246b6462c1acd7ac9a2f22.etc2.ctex"]
 
 [params]
 

@@ -4,8 +4,9 @@ importer="texture"
 type="CompressedTexture2D"
 uid="uid://t1y0vrkoq3jy"
 path.s3tc="res://.godot/imported/wallB_roofSlant_roof_plates.png-af0d2370a681d5df52d3aaa0f7c8d045.s3tc.ctex"
+path.etc2="res://.godot/imported/wallB_roofSlant_roof_plates.png-af0d2370a681d5df52d3aaa0f7c8d045.etc2.ctex"
 metadata={
-"imported_formats": ["s3tc_bptc"],
+"imported_formats": ["s3tc_bptc", "etc2_astc"],
 "vram_texture": true
 }
 generator_parameters={}
@@ -13,7 +14,7 @@ generator_parameters={}
 [deps]
 
 source_file="res://Assets/decoration/Retro Urban Kit/Models/GLTF format/wallB_roofSlant_roof_plates.png"
-dest_files=["res://.godot/imported/wallB_roofSlant_roof_plates.png-af0d2370a681d5df52d3aaa0f7c8d045.s3tc.ctex"]
+dest_files=["res://.godot/imported/wallB_roofSlant_roof_plates.png-af0d2370a681d5df52d3aaa0f7c8d045.s3tc.ctex", "res://.godot/imported/wallB_roofSlant_roof_plates.png-af0d2370a681d5df52d3aaa0f7c8d045.etc2.ctex"]
 
 [params]
 

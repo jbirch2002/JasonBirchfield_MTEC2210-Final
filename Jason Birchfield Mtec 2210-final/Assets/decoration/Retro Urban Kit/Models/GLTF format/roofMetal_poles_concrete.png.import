@@ -4,8 +4,9 @@ importer="texture"
 type="CompressedTexture2D"
 uid="uid://bsy3qvom0c2dp"
 path.s3tc="res://.godot/imported/roofMetal_poles_concrete.png-da2a9df8157de6c7c1c195ac6b3ea46e.s3tc.ctex"
+path.etc2="res://.godot/imported/roofMetal_poles_concrete.png-da2a9df8157de6c7c1c195ac6b3ea46e.etc2.ctex"
 metadata={
-"imported_formats": ["s3tc_bptc"],
+"imported_formats": ["s3tc_bptc", "etc2_astc"],
 "vram_texture": true
 }
 generator_parameters={}
@@ -13,7 +14,7 @@ generator_parameters={}
 [deps]
 
 source_file="res://Assets/decoration/Retro Urban Kit/Models/GLTF format/roofMetal_poles_concrete.png"
-dest_files=["res://.godot/imported/roofMetal_poles_concrete.png-da2a9df8157de6c7c1c195ac6b3ea46e.s3tc.ctex"]
+dest_files=["res://.godot/imported/roofMetal_poles_concrete.png-da2a9df8157de6c7c1c195ac6b3ea46e.s3tc.ctex", "res://.godot/imported/roofMetal_poles_concrete.png-da2a9df8157de6c7c1c195ac6b3ea46e.etc2.ctex"]
 
 [params]
 

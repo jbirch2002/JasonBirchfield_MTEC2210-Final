@@ -4,8 +4,9 @@ importer="texture"
 type="CompressedTexture2D"
 uid="uid://hsfrhuqcn3jp"
 path.s3tc="res://.godot/imported/cat_Cube_color.png-b2e26cbd0049896047d0540a3d467d51.s3tc.ctex"
+path.etc2="res://.godot/imported/cat_Cube_color.png-b2e26cbd0049896047d0540a3d467d51.etc2.ctex"
 metadata={
-"imported_formats": ["s3tc_bptc"],
+"imported_formats": ["s3tc_bptc", "etc2_astc"],
 "vram_texture": true
 }
 generator_parameters={}
@@ -13,7 +14,7 @@ generator_parameters={}
 [deps]
 
 source_file="res://Assets/animals/stylooanimalassetpack/glb/cat_Cube_color.png"
-dest_files=["res://.godot/imported/cat_Cube_color.png-b2e26cbd0049896047d0540a3d467d51.s3tc.ctex"]
+dest_files=["res://.godot/imported/cat_Cube_color.png-b2e26cbd0049896047d0540a3d467d51.s3tc.ctex", "res://.godot/imported/cat_Cube_color.png-b2e26cbd0049896047d0540a3d467d51.etc2.ctex"]
 
 [params]
 

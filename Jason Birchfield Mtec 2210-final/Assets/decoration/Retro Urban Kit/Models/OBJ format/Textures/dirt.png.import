@@ -4,15 +4,16 @@ importer="texture"
 type="CompressedTexture2D"
 uid="uid://d2n6kb58mr70j"
 path.s3tc="res://.godot/imported/dirt.png-c62c7df6fb772f3503d786112e02881c.s3tc.ctex"
+path.etc2="res://.godot/imported/dirt.png-c62c7df6fb772f3503d786112e02881c.etc2.ctex"
 metadata={
-"imported_formats": ["s3tc_bptc"],
+"imported_formats": ["s3tc_bptc", "etc2_astc"],
 "vram_texture": true
 }
 
 [deps]
 
 source_file="res://Assets/decoration/Retro Urban Kit/Models/OBJ format/Textures/dirt.png"
-dest_files=["res://.godot/imported/dirt.png-c62c7df6fb772f3503d786112e02881c.s3tc.ctex"]
+dest_files=["res://.godot/imported/dirt.png-c62c7df6fb772f3503d786112e02881c.s3tc.ctex", "res://.godot/imported/dirt.png-c62c7df6fb772f3503d786112e02881c.etc2.ctex"]
 
 [params]
 

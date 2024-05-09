@@ -4,15 +4,16 @@ importer="texture"
 type="CompressedTexture2D"
 uid="uid://bmocm5olkeaue"
 path.s3tc="res://.godot/imported/Se (5).jpg-35b0c9f57350647a7e5f6f397a387018.s3tc.ctex"
+path.etc2="res://.godot/imported/Se (5).jpg-35b0c9f57350647a7e5f6f397a387018.etc2.ctex"
 metadata={
-"imported_formats": ["s3tc_bptc"],
+"imported_formats": ["s3tc_bptc", "etc2_astc"],
 "vram_texture": true
 }
 
 [deps]
 
 source_file="res://Assets/decoration/Models pack psx/Texture/Se (5).jpg"
-dest_files=["res://.godot/imported/Se (5).jpg-35b0c9f57350647a7e5f6f397a387018.s3tc.ctex"]
+dest_files=["res://.godot/imported/Se (5).jpg-35b0c9f57350647a7e5f6f397a387018.s3tc.ctex", "res://.godot/imported/Se (5).jpg-35b0c9f57350647a7e5f6f397a387018.etc2.ctex"]
 
 [params]
 

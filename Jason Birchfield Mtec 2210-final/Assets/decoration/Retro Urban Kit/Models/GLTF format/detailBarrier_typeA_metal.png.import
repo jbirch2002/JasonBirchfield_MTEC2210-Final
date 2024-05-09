@@ -4,8 +4,9 @@ importer="texture"
 type="CompressedTexture2D"
 uid="uid://bgf62dqorhm05"
 path.s3tc="res://.godot/imported/detailBarrier_typeA_metal.png-1cafff20bdf4d94179eb359944dab4c7.s3tc.ctex"
+path.etc2="res://.godot/imported/detailBarrier_typeA_metal.png-1cafff20bdf4d94179eb359944dab4c7.etc2.ctex"
 metadata={
-"imported_formats": ["s3tc_bptc"],
+"imported_formats": ["s3tc_bptc", "etc2_astc"],
 "vram_texture": true
 }
 generator_parameters={}
@@ -13,7 +14,7 @@ generator_parameters={}
 [deps]
 
 source_file="res://Assets/decoration/Retro Urban Kit/Models/GLTF format/detailBarrier_typeA_metal.png"
-dest_files=["res://.godot/imported/detailBarrier_typeA_metal.png-1cafff20bdf4d94179eb359944dab4c7.s3tc.ctex"]
+dest_files=["res://.godot/imported/detailBarrier_typeA_metal.png-1cafff20bdf4d94179eb359944dab4c7.s3tc.ctex", "res://.godot/imported/detailBarrier_typeA_metal.png-1cafff20bdf4d94179eb359944dab4c7.etc2.ctex"]
 
 [params]
 

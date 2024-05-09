@@ -4,8 +4,9 @@ importer="texture"
 type="CompressedTexture2D"
 uid="uid://bnv240x5qlryc"
 path.s3tc="res://.godot/imported/wallB_flatWindow_metal_wall.png-36b57d4b6313721538c92f722cc76a63.s3tc.ctex"
+path.etc2="res://.godot/imported/wallB_flatWindow_metal_wall.png-36b57d4b6313721538c92f722cc76a63.etc2.ctex"
 metadata={
-"imported_formats": ["s3tc_bptc"],
+"imported_formats": ["s3tc_bptc", "etc2_astc"],
 "vram_texture": true
 }
 generator_parameters={}
@@ -13,7 +14,7 @@ generator_parameters={}
 [deps]
 
 source_file="res://Assets/decoration/Retro Urban Kit/Models/GLTF format/wallB_flatWindow_metal_wall.png"
-dest_files=["res://.godot/imported/wallB_flatWindow_metal_wall.png-36b57d4b6313721538c92f722cc76a63.s3tc.ctex"]
+dest_files=["res://.godot/imported/wallB_flatWindow_metal_wall.png-36b57d4b6313721538c92f722cc76a63.s3tc.ctex", "res://.godot/imported/wallB_flatWindow_metal_wall.png-36b57d4b6313721538c92f722cc76a63.etc2.ctex"]
 
 [params]
 

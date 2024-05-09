@@ -4,15 +4,16 @@ importer="texture"
 type="CompressedTexture2D"
 uid="uid://bf2i714re04yk"
 path.s3tc="res://.godot/imported/roof.png-fb077e73eef33f6e84b2893a9940b466.s3tc.ctex"
+path.etc2="res://.godot/imported/roof.png-fb077e73eef33f6e84b2893a9940b466.etc2.ctex"
 metadata={
-"imported_formats": ["s3tc_bptc"],
+"imported_formats": ["s3tc_bptc", "etc2_astc"],
 "vram_texture": true
 }
 
 [deps]
 
 source_file="res://Assets/decoration/Retro Urban Kit/Models/OBJ format/Textures/roof.png"
-dest_files=["res://.godot/imported/roof.png-fb077e73eef33f6e84b2893a9940b466.s3tc.ctex"]
+dest_files=["res://.godot/imported/roof.png-fb077e73eef33f6e84b2893a9940b466.s3tc.ctex", "res://.godot/imported/roof.png-fb077e73eef33f6e84b2893a9940b466.etc2.ctex"]
 
 [params]
 

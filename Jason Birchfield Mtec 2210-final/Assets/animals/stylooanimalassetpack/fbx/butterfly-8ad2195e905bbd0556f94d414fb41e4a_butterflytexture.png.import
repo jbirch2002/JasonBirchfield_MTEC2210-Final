@@ -4,8 +4,9 @@ importer="texture"
 type="CompressedTexture2D"
 uid="uid://egxfxybh1c78"
 path.s3tc="res://.godot/imported/butterfly-8ad2195e905bbd0556f94d414fb41e4a_butterflytexture.png-52fc2b130c53cb8e0de0cca6563b6732.s3tc.ctex"
+path.etc2="res://.godot/imported/butterfly-8ad2195e905bbd0556f94d414fb41e4a_butterflytexture.png-52fc2b130c53cb8e0de0cca6563b6732.etc2.ctex"
 metadata={
-"imported_formats": ["s3tc_bptc"],
+"imported_formats": ["s3tc_bptc", "etc2_astc"],
 "vram_texture": true
 }
 generator_parameters={}
@@ -13,7 +14,7 @@ generator_parameters={}
 [deps]
 
 source_file="res://Assets/animals/stylooanimalassetpack/fbx/butterfly-8ad2195e905bbd0556f94d414fb41e4a_butterflytexture.png"
-dest_files=["res://.godot/imported/butterfly-8ad2195e905bbd0556f94d414fb41e4a_butterflytexture.png-52fc2b130c53cb8e0de0cca6563b6732.s3tc.ctex"]
+dest_files=["res://.godot/imported/butterfly-8ad2195e905bbd0556f94d414fb41e4a_butterflytexture.png-52fc2b130c53cb8e0de0cca6563b6732.s3tc.ctex", "res://.godot/imported/butterfly-8ad2195e905bbd0556f94d414fb41e4a_butterflytexture.png-52fc2b130c53cb8e0de0cca6563b6732.etc2.ctex"]
 
 [params]
 

@@ -4,8 +4,9 @@ importer="texture"
 type="CompressedTexture2D"
 uid="uid://d01b7at1asm5u"
 path.s3tc="res://.godot/imported/wallSteps_typeB_concrete.png-3425c02adf0af11cd10a7efc88fb4b8a.s3tc.ctex"
+path.etc2="res://.godot/imported/wallSteps_typeB_concrete.png-3425c02adf0af11cd10a7efc88fb4b8a.etc2.ctex"
 metadata={
-"imported_formats": ["s3tc_bptc"],
+"imported_formats": ["s3tc_bptc", "etc2_astc"],
 "vram_texture": true
 }
 generator_parameters={}
@@ -13,7 +14,7 @@ generator_parameters={}
 [deps]
 
 source_file="res://Assets/decoration/Retro Urban Kit/Models/GLTF format/wallSteps_typeB_concrete.png"
-dest_files=["res://.godot/imported/wallSteps_typeB_concrete.png-3425c02adf0af11cd10a7efc88fb4b8a.s3tc.ctex"]
+dest_files=["res://.godot/imported/wallSteps_typeB_concrete.png-3425c02adf0af11cd10a7efc88fb4b8a.s3tc.ctex", "res://.godot/imported/wallSteps_typeB_concrete.png-3425c02adf0af11cd10a7efc88fb4b8a.etc2.ctex"]
 
 [params]
 

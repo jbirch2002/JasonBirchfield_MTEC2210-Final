@@ -4,8 +4,9 @@ importer="texture"
 type="CompressedTexture2D"
 uid="uid://dx1ggwh8v8yhs"
 path.s3tc="res://.godot/imported/ladybug_cocinelle.png-9cb88190c0d876537295919082150e6e.s3tc.ctex"
+path.etc2="res://.godot/imported/ladybug_cocinelle.png-9cb88190c0d876537295919082150e6e.etc2.ctex"
 metadata={
-"imported_formats": ["s3tc_bptc"],
+"imported_formats": ["s3tc_bptc", "etc2_astc"],
 "vram_texture": true
 }
 generator_parameters={}
@@ -13,7 +14,7 @@ generator_parameters={}
 [deps]
 
 source_file="res://Assets/animals/stylooanimalassetpack/glb/ladybug_cocinelle.png"
-dest_files=["res://.godot/imported/ladybug_cocinelle.png-9cb88190c0d876537295919082150e6e.s3tc.ctex"]
+dest_files=["res://.godot/imported/ladybug_cocinelle.png-9cb88190c0d876537295919082150e6e.s3tc.ctex", "res://.godot/imported/ladybug_cocinelle.png-9cb88190c0d876537295919082150e6e.etc2.ctex"]
 
 [params]
 

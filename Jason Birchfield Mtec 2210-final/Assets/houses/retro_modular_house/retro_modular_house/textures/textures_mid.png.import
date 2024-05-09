@@ -4,15 +4,16 @@ importer="texture"
 type="CompressedTexture2D"
 uid="uid://cd3udfa2asnwe"
 path.s3tc="res://.godot/imported/textures_mid.png-1fa16288834bfb2e0d8d35930f2a1dc5.s3tc.ctex"
+path.etc2="res://.godot/imported/textures_mid.png-1fa16288834bfb2e0d8d35930f2a1dc5.etc2.ctex"
 metadata={
-"imported_formats": ["s3tc_bptc"],
+"imported_formats": ["s3tc_bptc", "etc2_astc"],
 "vram_texture": true
 }
 
 [deps]
 
 source_file="res://Assets/houses/retro_modular_house/retro_modular_house/textures/textures_mid.png"
-dest_files=["res://.godot/imported/textures_mid.png-1fa16288834bfb2e0d8d35930f2a1dc5.s3tc.ctex"]
+dest_files=["res://.godot/imported/textures_mid.png-1fa16288834bfb2e0d8d35930f2a1dc5.s3tc.ctex", "res://.godot/imported/textures_mid.png-1fa16288834bfb2e0d8d35930f2a1dc5.etc2.ctex"]
 
 [params]
 

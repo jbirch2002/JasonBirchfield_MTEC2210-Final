@@ -4,15 +4,16 @@ importer="texture"
 type="CompressedTexture2D"
 uid="uid://ddfkoa6lliyqa"
 path.s3tc="res://.godot/imported/wall.png-8b4c5eaac247b2d737347e201d64b78e.s3tc.ctex"
+path.etc2="res://.godot/imported/wall.png-8b4c5eaac247b2d737347e201d64b78e.etc2.ctex"
 metadata={
-"imported_formats": ["s3tc_bptc"],
+"imported_formats": ["s3tc_bptc", "etc2_astc"],
 "vram_texture": true
 }
 
 [deps]
 
 source_file="res://Assets/decoration/Retro Urban Kit/Models/DAE format/Textures/wall.png"
-dest_files=["res://.godot/imported/wall.png-8b4c5eaac247b2d737347e201d64b78e.s3tc.ctex"]
+dest_files=["res://.godot/imported/wall.png-8b4c5eaac247b2d737347e201d64b78e.s3tc.ctex", "res://.godot/imported/wall.png-8b4c5eaac247b2d737347e201d64b78e.etc2.ctex"]
 
 [params]
 

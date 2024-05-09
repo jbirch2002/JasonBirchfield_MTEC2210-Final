@@ -4,15 +4,16 @@ importer="texture"
 type="CompressedTexture2D"
 uid="uid://dp4o0y55wdwkj"
 path.s3tc="res://.godot/imported/cavetexture.png-b268b1131372d29175fcabbe014a97cf.s3tc.ctex"
+path.etc2="res://.godot/imported/cavetexture.png-b268b1131372d29175fcabbe014a97cf.etc2.ctex"
 metadata={
-"imported_formats": ["s3tc_bptc"],
+"imported_formats": ["s3tc_bptc", "etc2_astc"],
 "vram_texture": true
 }
 
 [deps]
 
 source_file="res://cavetexture.png"
-dest_files=["res://.godot/imported/cavetexture.png-b268b1131372d29175fcabbe014a97cf.s3tc.ctex"]
+dest_files=["res://.godot/imported/cavetexture.png-b268b1131372d29175fcabbe014a97cf.s3tc.ctex", "res://.godot/imported/cavetexture.png-b268b1131372d29175fcabbe014a97cf.etc2.ctex"]
 
 [params]
 

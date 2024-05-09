@@ -4,8 +4,9 @@ importer="texture"
 type="CompressedTexture2D"
 uid="uid://bmw1pa2kxdd7m"
 path.s3tc="res://.godot/imported/wallB_garage_concrete.png-a139c21b4b923aa5d473a04a422d76a5.s3tc.ctex"
+path.etc2="res://.godot/imported/wallB_garage_concrete.png-a139c21b4b923aa5d473a04a422d76a5.etc2.ctex"
 metadata={
-"imported_formats": ["s3tc_bptc"],
+"imported_formats": ["s3tc_bptc", "etc2_astc"],
 "vram_texture": true
 }
 generator_parameters={}
@@ -13,7 +14,7 @@ generator_parameters={}
 [deps]
 
 source_file="res://Assets/decoration/Retro Urban Kit/Models/GLTF format/wallB_garage_concrete.png"
-dest_files=["res://.godot/imported/wallB_garage_concrete.png-a139c21b4b923aa5d473a04a422d76a5.s3tc.ctex"]
+dest_files=["res://.godot/imported/wallB_garage_concrete.png-a139c21b4b923aa5d473a04a422d76a5.s3tc.ctex", "res://.godot/imported/wallB_garage_concrete.png-a139c21b4b923aa5d473a04a422d76a5.etc2.ctex"]
 
 [params]
 

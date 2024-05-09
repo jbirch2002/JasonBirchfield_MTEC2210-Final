@@ -4,8 +4,9 @@ importer="texture"
 type="CompressedTexture2D"
 uid="uid://cgxfy1uqrd0o2"
 path.s3tc="res://.godot/imported/wallA_painted_concrete.png-9beb290058dd3d67242c49f1d1bb7ec7.s3tc.ctex"
+path.etc2="res://.godot/imported/wallA_painted_concrete.png-9beb290058dd3d67242c49f1d1bb7ec7.etc2.ctex"
 metadata={
-"imported_formats": ["s3tc_bptc"],
+"imported_formats": ["s3tc_bptc", "etc2_astc"],
 "vram_texture": true
 }
 generator_parameters={}
@@ -13,7 +14,7 @@ generator_parameters={}
 [deps]
 
 source_file="res://Assets/decoration/Retro Urban Kit/Models/GLTF format/wallA_painted_concrete.png"
-dest_files=["res://.godot/imported/wallA_painted_concrete.png-9beb290058dd3d67242c49f1d1bb7ec7.s3tc.ctex"]
+dest_files=["res://.godot/imported/wallA_painted_concrete.png-9beb290058dd3d67242c49f1d1bb7ec7.s3tc.ctex", "res://.godot/imported/wallA_painted_concrete.png-9beb290058dd3d67242c49f1d1bb7ec7.etc2.ctex"]
 
 [params]
 

@@ -4,15 +4,16 @@ importer="texture"
 type="CompressedTexture2D"
 uid="uid://dynh4fonk66b0"
 path.s3tc="res://.godot/imported/grass.png-cba9d9c50d048d493329f1e99399d290.s3tc.ctex"
+path.etc2="res://.godot/imported/grass.png-cba9d9c50d048d493329f1e99399d290.etc2.ctex"
 metadata={
-"imported_formats": ["s3tc_bptc"],
+"imported_formats": ["s3tc_bptc", "etc2_astc"],
 "vram_texture": true
 }
 
 [deps]
 
 source_file="res://Assets/decoration/Retro Urban Kit/Models/DAE format/Textures/grass.png"
-dest_files=["res://.godot/imported/grass.png-cba9d9c50d048d493329f1e99399d290.s3tc.ctex"]
+dest_files=["res://.godot/imported/grass.png-cba9d9c50d048d493329f1e99399d290.s3tc.ctex", "res://.godot/imported/grass.png-cba9d9c50d048d493329f1e99399d290.etc2.ctex"]
 
 [params]
 

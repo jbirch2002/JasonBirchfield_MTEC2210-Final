@@ -1,4 +1,4 @@
-[gd_scene load_steps=46 format=3 uid="uid://d1uapxdqjypdi"]
+[gd_scene load_steps=47 format=3 uid="uid://d1uapxdqjypdi"]
 
 [ext_resource type="Texture2D" uid="uid://cfipv208lae60" path="res://Assets/houses/preset_houses/house3_tex3.png" id="1_tgm43"]
 [ext_resource type="Script" path="res://Scripts/FrontAndExit.cs" id="2_4wilq"]
@@ -469,6 +469,9 @@ _data = {
 "RESET": SubResource("Animation_dy30q")
 }
 
+[sub_resource type="BoxShape3D" id="BoxShape3D_34q0f"]
+size = Vector3(104.2, 215.564, 8.70703)
+
 [node name="House2" type="Node3D"]
 transform = Transform3D(10, 0, 0, 0, 10, 0, 0, 0, 10, 0, 0, 0)
 
@@ -588,10 +591,17 @@ stream = ExtResource("5_o7n8x")
 transform = Transform3D(-1, 0, 8.74228e-08, 0, 1, 0, -8.74228e-08, 0, -1, 1.68893, 0.9999, -4.29056)
 
 [node name="ShaftEntrance" parent="." instance=ExtResource("2_qvlua")]
-transform = Transform3D(-8.74228e-09, 0, -0.2, 0, 0.2, 0, 0.2, 0, -8.74228e-09, -0.852953, 2.13277, -7.21187)
+transform = Transform3D(-8.74228e-09, 0, -0.256646, 0, 0.28717, 0, 0.2, 0, -1.12184e-08, -0.749612, 2.61812, -7.21187)
 
 [node name="OldMetalDoor" parent="ShaftEntrance" instance=ExtResource("5_46fg1")]
 transform = Transform3D(5.0985e-09, 0, -0.18, 0, 0.03888, 0, 0.03888, 0, 2.36042e-08, 10.9687, -5.94403, 0.464839)
 
+[node name="StaticBody3D" type="StaticBody3D" parent="ShaftEntrance/OldMetalDoor" groups=["ShaftEntrance"]]
+script = ExtResource("2_4wilq")
+
+[node name="collisionShape3d" type="CollisionShape3D" parent="ShaftEntrance/OldMetalDoor/StaticBody3D"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, -1.77636e-15, 0, 1, 0.0900803, 127.822, -3.85352)
+shape = SubResource("BoxShape3D_34q0f")
+
 [node name="Player" parent="." instance=ExtResource("4_dgh7x")]
-transform = Transform3D(1, 0, 1.74846e-07, 0, 1, 0, -1.74846e-07, 0, 1, -1.34145, 1.40295, 1.9287)
+transform = Transform3D(1, 0, 1.74846e-07, 0, 1.28155, 0, -1.74846e-07, 0, 1, -1.34145, 1.40295, 1.9287)

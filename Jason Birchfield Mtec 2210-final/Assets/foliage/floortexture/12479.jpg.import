@@ -4,15 +4,16 @@ importer="texture"
 type="CompressedTexture2D"
 uid="uid://o13miw4liw3b"
 path.s3tc="res://.godot/imported/12479.jpg-7efb55c2b30a7ffd7928d7052bd7886f.s3tc.ctex"
+path.etc2="res://.godot/imported/12479.jpg-7efb55c2b30a7ffd7928d7052bd7886f.etc2.ctex"
 metadata={
-"imported_formats": ["s3tc_bptc"],
+"imported_formats": ["s3tc_bptc", "etc2_astc"],
 "vram_texture": true
 }
 
 [deps]
 
 source_file="res://Assets/foliage/floortexture/12479.jpg"
-dest_files=["res://.godot/imported/12479.jpg-7efb55c2b30a7ffd7928d7052bd7886f.s3tc.ctex"]
+dest_files=["res://.godot/imported/12479.jpg-7efb55c2b30a7ffd7928d7052bd7886f.s3tc.ctex", "res://.godot/imported/12479.jpg-7efb55c2b30a7ffd7928d7052bd7886f.etc2.ctex"]
 
 [params]
 

@@ -19,7 +19,7 @@
 [ext_resource type="PackedScene" uid="uid://p5kjkg3wbphp" path="res://Scenes/Decoration/cupboard.tscn" id="14_ppku2"]
 [ext_resource type="Script" path="res://OpenDoors.cs" id="15_xwxy6"]
 [ext_resource type="PackedScene" uid="uid://cqel8pam7qhg7" path="res://Scenes/Decoration/Gramophone.tscn" id="19_jcjar"]
-[ext_resource type="AudioStream" uid="uid://c41cvsfa4d4rw" path="res://GramophoneSong.wav" id="20_mcrqy"]
+[ext_resource type="AudioStream" uid="uid://c41cvsfa4d4rw" path="res://Sounds/Background music/PlayerHouseSong.wav" id="20_mcrqy"]
 [ext_resource type="Script" path="res://Scripts/PlayGramophone.cs" id="21_eshrt"]
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_7h143"]
@@ -602,6 +602,7 @@ transform = Transform3D(1, 0, 2.27374e-13, 0, 1, 0, -2.27374e-13, 0, 1, 0, 0, 0)
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="House/house1/ClosetDoorHinge/ClosetL/Door"]
 shape = SubResource("ConcavePolygonShape3D_o0kt5")
+disabled = true
 
 [node name="ClosetDoorAnimation" type="AnimationPlayer" parent="House/house1/ClosetDoorHinge"]
 libraries = {
@@ -644,10 +645,9 @@ transform = Transform3D(-0.6, 0, -9.05975e-08, 0, 0.6, 0, 9.05975e-08, 0, -0.6, 
 transform = Transform3D(-2.73196e-08, 0, 0.625, 0, 0.625, 0, -0.625, 0, -2.73196e-08, -4.16238, 0.0635151, 0.836957)
 
 [node name="Gramophone" parent="Decoration/Table" instance=ExtResource("19_jcjar")]
-transform = Transform3D(-0.461785, 0, 0.461785, 0, 0.653061, 0, -0.461785, 0, -0.461785, 0.324046, 0.490392, -0.0327635)
+transform = Transform3D(-0.461785, 0, 0.461785, 0, 0.653061, 0, -0.461785, 0, -0.461785, -0.21251, 0.490392, -0.0327635)
 
 [node name="StaticBody3D" type="StaticBody3D" parent="Decoration/Table/Gramophone"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0)
 script = ExtResource("21_eshrt")
 audioStreamPlayer3DPath = NodePath("../PlayGramophoneAudio")
 
@@ -664,13 +664,13 @@ volume_db = -12.0
 transform = Transform3D(8.19589e-08, 0, -0.625, 0, 0.625, 0, 0.625, 0, 8.19589e-08, -2.49827, 0.570752, -4.06258)
 
 [node name="Oven" parent="Decoration" instance=ExtResource("13_alf4x")]
-transform = Transform3D(-0.75, 0, -5.49831e-08, 0, 0.75, 0, 6.55671e-08, 0, -0.628934, 0.525002, 0.204734, -5.48932)
+transform = Transform3D(-0.75, 0, -5.49831e-08, 0, 0.75, 0, 6.55671e-08, 0, -0.628934, 0.525002, 0.204734, -5.72567)
 
 [node name="KitchenSink" parent="Decoration" instance=ExtResource("12_o0x6u")]
-transform = Transform3D(-0.5, 0, -4.37114e-08, 0, 0.5, 0, 4.37114e-08, 0, -0.5, -2.20063, -0.0769895, -5.69244)
+transform = Transform3D(-0.5, 0, -4.37114e-08, 0, 0.5, 0, 4.37114e-08, 0, -0.5, -2.20063, -0.0769897, -5.92879)
 
 [node name="Cupboard" parent="Decoration" instance=ExtResource("14_ppku2")]
-transform = Transform3D(-0.5625, 0, -4.91753e-08, 0, 0.5625, 0, 4.91753e-08, 0, -0.5625, -0.924226, -0.519796, -5.35077)
+transform = Transform3D(-0.5625, 0, -4.91753e-08, 0, 0.5625, 0, 4.91753e-08, 0, -0.5625, -0.924226, -0.519796, -5.58712)
 
 [node name="Couch" parent="Decoration" instance=ExtResource("14_ief32")]
 transform = Transform3D(0.8, 0, 3.55271e-15, 0, 0.8, 0, -3.55271e-15, 0, 0.8, -0.272988, -0.19039, 1.11206)
@@ -679,4 +679,4 @@ transform = Transform3D(0.8, 0, 3.55271e-15, 0, 0.8, 0, -3.55271e-15, 0, 0.8, -0
 transform = Transform3D(-8.74228e-08, 2, 8.74229e-08, -2, -8.74228e-08, 8.74228e-08, 8.74228e-08, -8.74229e-08, 2, -7.25084, -0.640941, -5.78335)
 
 [node name="Player" parent="." instance=ExtResource("6_qi3dq")]
-transform = Transform3D(-10, 0, 8.74228e-07, 0, 10, 0, -8.74228e-07, 0, -10, -21.5341, 13.8188, -31.1364)
+transform = Transform3D(-10, 0, 8.74228e-07, 0, 12.7837, 0, -8.74228e-07, 0, -10, -31.2754, 13.8188, -31.6635)

@@ -4,8 +4,9 @@ importer="texture"
 type="CompressedTexture2D"
 uid="uid://c41ij8e5vt6mp"
 path.s3tc="res://.godot/imported/detailBarrierStrong_typeA_concrete.png-922033c593b90d86b14c27fb578740ee.s3tc.ctex"
+path.etc2="res://.godot/imported/detailBarrierStrong_typeA_concrete.png-922033c593b90d86b14c27fb578740ee.etc2.ctex"
 metadata={
-"imported_formats": ["s3tc_bptc"],
+"imported_formats": ["s3tc_bptc", "etc2_astc"],
 "vram_texture": true
 }
 generator_parameters={}
@@ -13,7 +14,7 @@ generator_parameters={}
 [deps]
 
 source_file="res://Assets/decoration/Retro Urban Kit/Models/GLTF format/detailBarrierStrong_typeA_concrete.png"
-dest_files=["res://.godot/imported/detailBarrierStrong_typeA_concrete.png-922033c593b90d86b14c27fb578740ee.s3tc.ctex"]
+dest_files=["res://.godot/imported/detailBarrierStrong_typeA_concrete.png-922033c593b90d86b14c27fb578740ee.s3tc.ctex", "res://.godot/imported/detailBarrierStrong_typeA_concrete.png-922033c593b90d86b14c27fb578740ee.etc2.ctex"]
 
 [params]
 

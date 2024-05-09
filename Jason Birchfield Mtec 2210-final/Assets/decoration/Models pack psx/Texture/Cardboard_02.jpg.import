@@ -4,15 +4,16 @@ importer="texture"
 type="CompressedTexture2D"
 uid="uid://c082nce1jrmak"
 path.s3tc="res://.godot/imported/Cardboard_02.jpg-40cbeb76a80b5c234c0ce0692b6b8ade.s3tc.ctex"
+path.etc2="res://.godot/imported/Cardboard_02.jpg-40cbeb76a80b5c234c0ce0692b6b8ade.etc2.ctex"
 metadata={
-"imported_formats": ["s3tc_bptc"],
+"imported_formats": ["s3tc_bptc", "etc2_astc"],
 "vram_texture": true
 }
 
 [deps]
 
 source_file="res://Assets/decoration/Models pack psx/Texture/Cardboard_02.jpg"
-dest_files=["res://.godot/imported/Cardboard_02.jpg-40cbeb76a80b5c234c0ce0692b6b8ade.s3tc.ctex"]
+dest_files=["res://.godot/imported/Cardboard_02.jpg-40cbeb76a80b5c234c0ce0692b6b8ade.s3tc.ctex", "res://.godot/imported/Cardboard_02.jpg-40cbeb76a80b5c234c0ce0692b6b8ade.etc2.ctex"]
 
 [params]
 

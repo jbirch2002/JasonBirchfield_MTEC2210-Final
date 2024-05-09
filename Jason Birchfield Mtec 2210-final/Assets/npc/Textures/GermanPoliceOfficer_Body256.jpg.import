@@ -4,15 +4,16 @@ importer="texture"
 type="CompressedTexture2D"
 uid="uid://cybdt17vonxy1"
 path.s3tc="res://.godot/imported/GermanPoliceOfficer_Body256.jpg-43b769c6361480d40ed97a29da300c44.s3tc.ctex"
+path.etc2="res://.godot/imported/GermanPoliceOfficer_Body256.jpg-43b769c6361480d40ed97a29da300c44.etc2.ctex"
 metadata={
-"imported_formats": ["s3tc_bptc"],
+"imported_formats": ["s3tc_bptc", "etc2_astc"],
 "vram_texture": true
 }
 
 [deps]
 
 source_file="res://Assets/npc/Textures/GermanPoliceOfficer_Body256.jpg"
-dest_files=["res://.godot/imported/GermanPoliceOfficer_Body256.jpg-43b769c6361480d40ed97a29da300c44.s3tc.ctex"]
+dest_files=["res://.godot/imported/GermanPoliceOfficer_Body256.jpg-43b769c6361480d40ed97a29da300c44.s3tc.ctex", "res://.godot/imported/GermanPoliceOfficer_Body256.jpg-43b769c6361480d40ed97a29da300c44.etc2.ctex"]
 
 [params]
 

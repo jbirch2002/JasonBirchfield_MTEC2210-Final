@@ -4,8 +4,9 @@ importer="texture"
 type="CompressedTexture2D"
 uid="uid://bwcfw8da8ho50"
 path.s3tc="res://.godot/imported/chichen_chicken_color.png-c17c0bea4fd52e405c6a939b657e3185.s3tc.ctex"
+path.etc2="res://.godot/imported/chichen_chicken_color.png-c17c0bea4fd52e405c6a939b657e3185.etc2.ctex"
 metadata={
-"imported_formats": ["s3tc_bptc"],
+"imported_formats": ["s3tc_bptc", "etc2_astc"],
 "vram_texture": true
 }
 generator_parameters={}
@@ -13,7 +14,7 @@ generator_parameters={}
 [deps]
 
 source_file="res://Assets/animals/stylooanimalassetpack/glb/chichen_chicken_color.png"
-dest_files=["res://.godot/imported/chichen_chicken_color.png-c17c0bea4fd52e405c6a939b657e3185.s3tc.ctex"]
+dest_files=["res://.godot/imported/chichen_chicken_color.png-c17c0bea4fd52e405c6a939b657e3185.s3tc.ctex", "res://.godot/imported/chichen_chicken_color.png-c17c0bea4fd52e405c6a939b657e3185.etc2.ctex"]
 
 [params]
 

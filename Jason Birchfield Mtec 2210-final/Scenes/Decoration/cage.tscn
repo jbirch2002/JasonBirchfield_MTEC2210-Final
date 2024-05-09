@@ -1,4 +1,4 @@
-[gd_scene load_steps=25 format=3 uid="uid://c2rpp72lxx575"]
+[gd_scene load_steps=26 format=3 uid="uid://c2rpp72lxx575"]
 
 [ext_resource type="Texture2D" uid="uid://bcebn1kx04gh5" path="res://Assets/Cage/cage_6.jpg" id="1_70dbm"]
 [ext_resource type="Texture2D" uid="uid://da86e4otj13kk" path="res://Assets/Cage/cage_7.png" id="2_mnrji"]
@@ -203,6 +203,9 @@ _surfaces = [{
 blend_shape_mode = 0
 shadow_mesh = SubResource("ArrayMesh_u3mwx")
 
+[sub_resource type="BoxShape3D" id="BoxShape3D_jmhqe"]
+size = Vector3(225.981, 444.381, 186.394)
+
 [node name="BirdCage" type="Node3D"]
 transform = Transform3D(0.25, 0, 0, 0, 0.25, 0, 0, 0, 0.25, 0, 0, 0)
 
@@ -237,3 +240,9 @@ skeleton = NodePath("")
 [node name="defaultMaterial4" type="MeshInstance3D" parent="Sketchfab_model/Collada visual scene group/cage_low"]
 mesh = SubResource("ArrayMesh_x5qma")
 skeleton = NodePath("")
+
+[node name="StaticBody3D" type="StaticBody3D" parent="Sketchfab_model/Collada visual scene group/cage_low/defaultMaterial4"]
+
+[node name="collisionShape3d" type="CollisionShape3D" parent="Sketchfab_model/Collada visual scene group/cage_low/defaultMaterial4/StaticBody3D"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -15.0588, 221.691, -11.4477)
+shape = SubResource("BoxShape3D_jmhqe")

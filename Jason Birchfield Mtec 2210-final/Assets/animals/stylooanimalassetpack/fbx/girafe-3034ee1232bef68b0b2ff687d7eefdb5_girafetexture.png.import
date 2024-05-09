@@ -4,8 +4,9 @@ importer="texture"
 type="CompressedTexture2D"
 uid="uid://cpsckmccm2sc7"
 path.s3tc="res://.godot/imported/girafe-3034ee1232bef68b0b2ff687d7eefdb5_girafetexture.png-79b98fe3acec769e99f80ffcf05cc7db.s3tc.ctex"
+path.etc2="res://.godot/imported/girafe-3034ee1232bef68b0b2ff687d7eefdb5_girafetexture.png-79b98fe3acec769e99f80ffcf05cc7db.etc2.ctex"
 metadata={
-"imported_formats": ["s3tc_bptc"],
+"imported_formats": ["s3tc_bptc", "etc2_astc"],
 "vram_texture": true
 }
 generator_parameters={}
@@ -13,7 +14,7 @@ generator_parameters={}
 [deps]
 
 source_file="res://Assets/animals/stylooanimalassetpack/fbx/girafe-3034ee1232bef68b0b2ff687d7eefdb5_girafetexture.png"
-dest_files=["res://.godot/imported/girafe-3034ee1232bef68b0b2ff687d7eefdb5_girafetexture.png-79b98fe3acec769e99f80ffcf05cc7db.s3tc.ctex"]
+dest_files=["res://.godot/imported/girafe-3034ee1232bef68b0b2ff687d7eefdb5_girafetexture.png-79b98fe3acec769e99f80ffcf05cc7db.s3tc.ctex", "res://.godot/imported/girafe-3034ee1232bef68b0b2ff687d7eefdb5_girafetexture.png-79b98fe3acec769e99f80ffcf05cc7db.etc2.ctex"]
 
 [params]
 

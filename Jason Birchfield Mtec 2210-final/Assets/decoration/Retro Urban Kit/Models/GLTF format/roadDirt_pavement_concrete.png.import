@@ -4,8 +4,9 @@ importer="texture"
 type="CompressedTexture2D"
 uid="uid://dy42cocuupren"
 path.s3tc="res://.godot/imported/roadDirt_pavement_concrete.png-44f97b8d410b4aedb0beb2d3a6df0d0e.s3tc.ctex"
+path.etc2="res://.godot/imported/roadDirt_pavement_concrete.png-44f97b8d410b4aedb0beb2d3a6df0d0e.etc2.ctex"
 metadata={
-"imported_formats": ["s3tc_bptc"],
+"imported_formats": ["s3tc_bptc", "etc2_astc"],
 "vram_texture": true
 }
 generator_parameters={}
@@ -13,7 +14,7 @@ generator_parameters={}
 [deps]
 
 source_file="res://Assets/decoration/Retro Urban Kit/Models/GLTF format/roadDirt_pavement_concrete.png"
-dest_files=["res://.godot/imported/roadDirt_pavement_concrete.png-44f97b8d410b4aedb0beb2d3a6df0d0e.s3tc.ctex"]
+dest_files=["res://.godot/imported/roadDirt_pavement_concrete.png-44f97b8d410b4aedb0beb2d3a6df0d0e.s3tc.ctex", "res://.godot/imported/roadDirt_pavement_concrete.png-44f97b8d410b4aedb0beb2d3a6df0d0e.etc2.ctex"]
 
 [params]
 

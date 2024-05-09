@@ -4,8 +4,9 @@ importer="texture"
 type="CompressedTexture2D"
 uid="uid://bagerngpf08ov"
 path.s3tc="res://.godot/imported/roadAsphalt_pavement_tiles.png-47a144a8c08360d1ebb310893701e439.s3tc.ctex"
+path.etc2="res://.godot/imported/roadAsphalt_pavement_tiles.png-47a144a8c08360d1ebb310893701e439.etc2.ctex"
 metadata={
-"imported_formats": ["s3tc_bptc"],
+"imported_formats": ["s3tc_bptc", "etc2_astc"],
 "vram_texture": true
 }
 generator_parameters={}
@@ -13,7 +14,7 @@ generator_parameters={}
 [deps]
 
 source_file="res://Assets/decoration/Retro Urban Kit/Models/GLTF format/roadAsphalt_pavement_tiles.png"
-dest_files=["res://.godot/imported/roadAsphalt_pavement_tiles.png-47a144a8c08360d1ebb310893701e439.s3tc.ctex"]
+dest_files=["res://.godot/imported/roadAsphalt_pavement_tiles.png-47a144a8c08360d1ebb310893701e439.s3tc.ctex", "res://.godot/imported/roadAsphalt_pavement_tiles.png-47a144a8c08360d1ebb310893701e439.etc2.ctex"]
 
 [params]
 

@@ -4,8 +4,9 @@ importer="texture"
 type="CompressedTexture2D"
 uid="uid://dl6wgfsdeac4e"
 path.s3tc="res://.godot/imported/roofMetal_typeB_roof_plates.png-72ba5b8890bab6acd5693815ac49fdc8.s3tc.ctex"
+path.etc2="res://.godot/imported/roofMetal_typeB_roof_plates.png-72ba5b8890bab6acd5693815ac49fdc8.etc2.ctex"
 metadata={
-"imported_formats": ["s3tc_bptc"],
+"imported_formats": ["s3tc_bptc", "etc2_astc"],
 "vram_texture": true
 }
 generator_parameters={}
@@ -13,7 +14,7 @@ generator_parameters={}
 [deps]
 
 source_file="res://Assets/decoration/Retro Urban Kit/Models/GLTF format/roofMetal_typeB_roof_plates.png"
-dest_files=["res://.godot/imported/roofMetal_typeB_roof_plates.png-72ba5b8890bab6acd5693815ac49fdc8.s3tc.ctex"]
+dest_files=["res://.godot/imported/roofMetal_typeB_roof_plates.png-72ba5b8890bab6acd5693815ac49fdc8.s3tc.ctex", "res://.godot/imported/roofMetal_typeB_roof_plates.png-72ba5b8890bab6acd5693815ac49fdc8.etc2.ctex"]
 
 [params]
 

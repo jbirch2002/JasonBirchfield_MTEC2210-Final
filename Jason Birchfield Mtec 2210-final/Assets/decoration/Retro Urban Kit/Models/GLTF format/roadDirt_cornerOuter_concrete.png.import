@@ -4,8 +4,9 @@ importer="texture"
 type="CompressedTexture2D"
 uid="uid://dehoodyvclyir"
 path.s3tc="res://.godot/imported/roadDirt_cornerOuter_concrete.png-c79c6bfd428cc6a7ca18cef039feedfa.s3tc.ctex"
+path.etc2="res://.godot/imported/roadDirt_cornerOuter_concrete.png-c79c6bfd428cc6a7ca18cef039feedfa.etc2.ctex"
 metadata={
-"imported_formats": ["s3tc_bptc"],
+"imported_formats": ["s3tc_bptc", "etc2_astc"],
 "vram_texture": true
 }
 generator_parameters={}
@@ -13,7 +14,7 @@ generator_parameters={}
 [deps]
 
 source_file="res://Assets/decoration/Retro Urban Kit/Models/GLTF format/roadDirt_cornerOuter_concrete.png"
-dest_files=["res://.godot/imported/roadDirt_cornerOuter_concrete.png-c79c6bfd428cc6a7ca18cef039feedfa.s3tc.ctex"]
+dest_files=["res://.godot/imported/roadDirt_cornerOuter_concrete.png-c79c6bfd428cc6a7ca18cef039feedfa.s3tc.ctex", "res://.godot/imported/roadDirt_cornerOuter_concrete.png-c79c6bfd428cc6a7ca18cef039feedfa.etc2.ctex"]
 
 [params]
 

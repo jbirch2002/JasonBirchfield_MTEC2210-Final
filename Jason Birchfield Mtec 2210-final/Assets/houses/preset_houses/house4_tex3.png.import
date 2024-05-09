@@ -4,15 +4,16 @@ importer="texture"
 type="CompressedTexture2D"
 uid="uid://brihvggeanmv8"
 path.s3tc="res://.godot/imported/house4_tex3.png-7b764a630f9c46d39e0c1f61f25d69bf.s3tc.ctex"
+path.etc2="res://.godot/imported/house4_tex3.png-7b764a630f9c46d39e0c1f61f25d69bf.etc2.ctex"
 metadata={
-"imported_formats": ["s3tc_bptc"],
+"imported_formats": ["s3tc_bptc", "etc2_astc"],
 "vram_texture": true
 }
 
 [deps]
 
 source_file="res://Assets/houses/preset_houses/house4_tex3.png"
-dest_files=["res://.godot/imported/house4_tex3.png-7b764a630f9c46d39e0c1f61f25d69bf.s3tc.ctex"]
+dest_files=["res://.godot/imported/house4_tex3.png-7b764a630f9c46d39e0c1f61f25d69bf.s3tc.ctex", "res://.godot/imported/house4_tex3.png-7b764a630f9c46d39e0c1f61f25d69bf.etc2.ctex"]
 
 [params]
 

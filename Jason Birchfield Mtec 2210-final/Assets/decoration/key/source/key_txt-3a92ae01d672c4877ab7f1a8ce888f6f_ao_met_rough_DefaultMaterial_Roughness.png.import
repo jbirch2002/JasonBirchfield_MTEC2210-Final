@@ -4,8 +4,9 @@ importer="texture"
 type="CompressedTexture2D"
 uid="uid://0b0qxk4yh3ox"
 path.s3tc="res://.godot/imported/key_txt-3a92ae01d672c4877ab7f1a8ce888f6f_ao_met_rough_DefaultMaterial_Roughness.png-c1472daeb0a4ef59b6bd6e3a4f1e2957.s3tc.ctex"
+path.etc2="res://.godot/imported/key_txt-3a92ae01d672c4877ab7f1a8ce888f6f_ao_met_rough_DefaultMaterial_Roughness.png-c1472daeb0a4ef59b6bd6e3a4f1e2957.etc2.ctex"
 metadata={
-"imported_formats": ["s3tc_bptc"],
+"imported_formats": ["s3tc_bptc", "etc2_astc"],
 "vram_texture": true
 }
 generator_parameters={}
@@ -13,7 +14,7 @@ generator_parameters={}
 [deps]
 
 source_file="res://Assets/decoration/key/source/key_txt-3a92ae01d672c4877ab7f1a8ce888f6f_ao_met_rough_DefaultMaterial_Roughness.png"
-dest_files=["res://.godot/imported/key_txt-3a92ae01d672c4877ab7f1a8ce888f6f_ao_met_rough_DefaultMaterial_Roughness.png-c1472daeb0a4ef59b6bd6e3a4f1e2957.s3tc.ctex"]
+dest_files=["res://.godot/imported/key_txt-3a92ae01d672c4877ab7f1a8ce888f6f_ao_met_rough_DefaultMaterial_Roughness.png-c1472daeb0a4ef59b6bd6e3a4f1e2957.s3tc.ctex", "res://.godot/imported/key_txt-3a92ae01d672c4877ab7f1a8ce888f6f_ao_met_rough_DefaultMaterial_Roughness.png-c1472daeb0a4ef59b6bd6e3a4f1e2957.etc2.ctex"]
 
 [params]
 

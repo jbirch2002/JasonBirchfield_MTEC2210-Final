@@ -4,8 +4,9 @@ importer="texture"
 type="CompressedTexture2D"
 uid="uid://mwonkfk3naw5"
 path.s3tc="res://.godot/imported/wallB_roofDetailed_concrete.png-69b53c75b7d051dc6c32e9df941e094e.s3tc.ctex"
+path.etc2="res://.godot/imported/wallB_roofDetailed_concrete.png-69b53c75b7d051dc6c32e9df941e094e.etc2.ctex"
 metadata={
-"imported_formats": ["s3tc_bptc"],
+"imported_formats": ["s3tc_bptc", "etc2_astc"],
 "vram_texture": true
 }
 generator_parameters={}
@@ -13,7 +14,7 @@ generator_parameters={}
 [deps]
 
 source_file="res://Assets/decoration/Retro Urban Kit/Models/GLTF format/wallB_roofDetailed_concrete.png"
-dest_files=["res://.godot/imported/wallB_roofDetailed_concrete.png-69b53c75b7d051dc6c32e9df941e094e.s3tc.ctex"]
+dest_files=["res://.godot/imported/wallB_roofDetailed_concrete.png-69b53c75b7d051dc6c32e9df941e094e.s3tc.ctex", "res://.godot/imported/wallB_roofDetailed_concrete.png-69b53c75b7d051dc6c32e9df941e094e.etc2.ctex"]
 
 [params]
 

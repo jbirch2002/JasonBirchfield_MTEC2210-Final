@@ -4,15 +4,16 @@ importer="texture"
 type="CompressedTexture2D"
 uid="uid://cfkgs5vwhyd5u"
 path.s3tc="res://.godot/imported/signs.png-6f9905c2926b6ed30103010d6aa34f2c.s3tc.ctex"
+path.etc2="res://.godot/imported/signs.png-6f9905c2926b6ed30103010d6aa34f2c.etc2.ctex"
 metadata={
-"imported_formats": ["s3tc_bptc"],
+"imported_formats": ["s3tc_bptc", "etc2_astc"],
 "vram_texture": true
 }
 
 [deps]
 
 source_file="res://Assets/decoration/Retro Urban Kit/Models/OBJ format/Textures/signs.png"
-dest_files=["res://.godot/imported/signs.png-6f9905c2926b6ed30103010d6aa34f2c.s3tc.ctex"]
+dest_files=["res://.godot/imported/signs.png-6f9905c2926b6ed30103010d6aa34f2c.s3tc.ctex", "res://.godot/imported/signs.png-6f9905c2926b6ed30103010d6aa34f2c.etc2.ctex"]
 
 [params]
 

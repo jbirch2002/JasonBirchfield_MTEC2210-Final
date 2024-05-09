@@ -4,15 +4,16 @@ importer="texture"
 type="CompressedTexture2D"
 uid="uid://p8xn02bhkab8"
 path.s3tc="res://.godot/imported/wall_lines.png-45c7e80ba0a53e227ef65f78211c1356.s3tc.ctex"
+path.etc2="res://.godot/imported/wall_lines.png-45c7e80ba0a53e227ef65f78211c1356.etc2.ctex"
 metadata={
-"imported_formats": ["s3tc_bptc"],
+"imported_formats": ["s3tc_bptc", "etc2_astc"],
 "vram_texture": true
 }
 
 [deps]
 
 source_file="res://Assets/decoration/Retro Urban Kit/Models/OBJ format/Textures/wall_lines.png"
-dest_files=["res://.godot/imported/wall_lines.png-45c7e80ba0a53e227ef65f78211c1356.s3tc.ctex"]
+dest_files=["res://.godot/imported/wall_lines.png-45c7e80ba0a53e227ef65f78211c1356.s3tc.ctex", "res://.godot/imported/wall_lines.png-45c7e80ba0a53e227ef65f78211c1356.etc2.ctex"]
 
 [params]
 

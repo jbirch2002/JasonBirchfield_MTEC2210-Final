@@ -4,8 +4,9 @@ importer="texture"
 type="CompressedTexture2D"
 uid="uid://dv33ggsgcieui"
 path.s3tc="res://.godot/imported/detailCables_typeA_signs.png-3ff82f83a2598054e2547e2ef3d93a6d.s3tc.ctex"
+path.etc2="res://.godot/imported/detailCables_typeA_signs.png-3ff82f83a2598054e2547e2ef3d93a6d.etc2.ctex"
 metadata={
-"imported_formats": ["s3tc_bptc"],
+"imported_formats": ["s3tc_bptc", "etc2_astc"],
 "vram_texture": true
 }
 generator_parameters={}
@@ -13,7 +14,7 @@ generator_parameters={}
 [deps]
 
 source_file="res://Assets/decoration/Retro Urban Kit/Models/GLTF format/detailCables_typeA_signs.png"
-dest_files=["res://.godot/imported/detailCables_typeA_signs.png-3ff82f83a2598054e2547e2ef3d93a6d.s3tc.ctex"]
+dest_files=["res://.godot/imported/detailCables_typeA_signs.png-3ff82f83a2598054e2547e2ef3d93a6d.s3tc.ctex", "res://.godot/imported/detailCables_typeA_signs.png-3ff82f83a2598054e2547e2ef3d93a6d.etc2.ctex"]
 
 [params]
 

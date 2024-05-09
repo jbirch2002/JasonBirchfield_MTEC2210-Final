@@ -4,15 +4,16 @@ importer="texture"
 type="CompressedTexture2D"
 uid="uid://bgj851jbx1loy"
 path.s3tc="res://.godot/imported/Trash.jpg-90abbc42a90ae983404b0eaf090f545d.s3tc.ctex"
+path.etc2="res://.godot/imported/Trash.jpg-90abbc42a90ae983404b0eaf090f545d.etc2.ctex"
 metadata={
-"imported_formats": ["s3tc_bptc"],
+"imported_formats": ["s3tc_bptc", "etc2_astc"],
 "vram_texture": true
 }
 
 [deps]
 
 source_file="res://Assets/decoration/Models pack psx/Texture/Trash.jpg"
-dest_files=["res://.godot/imported/Trash.jpg-90abbc42a90ae983404b0eaf090f545d.s3tc.ctex"]
+dest_files=["res://.godot/imported/Trash.jpg-90abbc42a90ae983404b0eaf090f545d.s3tc.ctex", "res://.godot/imported/Trash.jpg-90abbc42a90ae983404b0eaf090f545d.etc2.ctex"]
 
 [params]
 

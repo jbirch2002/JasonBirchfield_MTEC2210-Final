@@ -4,7 +4,6 @@
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_ii0lw"]
 resource_name = "Wood_05"
-albedo_color = Color(1, 1, 1, 1)
 metallic = 0.4
 
 [sub_resource type="ArrayMesh" id="ArrayMesh_fwda7"]
@@ -42,8 +41,8 @@ shadow_mesh = SubResource("ArrayMesh_fwda7")
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_21m6i"]
 albedo_texture = ExtResource("1_b8vlv")
 
-[sub_resource type="ConvexPolygonShape3D" id="ConvexPolygonShape3D_onxoh"]
-points = PackedVector3Array(0.0178887, 0.0113614, 0.00218354, 0.0178887, -0.0113419, 0.00218354, 0.0178887, 0.0113614, 0.00046414, -0.0179047, 0.0113614, 0.00218354, 0.0178887, -0.0113419, 0.00046414, -0.0179047, -0.0113419, 0.00218354, 0.0169883, 0.0104747, -0.0125032, -0.0179047, 0.0113614, 0.00046414, 0.0169883, -0.0105352, -0.0125032, -0.0179047, -0.0113419, 0.00046414, -0.0169062, 0.0104747, -0.0125032, -0.0169062, -0.0105352, -0.0125032)
+[sub_resource type="BoxShape3D" id="BoxShape3D_peji1"]
+size = Vector3(0.0347233, 0.0336609, 0.0149746)
 
 [node name="table2" type="Node3D"]
 
@@ -55,6 +54,6 @@ surface_material_override/0 = SubResource("StandardMaterial3D_21m6i")
 
 [node name="StaticBody3D" type="StaticBody3D" parent="Cube_199"]
 
-[node name="CollisionShape3D" type="CollisionShape3D" parent="Cube_199/StaticBody3D"]
-transform = Transform3D(1, 0, 0, 0, 1, -1.42109e-14, 0, 1.42109e-14, 1, 0, 0, 0)
-shape = SubResource("ConvexPolygonShape3D_onxoh")
+[node name="collisionShape3d" type="CollisionShape3D" parent="Cube_199/StaticBody3D"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.000292646, -0.00194369, -0.00509739)
+shape = SubResource("BoxShape3D_peji1")

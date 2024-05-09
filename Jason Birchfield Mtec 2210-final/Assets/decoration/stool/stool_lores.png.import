@@ -4,15 +4,16 @@ importer="texture"
 type="CompressedTexture2D"
 uid="uid://0raih4lga61v"
 path.s3tc="res://.godot/imported/stool_lores.png-c31ea4ad41cfd073a08a4e6e10d24f47.s3tc.ctex"
+path.etc2="res://.godot/imported/stool_lores.png-c31ea4ad41cfd073a08a4e6e10d24f47.etc2.ctex"
 metadata={
-"imported_formats": ["s3tc_bptc"],
+"imported_formats": ["s3tc_bptc", "etc2_astc"],
 "vram_texture": true
 }
 
 [deps]
 
 source_file="res://Assets/decoration/stool/stool_lores.png"
-dest_files=["res://.godot/imported/stool_lores.png-c31ea4ad41cfd073a08a4e6e10d24f47.s3tc.ctex"]
+dest_files=["res://.godot/imported/stool_lores.png-c31ea4ad41cfd073a08a4e6e10d24f47.s3tc.ctex", "res://.godot/imported/stool_lores.png-c31ea4ad41cfd073a08a4e6e10d24f47.etc2.ctex"]
 
 [params]
 

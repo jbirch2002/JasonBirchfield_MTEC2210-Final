@@ -4,15 +4,16 @@ importer="texture"
 type="CompressedTexture2D"
 uid="uid://dneanuihlwy4h"
 path.s3tc="res://.godot/imported/concreteSmooth.png-a631b599fa00b31238c8f4294f8504ed.s3tc.ctex"
+path.etc2="res://.godot/imported/concreteSmooth.png-a631b599fa00b31238c8f4294f8504ed.etc2.ctex"
 metadata={
-"imported_formats": ["s3tc_bptc"],
+"imported_formats": ["s3tc_bptc", "etc2_astc"],
 "vram_texture": true
 }
 
 [deps]
 
 source_file="res://Assets/decoration/Retro Urban Kit/Models/OBJ format/Textures/concreteSmooth.png"
-dest_files=["res://.godot/imported/concreteSmooth.png-a631b599fa00b31238c8f4294f8504ed.s3tc.ctex"]
+dest_files=["res://.godot/imported/concreteSmooth.png-a631b599fa00b31238c8f4294f8504ed.s3tc.ctex", "res://.godot/imported/concreteSmooth.png-a631b599fa00b31238c8f4294f8504ed.etc2.ctex"]
 
 [params]
 

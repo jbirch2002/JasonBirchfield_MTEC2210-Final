@@ -4,8 +4,9 @@ importer="texture"
 type="CompressedTexture2D"
 uid="uid://cy3a6j2fnycxr"
 path.s3tc="res://.godot/imported/treePine_small_treeB.png-a4d134a09f9e6ede95cb16327d21de8e.s3tc.ctex"
+path.etc2="res://.godot/imported/treePine_small_treeB.png-a4d134a09f9e6ede95cb16327d21de8e.etc2.ctex"
 metadata={
-"imported_formats": ["s3tc_bptc"],
+"imported_formats": ["s3tc_bptc", "etc2_astc"],
 "vram_texture": true
 }
 generator_parameters={}
@@ -13,7 +14,7 @@ generator_parameters={}
 [deps]
 
 source_file="res://Assets/decoration/Retro Urban Kit/Models/GLTF format/treePine_small_treeB.png"
-dest_files=["res://.godot/imported/treePine_small_treeB.png-a4d134a09f9e6ede95cb16327d21de8e.s3tc.ctex"]
+dest_files=["res://.godot/imported/treePine_small_treeB.png-a4d134a09f9e6ede95cb16327d21de8e.s3tc.ctex", "res://.godot/imported/treePine_small_treeB.png-a4d134a09f9e6ede95cb16327d21de8e.etc2.ctex"]
 
 [params]
 

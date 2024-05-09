@@ -4,15 +4,16 @@ importer="texture"
 type="CompressedTexture2D"
 uid="uid://cfef52uw35ih1"
 path.s3tc="res://.godot/imported/Door_noas_L_Door_Metallic.tga.png-ec605b10b601ff8966373d72263e87b7.s3tc.ctex"
+path.etc2="res://.godot/imported/Door_noas_L_Door_Metallic.tga.png-ec605b10b601ff8966373d72263e87b7.etc2.ctex"
 metadata={
-"imported_formats": ["s3tc_bptc"],
+"imported_formats": ["s3tc_bptc", "etc2_astc"],
 "vram_texture": true
 }
 
 [deps]
 
 source_file="res://Assets/decoration/bunker door/textures/Door_noas_L_Door_Metallic.tga.png"
-dest_files=["res://.godot/imported/Door_noas_L_Door_Metallic.tga.png-ec605b10b601ff8966373d72263e87b7.s3tc.ctex"]
+dest_files=["res://.godot/imported/Door_noas_L_Door_Metallic.tga.png-ec605b10b601ff8966373d72263e87b7.s3tc.ctex", "res://.godot/imported/Door_noas_L_Door_Metallic.tga.png-ec605b10b601ff8966373d72263e87b7.etc2.ctex"]
 
 [params]
 

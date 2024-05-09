@@ -4,15 +4,16 @@ importer="texture"
 type="CompressedTexture2D"
 uid="uid://cvh7401cpfwgm"
 path.s3tc="res://.godot/imported/BONES_LOW_POLY_ASSET_PACK_texture.png-3fc235df035af8bbb4b9bd40f40589ae.s3tc.ctex"
+path.etc2="res://.godot/imported/BONES_LOW_POLY_ASSET_PACK_texture.png-3fc235df035af8bbb4b9bd40f40589ae.etc2.ctex"
 metadata={
-"imported_formats": ["s3tc_bptc"],
+"imported_formats": ["s3tc_bptc", "etc2_astc"],
 "vram_texture": true
 }
 
 [deps]
 
 source_file="res://Assets/decoration/bones/textures/BONES_LOW_POLY_ASSET_PACK_texture.png"
-dest_files=["res://.godot/imported/BONES_LOW_POLY_ASSET_PACK_texture.png-3fc235df035af8bbb4b9bd40f40589ae.s3tc.ctex"]
+dest_files=["res://.godot/imported/BONES_LOW_POLY_ASSET_PACK_texture.png-3fc235df035af8bbb4b9bd40f40589ae.s3tc.ctex", "res://.godot/imported/BONES_LOW_POLY_ASSET_PACK_texture.png-3fc235df035af8bbb4b9bd40f40589ae.etc2.ctex"]
 
 [params]
 

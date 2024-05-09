@@ -4,15 +4,16 @@ importer="texture"
 type="CompressedTexture2D"
 uid="uid://dl8rq6fdwayfa"
 path.s3tc="res://.godot/imported/crypt.png-e1063bebfd8679d5ee7c0015989d75e2.s3tc.ctex"
+path.etc2="res://.godot/imported/crypt.png-e1063bebfd8679d5ee7c0015989d75e2.etc2.ctex"
 metadata={
-"imported_formats": ["s3tc_bptc"],
+"imported_formats": ["s3tc_bptc", "etc2_astc"],
 "vram_texture": true
 }
 
 [deps]
 
 source_file="res://Assets/decoration/Graveyard Kit/Previews/crypt.png"
-dest_files=["res://.godot/imported/crypt.png-e1063bebfd8679d5ee7c0015989d75e2.s3tc.ctex"]
+dest_files=["res://.godot/imported/crypt.png-e1063bebfd8679d5ee7c0015989d75e2.s3tc.ctex", "res://.godot/imported/crypt.png-e1063bebfd8679d5ee7c0015989d75e2.etc2.ctex"]
 
 [params]
 

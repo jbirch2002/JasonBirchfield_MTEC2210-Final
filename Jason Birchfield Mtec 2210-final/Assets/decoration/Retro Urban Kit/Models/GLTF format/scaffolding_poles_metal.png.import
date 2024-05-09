@@ -4,8 +4,9 @@ importer="texture"
 type="CompressedTexture2D"
 uid="uid://mp1ayj10oxvw"
 path.s3tc="res://.godot/imported/scaffolding_poles_metal.png-64af2ea3818dbad598cbd47be5a453ca.s3tc.ctex"
+path.etc2="res://.godot/imported/scaffolding_poles_metal.png-64af2ea3818dbad598cbd47be5a453ca.etc2.ctex"
 metadata={
-"imported_formats": ["s3tc_bptc"],
+"imported_formats": ["s3tc_bptc", "etc2_astc"],
 "vram_texture": true
 }
 generator_parameters={}
@@ -13,7 +14,7 @@ generator_parameters={}
 [deps]
 
 source_file="res://Assets/decoration/Retro Urban Kit/Models/GLTF format/scaffolding_poles_metal.png"
-dest_files=["res://.godot/imported/scaffolding_poles_metal.png-64af2ea3818dbad598cbd47be5a453ca.s3tc.ctex"]
+dest_files=["res://.godot/imported/scaffolding_poles_metal.png-64af2ea3818dbad598cbd47be5a453ca.s3tc.ctex", "res://.godot/imported/scaffolding_poles_metal.png-64af2ea3818dbad598cbd47be5a453ca.etc2.ctex"]
 
 [params]
 

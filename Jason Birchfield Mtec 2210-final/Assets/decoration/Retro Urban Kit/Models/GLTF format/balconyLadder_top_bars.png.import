@@ -4,8 +4,9 @@ importer="texture"
 type="CompressedTexture2D"
 uid="uid://ip4vdlapjqqa"
 path.s3tc="res://.godot/imported/balconyLadder_top_bars.png-f97428710f49ad1e0e0edd0f143a1278.s3tc.ctex"
+path.etc2="res://.godot/imported/balconyLadder_top_bars.png-f97428710f49ad1e0e0edd0f143a1278.etc2.ctex"
 metadata={
-"imported_formats": ["s3tc_bptc"],
+"imported_formats": ["s3tc_bptc", "etc2_astc"],
 "vram_texture": true
 }
 generator_parameters={}
@@ -13,7 +14,7 @@ generator_parameters={}
 [deps]
 
 source_file="res://Assets/decoration/Retro Urban Kit/Models/GLTF format/balconyLadder_top_bars.png"
-dest_files=["res://.godot/imported/balconyLadder_top_bars.png-f97428710f49ad1e0e0edd0f143a1278.s3tc.ctex"]
+dest_files=["res://.godot/imported/balconyLadder_top_bars.png-f97428710f49ad1e0e0edd0f143a1278.s3tc.ctex", "res://.godot/imported/balconyLadder_top_bars.png-f97428710f49ad1e0e0edd0f143a1278.etc2.ctex"]
 
 [params]
 

@@ -4,15 +4,16 @@ importer="texture"
 type="CompressedTexture2D"
 uid="uid://cuo23gia561c5"
 path.s3tc="res://.godot/imported/ball_base_color 1.png-28525b88254a3aab1544247cd8ccd250.s3tc.ctex"
+path.etc2="res://.godot/imported/ball_base_color 1.png-28525b88254a3aab1544247cd8ccd250.etc2.ctex"
 metadata={
-"imported_formats": ["s3tc_bptc"],
+"imported_formats": ["s3tc_bptc", "etc2_astc"],
 "vram_texture": true
 }
 
 [deps]
 
 source_file="res://Assets/decoration/bell/Material 1/Ball/ball_base_color 1.png"
-dest_files=["res://.godot/imported/ball_base_color 1.png-28525b88254a3aab1544247cd8ccd250.s3tc.ctex"]
+dest_files=["res://.godot/imported/ball_base_color 1.png-28525b88254a3aab1544247cd8ccd250.s3tc.ctex", "res://.godot/imported/ball_base_color 1.png-28525b88254a3aab1544247cd8ccd250.etc2.ctex"]
 
 [params]
 

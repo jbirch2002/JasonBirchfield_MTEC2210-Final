@@ -4,15 +4,16 @@ importer="texture"
 type="CompressedTexture2D"
 uid="uid://b174nnmjego65"
 path.s3tc="res://.godot/imported/doors.png-08b25f058cbd77e2801aa359cb7dce63.s3tc.ctex"
+path.etc2="res://.godot/imported/doors.png-08b25f058cbd77e2801aa359cb7dce63.etc2.ctex"
 metadata={
-"imported_formats": ["s3tc_bptc"],
+"imported_formats": ["s3tc_bptc", "etc2_astc"],
 "vram_texture": true
 }
 
 [deps]
 
 source_file="res://Assets/decoration/Retro Urban Kit/Models/DAE format/Textures/doors.png"
-dest_files=["res://.godot/imported/doors.png-08b25f058cbd77e2801aa359cb7dce63.s3tc.ctex"]
+dest_files=["res://.godot/imported/doors.png-08b25f058cbd77e2801aa359cb7dce63.s3tc.ctex", "res://.godot/imported/doors.png-08b25f058cbd77e2801aa359cb7dce63.etc2.ctex"]
 
 [params]
 

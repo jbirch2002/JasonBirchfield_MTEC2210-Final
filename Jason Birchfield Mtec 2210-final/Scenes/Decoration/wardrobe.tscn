@@ -5,12 +5,10 @@
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_ii0lw"]
 resource_name = "Wood_05"
-albedo_color = Color(1, 1, 1, 1)
 metallic = 0.4
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_putin"]
 resource_name = "Wood_02"
-albedo_color = Color(1, 1, 1, 1)
 metallic = 0.4
 
 [sub_resource type="ArrayMesh" id="ArrayMesh_oc1t7"]
@@ -85,8 +83,8 @@ skeleton = NodePath("")
 surface_material_override/0 = SubResource("StandardMaterial3D_5wooe")
 surface_material_override/1 = SubResource("StandardMaterial3D_11us6")
 
-[node name="CollisionShape3D" type="CollisionShape3D" parent="Cube_195"]
-transform = Transform3D(1, 0, 0, 0, 1, -1.42109e-14, 0, 1.42109e-14, 1, 0, 0, 0)
-shape = SubResource("ConvexPolygonShape3D_u8a0j")
-
 [node name="StaticBody3D" type="StaticBody3D" parent="Cube_195"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Cube_195/StaticBody3D"]
+transform = Transform3D(1, 0, 0, 0, 1, -2.13163e-14, 0, 2.13163e-14, 1, 0, 0, 0)
+shape = SubResource("ConvexPolygonShape3D_u8a0j")

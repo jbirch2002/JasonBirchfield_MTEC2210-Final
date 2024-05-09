@@ -4,15 +4,16 @@ importer="texture"
 type="CompressedTexture2D"
 uid="uid://bhhc1pfiafl71"
 path.s3tc="res://.godot/imported/wall_garage.png-369ef0d4d5184ac3556491f1c4378c22.s3tc.ctex"
+path.etc2="res://.godot/imported/wall_garage.png-369ef0d4d5184ac3556491f1c4378c22.etc2.ctex"
 metadata={
-"imported_formats": ["s3tc_bptc"],
+"imported_formats": ["s3tc_bptc", "etc2_astc"],
 "vram_texture": true
 }
 
 [deps]
 
 source_file="res://Assets/decoration/Retro Urban Kit/Models/DAE format/Textures/wall_garage.png"
-dest_files=["res://.godot/imported/wall_garage.png-369ef0d4d5184ac3556491f1c4378c22.s3tc.ctex"]
+dest_files=["res://.godot/imported/wall_garage.png-369ef0d4d5184ac3556491f1c4378c22.s3tc.ctex", "res://.godot/imported/wall_garage.png-369ef0d4d5184ac3556491f1c4378c22.etc2.ctex"]
 
 [params]
 

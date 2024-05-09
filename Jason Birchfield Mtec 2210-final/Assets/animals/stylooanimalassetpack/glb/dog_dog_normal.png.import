@@ -4,8 +4,9 @@ importer="texture"
 type="CompressedTexture2D"
 uid="uid://dyjywu2gk762m"
 path.s3tc="res://.godot/imported/dog_dog_normal.png-c3b37547389eb3575b8f45af0f101b77.s3tc.ctex"
+path.etc2="res://.godot/imported/dog_dog_normal.png-c3b37547389eb3575b8f45af0f101b77.etc2.ctex"
 metadata={
-"imported_formats": ["s3tc_bptc"],
+"imported_formats": ["s3tc_bptc", "etc2_astc"],
 "vram_texture": true
 }
 generator_parameters={}
@@ -13,7 +14,7 @@ generator_parameters={}
 [deps]
 
 source_file="res://Assets/animals/stylooanimalassetpack/glb/dog_dog_normal.png"
-dest_files=["res://.godot/imported/dog_dog_normal.png-c3b37547389eb3575b8f45af0f101b77.s3tc.ctex"]
+dest_files=["res://.godot/imported/dog_dog_normal.png-c3b37547389eb3575b8f45af0f101b77.s3tc.ctex", "res://.godot/imported/dog_dog_normal.png-c3b37547389eb3575b8f45af0f101b77.etc2.ctex"]
 
 [params]
 

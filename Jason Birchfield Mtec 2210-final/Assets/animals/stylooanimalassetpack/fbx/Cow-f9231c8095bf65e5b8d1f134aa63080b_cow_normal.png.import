@@ -4,8 +4,9 @@ importer="texture"
 type="CompressedTexture2D"
 uid="uid://bj542ytoid4ba"
 path.s3tc="res://.godot/imported/Cow-f9231c8095bf65e5b8d1f134aa63080b_cow_normal.png-29e2b860ce216c59dea44a2869f2aa18.s3tc.ctex"
+path.etc2="res://.godot/imported/Cow-f9231c8095bf65e5b8d1f134aa63080b_cow_normal.png-29e2b860ce216c59dea44a2869f2aa18.etc2.ctex"
 metadata={
-"imported_formats": ["s3tc_bptc"],
+"imported_formats": ["s3tc_bptc", "etc2_astc"],
 "vram_texture": true
 }
 generator_parameters={}
@@ -13,7 +14,7 @@ generator_parameters={}
 [deps]
 
 source_file="res://Assets/animals/stylooanimalassetpack/fbx/Cow-f9231c8095bf65e5b8d1f134aa63080b_cow_normal.png"
-dest_files=["res://.godot/imported/Cow-f9231c8095bf65e5b8d1f134aa63080b_cow_normal.png-29e2b860ce216c59dea44a2869f2aa18.s3tc.ctex"]
+dest_files=["res://.godot/imported/Cow-f9231c8095bf65e5b8d1f134aa63080b_cow_normal.png-29e2b860ce216c59dea44a2869f2aa18.s3tc.ctex", "res://.godot/imported/Cow-f9231c8095bf65e5b8d1f134aa63080b_cow_normal.png-29e2b860ce216c59dea44a2869f2aa18.etc2.ctex"]
 
 [params]
 

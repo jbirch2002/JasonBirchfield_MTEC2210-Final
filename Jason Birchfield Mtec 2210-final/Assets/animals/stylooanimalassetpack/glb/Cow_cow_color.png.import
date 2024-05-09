@@ -4,8 +4,9 @@ importer="texture"
 type="CompressedTexture2D"
 uid="uid://creegycp5v4ha"
 path.s3tc="res://.godot/imported/Cow_cow_color.png-6e29e1d6f24cf54bf7a6803cfd7900d3.s3tc.ctex"
+path.etc2="res://.godot/imported/Cow_cow_color.png-6e29e1d6f24cf54bf7a6803cfd7900d3.etc2.ctex"
 metadata={
-"imported_formats": ["s3tc_bptc"],
+"imported_formats": ["s3tc_bptc", "etc2_astc"],
 "vram_texture": true
 }
 generator_parameters={}
@@ -13,7 +14,7 @@ generator_parameters={}
 [deps]
 
 source_file="res://Assets/animals/stylooanimalassetpack/glb/Cow_cow_color.png"
-dest_files=["res://.godot/imported/Cow_cow_color.png-6e29e1d6f24cf54bf7a6803cfd7900d3.s3tc.ctex"]
+dest_files=["res://.godot/imported/Cow_cow_color.png-6e29e1d6f24cf54bf7a6803cfd7900d3.s3tc.ctex", "res://.godot/imported/Cow_cow_color.png-6e29e1d6f24cf54bf7a6803cfd7900d3.etc2.ctex"]
 
 [params]
 

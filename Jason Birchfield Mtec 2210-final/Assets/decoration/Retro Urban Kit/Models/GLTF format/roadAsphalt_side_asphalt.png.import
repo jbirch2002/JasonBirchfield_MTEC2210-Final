@@ -4,8 +4,9 @@ importer="texture"
 type="CompressedTexture2D"
 uid="uid://bpokgo03ghsk6"
 path.s3tc="res://.godot/imported/roadAsphalt_side_asphalt.png-0f4b078af75ddaf11855e1d5c87e020d.s3tc.ctex"
+path.etc2="res://.godot/imported/roadAsphalt_side_asphalt.png-0f4b078af75ddaf11855e1d5c87e020d.etc2.ctex"
 metadata={
-"imported_formats": ["s3tc_bptc"],
+"imported_formats": ["s3tc_bptc", "etc2_astc"],
 "vram_texture": true
 }
 generator_parameters={}
@@ -13,7 +14,7 @@ generator_parameters={}
 [deps]
 
 source_file="res://Assets/decoration/Retro Urban Kit/Models/GLTF format/roadAsphalt_side_asphalt.png"
-dest_files=["res://.godot/imported/roadAsphalt_side_asphalt.png-0f4b078af75ddaf11855e1d5c87e020d.s3tc.ctex"]
+dest_files=["res://.godot/imported/roadAsphalt_side_asphalt.png-0f4b078af75ddaf11855e1d5c87e020d.s3tc.ctex", "res://.godot/imported/roadAsphalt_side_asphalt.png-0f4b078af75ddaf11855e1d5c87e020d.etc2.ctex"]
 
 [params]
 

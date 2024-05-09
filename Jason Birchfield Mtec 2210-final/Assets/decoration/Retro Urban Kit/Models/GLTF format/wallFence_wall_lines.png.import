@@ -4,8 +4,9 @@ importer="texture"
 type="CompressedTexture2D"
 uid="uid://olip0tk1purk"
 path.s3tc="res://.godot/imported/wallFence_wall_lines.png-624e4e30fae0fd0f80385ab2b411ff6e.s3tc.ctex"
+path.etc2="res://.godot/imported/wallFence_wall_lines.png-624e4e30fae0fd0f80385ab2b411ff6e.etc2.ctex"
 metadata={
-"imported_formats": ["s3tc_bptc"],
+"imported_formats": ["s3tc_bptc", "etc2_astc"],
 "vram_texture": true
 }
 generator_parameters={}
@@ -13,7 +14,7 @@ generator_parameters={}
 [deps]
 
 source_file="res://Assets/decoration/Retro Urban Kit/Models/GLTF format/wallFence_wall_lines.png"
-dest_files=["res://.godot/imported/wallFence_wall_lines.png-624e4e30fae0fd0f80385ab2b411ff6e.s3tc.ctex"]
+dest_files=["res://.godot/imported/wallFence_wall_lines.png-624e4e30fae0fd0f80385ab2b411ff6e.s3tc.ctex", "res://.godot/imported/wallFence_wall_lines.png-624e4e30fae0fd0f80385ab2b411ff6e.etc2.ctex"]
 
 [params]
 

@@ -4,8 +4,9 @@ importer="texture"
 type="CompressedTexture2D"
 uid="uid://bwkg7lso6a73r"
 path.s3tc="res://.godot/imported/windowSmall_typeA_metal.png-62e5cfe886fe5fa7f7c2ec1eed7f1f9b.s3tc.ctex"
+path.etc2="res://.godot/imported/windowSmall_typeA_metal.png-62e5cfe886fe5fa7f7c2ec1eed7f1f9b.etc2.ctex"
 metadata={
-"imported_formats": ["s3tc_bptc"],
+"imported_formats": ["s3tc_bptc", "etc2_astc"],
 "vram_texture": true
 }
 generator_parameters={}
@@ -13,7 +14,7 @@ generator_parameters={}
 [deps]
 
 source_file="res://Assets/decoration/Retro Urban Kit/Models/GLTF format/windowSmall_typeA_metal.png"
-dest_files=["res://.godot/imported/windowSmall_typeA_metal.png-62e5cfe886fe5fa7f7c2ec1eed7f1f9b.s3tc.ctex"]
+dest_files=["res://.godot/imported/windowSmall_typeA_metal.png-62e5cfe886fe5fa7f7c2ec1eed7f1f9b.s3tc.ctex", "res://.godot/imported/windowSmall_typeA_metal.png-62e5cfe886fe5fa7f7c2ec1eed7f1f9b.etc2.ctex"]
 
 [params]
 

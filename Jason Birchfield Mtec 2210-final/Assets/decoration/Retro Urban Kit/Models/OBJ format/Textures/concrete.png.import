@@ -4,15 +4,16 @@ importer="texture"
 type="CompressedTexture2D"
 uid="uid://cs2pnvdubcba7"
 path.s3tc="res://.godot/imported/concrete.png-977605b5702e8ce41b01ba8d6f8822b5.s3tc.ctex"
+path.etc2="res://.godot/imported/concrete.png-977605b5702e8ce41b01ba8d6f8822b5.etc2.ctex"
 metadata={
-"imported_formats": ["s3tc_bptc"],
+"imported_formats": ["s3tc_bptc", "etc2_astc"],
 "vram_texture": true
 }
 
 [deps]
 
 source_file="res://Assets/decoration/Retro Urban Kit/Models/OBJ format/Textures/concrete.png"
-dest_files=["res://.godot/imported/concrete.png-977605b5702e8ce41b01ba8d6f8822b5.s3tc.ctex"]
+dest_files=["res://.godot/imported/concrete.png-977605b5702e8ce41b01ba8d6f8822b5.s3tc.ctex", "res://.godot/imported/concrete.png-977605b5702e8ce41b01ba8d6f8822b5.etc2.ctex"]
 
 [params]
 

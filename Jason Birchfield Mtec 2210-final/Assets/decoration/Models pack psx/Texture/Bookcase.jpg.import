@@ -4,15 +4,16 @@ importer="texture"
 type="CompressedTexture2D"
 uid="uid://dujd0vtwt11jk"
 path.s3tc="res://.godot/imported/Bookcase.jpg-5c287e21268dbc213029d41cad44cdef.s3tc.ctex"
+path.etc2="res://.godot/imported/Bookcase.jpg-5c287e21268dbc213029d41cad44cdef.etc2.ctex"
 metadata={
-"imported_formats": ["s3tc_bptc"],
+"imported_formats": ["s3tc_bptc", "etc2_astc"],
 "vram_texture": true
 }
 
 [deps]
 
 source_file="res://Assets/decoration/Models pack psx/Texture/Bookcase.jpg"
-dest_files=["res://.godot/imported/Bookcase.jpg-5c287e21268dbc213029d41cad44cdef.s3tc.ctex"]
+dest_files=["res://.godot/imported/Bookcase.jpg-5c287e21268dbc213029d41cad44cdef.s3tc.ctex", "res://.godot/imported/Bookcase.jpg-5c287e21268dbc213029d41cad44cdef.etc2.ctex"]
 
 [params]
 

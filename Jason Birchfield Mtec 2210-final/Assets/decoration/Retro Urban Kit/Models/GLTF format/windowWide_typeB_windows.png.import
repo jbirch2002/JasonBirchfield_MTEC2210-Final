@@ -4,8 +4,9 @@ importer="texture"
 type="CompressedTexture2D"
 uid="uid://cf570xhfsy4p1"
 path.s3tc="res://.godot/imported/windowWide_typeB_windows.png-1c824f7134b27ad83e2ad59d79210dfb.s3tc.ctex"
+path.etc2="res://.godot/imported/windowWide_typeB_windows.png-1c824f7134b27ad83e2ad59d79210dfb.etc2.ctex"
 metadata={
-"imported_formats": ["s3tc_bptc"],
+"imported_formats": ["s3tc_bptc", "etc2_astc"],
 "vram_texture": true
 }
 generator_parameters={}
@@ -13,7 +14,7 @@ generator_parameters={}
 [deps]
 
 source_file="res://Assets/decoration/Retro Urban Kit/Models/GLTF format/windowWide_typeB_windows.png"
-dest_files=["res://.godot/imported/windowWide_typeB_windows.png-1c824f7134b27ad83e2ad59d79210dfb.s3tc.ctex"]
+dest_files=["res://.godot/imported/windowWide_typeB_windows.png-1c824f7134b27ad83e2ad59d79210dfb.s3tc.ctex", "res://.godot/imported/windowWide_typeB_windows.png-1c824f7134b27ad83e2ad59d79210dfb.etc2.ctex"]
 
 [params]
 

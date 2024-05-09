@@ -4,8 +4,9 @@ importer="texture"
 type="CompressedTexture2D"
 uid="uid://busfn14jox1cp"
 path.s3tc="res://.godot/imported/Cow-f9231c8095bf65e5b8d1f134aa63080b_ao_met_rough_cow_roughness.png-d54e53ba0b2ab72daaeb508e93aaf0b2.s3tc.ctex"
+path.etc2="res://.godot/imported/Cow-f9231c8095bf65e5b8d1f134aa63080b_ao_met_rough_cow_roughness.png-d54e53ba0b2ab72daaeb508e93aaf0b2.etc2.ctex"
 metadata={
-"imported_formats": ["s3tc_bptc"],
+"imported_formats": ["s3tc_bptc", "etc2_astc"],
 "vram_texture": true
 }
 generator_parameters={}
@@ -13,7 +14,7 @@ generator_parameters={}
 [deps]
 
 source_file="res://Assets/animals/stylooanimalassetpack/fbx/Cow-f9231c8095bf65e5b8d1f134aa63080b_ao_met_rough_cow_roughness.png"
-dest_files=["res://.godot/imported/Cow-f9231c8095bf65e5b8d1f134aa63080b_ao_met_rough_cow_roughness.png-d54e53ba0b2ab72daaeb508e93aaf0b2.s3tc.ctex"]
+dest_files=["res://.godot/imported/Cow-f9231c8095bf65e5b8d1f134aa63080b_ao_met_rough_cow_roughness.png-d54e53ba0b2ab72daaeb508e93aaf0b2.s3tc.ctex", "res://.godot/imported/Cow-f9231c8095bf65e5b8d1f134aa63080b_ao_met_rough_cow_roughness.png-d54e53ba0b2ab72daaeb508e93aaf0b2.etc2.ctex"]
 
 [params]
 

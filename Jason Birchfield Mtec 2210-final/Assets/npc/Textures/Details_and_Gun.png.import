@@ -4,15 +4,16 @@ importer="texture"
 type="CompressedTexture2D"
 uid="uid://es4mwchskq5x"
 path.s3tc="res://.godot/imported/Details_and_Gun.png-0af4181798c79c8722350e32eaa86fb1.s3tc.ctex"
+path.etc2="res://.godot/imported/Details_and_Gun.png-0af4181798c79c8722350e32eaa86fb1.etc2.ctex"
 metadata={
-"imported_formats": ["s3tc_bptc"],
+"imported_formats": ["s3tc_bptc", "etc2_astc"],
 "vram_texture": true
 }
 
 [deps]
 
 source_file="res://Assets/npc/Textures/Details_and_Gun.png"
-dest_files=["res://.godot/imported/Details_and_Gun.png-0af4181798c79c8722350e32eaa86fb1.s3tc.ctex"]
+dest_files=["res://.godot/imported/Details_and_Gun.png-0af4181798c79c8722350e32eaa86fb1.s3tc.ctex", "res://.godot/imported/Details_and_Gun.png-0af4181798c79c8722350e32eaa86fb1.etc2.ctex"]
 
 [params]
 

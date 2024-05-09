@@ -4,8 +4,9 @@ importer="texture"
 type="CompressedTexture2D"
 uid="uid://duh8jjrbh32h5"
 path.s3tc="res://.godot/imported/wallA_roofSlantDetailed_concrete.png-9162b82ced4ff77b38f56113991f1285.s3tc.ctex"
+path.etc2="res://.godot/imported/wallA_roofSlantDetailed_concrete.png-9162b82ced4ff77b38f56113991f1285.etc2.ctex"
 metadata={
-"imported_formats": ["s3tc_bptc"],
+"imported_formats": ["s3tc_bptc", "etc2_astc"],
 "vram_texture": true
 }
 generator_parameters={}
@@ -13,7 +14,7 @@ generator_parameters={}
 [deps]
 
 source_file="res://Assets/decoration/Retro Urban Kit/Models/GLTF format/wallA_roofSlantDetailed_concrete.png"
-dest_files=["res://.godot/imported/wallA_roofSlantDetailed_concrete.png-9162b82ced4ff77b38f56113991f1285.s3tc.ctex"]
+dest_files=["res://.godot/imported/wallA_roofSlantDetailed_concrete.png-9162b82ced4ff77b38f56113991f1285.s3tc.ctex", "res://.godot/imported/wallA_roofSlantDetailed_concrete.png-9162b82ced4ff77b38f56113991f1285.etc2.ctex"]
 
 [params]
 

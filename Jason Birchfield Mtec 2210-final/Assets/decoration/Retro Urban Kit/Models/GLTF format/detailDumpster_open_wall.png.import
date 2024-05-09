@@ -4,8 +4,9 @@ importer="texture"
 type="CompressedTexture2D"
 uid="uid://cqjh2q374d2nh"
 path.s3tc="res://.godot/imported/detailDumpster_open_wall.png-0ebd776ff7a6f7a7101456462b79f2db.s3tc.ctex"
+path.etc2="res://.godot/imported/detailDumpster_open_wall.png-0ebd776ff7a6f7a7101456462b79f2db.etc2.ctex"
 metadata={
-"imported_formats": ["s3tc_bptc"],
+"imported_formats": ["s3tc_bptc", "etc2_astc"],
 "vram_texture": true
 }
 generator_parameters={}
@@ -13,7 +14,7 @@ generator_parameters={}
 [deps]
 
 source_file="res://Assets/decoration/Retro Urban Kit/Models/GLTF format/detailDumpster_open_wall.png"
-dest_files=["res://.godot/imported/detailDumpster_open_wall.png-0ebd776ff7a6f7a7101456462b79f2db.s3tc.ctex"]
+dest_files=["res://.godot/imported/detailDumpster_open_wall.png-0ebd776ff7a6f7a7101456462b79f2db.s3tc.ctex", "res://.godot/imported/detailDumpster_open_wall.png-0ebd776ff7a6f7a7101456462b79f2db.etc2.ctex"]
 
 [params]
 

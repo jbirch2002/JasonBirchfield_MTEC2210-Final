@@ -4,15 +4,16 @@ importer="texture"
 type="CompressedTexture2D"
 uid="uid://cxbc8j2o1qc7n"
 path.s3tc="res://.godot/imported/Image_3.png-f24aff84d4a059fb1dd6bee9615bb67d.s3tc.ctex"
+path.etc2="res://.godot/imported/Image_3.png-f24aff84d4a059fb1dd6bee9615bb67d.etc2.ctex"
 metadata={
-"imported_formats": ["s3tc_bptc"],
+"imported_formats": ["s3tc_bptc", "etc2_astc"],
 "vram_texture": true
 }
 
 [deps]
 
 source_file="res://Assets/animals/cow/textures/Image_3.png"
-dest_files=["res://.godot/imported/Image_3.png-f24aff84d4a059fb1dd6bee9615bb67d.s3tc.ctex"]
+dest_files=["res://.godot/imported/Image_3.png-f24aff84d4a059fb1dd6bee9615bb67d.s3tc.ctex", "res://.godot/imported/Image_3.png-f24aff84d4a059fb1dd6bee9615bb67d.etc2.ctex"]
 
 [params]
 

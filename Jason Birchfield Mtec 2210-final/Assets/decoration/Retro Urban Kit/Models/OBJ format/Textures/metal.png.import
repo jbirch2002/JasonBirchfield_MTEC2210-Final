@@ -4,15 +4,16 @@ importer="texture"
 type="CompressedTexture2D"
 uid="uid://jeqk8xwkqvo3"
 path.s3tc="res://.godot/imported/metal.png-ba6148bf743ec815a3e13f5593ff00c9.s3tc.ctex"
+path.etc2="res://.godot/imported/metal.png-ba6148bf743ec815a3e13f5593ff00c9.etc2.ctex"
 metadata={
-"imported_formats": ["s3tc_bptc"],
+"imported_formats": ["s3tc_bptc", "etc2_astc"],
 "vram_texture": true
 }
 
 [deps]
 
 source_file="res://Assets/decoration/Retro Urban Kit/Models/OBJ format/Textures/metal.png"
-dest_files=["res://.godot/imported/metal.png-ba6148bf743ec815a3e13f5593ff00c9.s3tc.ctex"]
+dest_files=["res://.godot/imported/metal.png-ba6148bf743ec815a3e13f5593ff00c9.s3tc.ctex", "res://.godot/imported/metal.png-ba6148bf743ec815a3e13f5593ff00c9.etc2.ctex"]
 
 [params]
 

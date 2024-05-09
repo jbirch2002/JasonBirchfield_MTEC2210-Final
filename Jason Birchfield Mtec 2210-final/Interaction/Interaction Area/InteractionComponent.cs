@@ -6,9 +6,12 @@ public partial class InteractionComponent : Node
     [Export] NodePath interactionRaycastPath;
     [Export] NodePath interactionLabelPath;
     [Export] NodePath interactionAudioPath;
+    [Export] NodePath interactionCrosshairPath;
     RayCast3D interactionRaycast;
     Label interactionLabel;
     AudioStreamPlayer3D interactionAudio;
+    CenterContainer centerContainer;
+    
     bool isReset = true;
 
     public override void _Ready()
@@ -16,6 +19,8 @@ public partial class InteractionComponent : Node
         interactionRaycast = GetNode<RayCast3D>(interactionRaycastPath);
         interactionLabel = GetNode<Label>(interactionLabelPath);
         interactionAudio = GetNode<AudioStreamPlayer3D>(interactionAudioPath);
+        centerContainer = GetNode<CenterContainer>(interactionCrosshairPath);  
+        centerContainer.Visible = false;
     }
 
     public override void _Process(double delta)
@@ -29,6 +34,7 @@ public partial class InteractionComponent : Node
                 if (interactable != null && interactable.HasMethod("Interact"))
                 {
                     interactionLabel.Text = "Enter\n[E]";
+                    centerContainer.Visible = true;
                 }
             }
             
@@ -37,13 +43,15 @@ public partial class InteractionComponent : Node
                 if (interactable != null && interactable.HasMethod("Interact"))
                 {
                     interactionLabel.Text = "Leave\n[E]";
+                    centerContainer.Visible = true;
                 }
             }
             if(interactable.IsInGroup("ShaftEntrance"))
             {
                 if (interactable != null && interactable.HasMethod("Interact"))
                 {
-                    interactionLabel.Text = "";
+                    interactionLabel.Text = "Enter...?\n[E]";
+                    centerContainer.Visible = true;
                 }
             }
             if(interactable.IsInGroup("Bones"))
@@ -51,6 +59,7 @@ public partial class InteractionComponent : Node
                 if (interactable != null && interactable.HasMethod("Interact"))
                 {
                     interactionLabel.Text = "[E]";
+                    centerContainer.Visible = true;
                 }
             }
             if(interactable.IsInGroup("Bell"))
@@ -58,6 +67,7 @@ public partial class InteractionComponent : Node
                 if (interactable != null && interactable.HasMethod("Interact"))
                 {
                     interactionLabel.Text = "Ring?\n[E]";
+                    centerContainer.Visible = true;
                 }
             }
         }
@@ -66,6 +76,7 @@ public partial class InteractionComponent : Node
             if (!isReset)
             {
                 interactionLabel.Text = "";
+                centerContainer.Visible = false;
                 isReset = true;
             }
         }

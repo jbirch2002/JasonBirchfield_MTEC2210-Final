@@ -4,8 +4,9 @@ importer="texture"
 type="CompressedTexture2D"
 uid="uid://haeatt60n5tp"
 path.s3tc="res://.godot/imported/wallB_door_doors.png-923e78c033bb4fed9181511f96df8602.s3tc.ctex"
+path.etc2="res://.godot/imported/wallB_door_doors.png-923e78c033bb4fed9181511f96df8602.etc2.ctex"
 metadata={
-"imported_formats": ["s3tc_bptc"],
+"imported_formats": ["s3tc_bptc", "etc2_astc"],
 "vram_texture": true
 }
 generator_parameters={}
@@ -13,7 +14,7 @@ generator_parameters={}
 [deps]
 
 source_file="res://Assets/decoration/Retro Urban Kit/Models/GLTF format/wallB_door_doors.png"
-dest_files=["res://.godot/imported/wallB_door_doors.png-923e78c033bb4fed9181511f96df8602.s3tc.ctex"]
+dest_files=["res://.godot/imported/wallB_door_doors.png-923e78c033bb4fed9181511f96df8602.s3tc.ctex", "res://.godot/imported/wallB_door_doors.png-923e78c033bb4fed9181511f96df8602.etc2.ctex"]
 
 [params]
 

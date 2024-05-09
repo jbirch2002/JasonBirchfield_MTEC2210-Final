@@ -4,8 +4,9 @@ importer="texture"
 type="CompressedTexture2D"
 uid="uid://cexalsxdp47dw"
 path.s3tc="res://.godot/imported/grass_grass.png-cc28cb6aaa4f354ce52c2e86214d5c77.s3tc.ctex"
+path.etc2="res://.godot/imported/grass_grass.png-cc28cb6aaa4f354ce52c2e86214d5c77.etc2.ctex"
 metadata={
-"imported_formats": ["s3tc_bptc"],
+"imported_formats": ["s3tc_bptc", "etc2_astc"],
 "vram_texture": true
 }
 generator_parameters={}
@@ -13,7 +14,7 @@ generator_parameters={}
 [deps]
 
 source_file="res://Assets/decoration/Retro Urban Kit/Models/GLTF format/grass_grass.png"
-dest_files=["res://.godot/imported/grass_grass.png-cc28cb6aaa4f354ce52c2e86214d5c77.s3tc.ctex"]
+dest_files=["res://.godot/imported/grass_grass.png-cc28cb6aaa4f354ce52c2e86214d5c77.s3tc.ctex", "res://.godot/imported/grass_grass.png-cc28cb6aaa4f354ce52c2e86214d5c77.etc2.ctex"]
 
 [params]
 

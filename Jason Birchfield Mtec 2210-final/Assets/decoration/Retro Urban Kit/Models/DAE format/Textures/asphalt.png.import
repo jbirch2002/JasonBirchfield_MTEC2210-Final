@@ -4,15 +4,16 @@ importer="texture"
 type="CompressedTexture2D"
 uid="uid://dtvqlm7rsnxqm"
 path.s3tc="res://.godot/imported/asphalt.png-a8b3d23b5aad0f66f4939f8ade954cf1.s3tc.ctex"
+path.etc2="res://.godot/imported/asphalt.png-a8b3d23b5aad0f66f4939f8ade954cf1.etc2.ctex"
 metadata={
-"imported_formats": ["s3tc_bptc"],
+"imported_formats": ["s3tc_bptc", "etc2_astc"],
 "vram_texture": true
 }
 
 [deps]
 
 source_file="res://Assets/decoration/Retro Urban Kit/Models/DAE format/Textures/asphalt.png"
-dest_files=["res://.godot/imported/asphalt.png-a8b3d23b5aad0f66f4939f8ade954cf1.s3tc.ctex"]
+dest_files=["res://.godot/imported/asphalt.png-a8b3d23b5aad0f66f4939f8ade954cf1.s3tc.ctex", "res://.godot/imported/asphalt.png-a8b3d23b5aad0f66f4939f8ade954cf1.etc2.ctex"]
 
 [params]
 

@@ -4,15 +4,16 @@ importer="texture"
 type="CompressedTexture2D"
 uid="uid://w5roofrrecb5"
 path.s3tc="res://.godot/imported/Wood_03.jpg-0e1293ee3cb8974ae7e3df89271db516.s3tc.ctex"
+path.etc2="res://.godot/imported/Wood_03.jpg-0e1293ee3cb8974ae7e3df89271db516.etc2.ctex"
 metadata={
-"imported_formats": ["s3tc_bptc"],
+"imported_formats": ["s3tc_bptc", "etc2_astc"],
 "vram_texture": true
 }
 
 [deps]
 
 source_file="res://Assets/decoration/Models pack psx/Texture/Wood_03.jpg"
-dest_files=["res://.godot/imported/Wood_03.jpg-0e1293ee3cb8974ae7e3df89271db516.s3tc.ctex"]
+dest_files=["res://.godot/imported/Wood_03.jpg-0e1293ee3cb8974ae7e3df89271db516.s3tc.ctex", "res://.godot/imported/Wood_03.jpg-0e1293ee3cb8974ae7e3df89271db516.etc2.ctex"]
 
 [params]
 

@@ -4,15 +4,16 @@ importer="texture"
 type="CompressedTexture2D"
 uid="uid://cidtblpyejq01"
 path.s3tc="res://.godot/imported/bars.png-a9345eda56f4c2a6e25c77de3774abb5.s3tc.ctex"
+path.etc2="res://.godot/imported/bars.png-a9345eda56f4c2a6e25c77de3774abb5.etc2.ctex"
 metadata={
-"imported_formats": ["s3tc_bptc"],
+"imported_formats": ["s3tc_bptc", "etc2_astc"],
 "vram_texture": true
 }
 
 [deps]
 
 source_file="res://Assets/decoration/Retro Urban Kit/Models/OBJ format/Textures/bars.png"
-dest_files=["res://.godot/imported/bars.png-a9345eda56f4c2a6e25c77de3774abb5.s3tc.ctex"]
+dest_files=["res://.godot/imported/bars.png-a9345eda56f4c2a6e25c77de3774abb5.s3tc.ctex", "res://.godot/imported/bars.png-a9345eda56f4c2a6e25c77de3774abb5.etc2.ctex"]
 
 [params]
 

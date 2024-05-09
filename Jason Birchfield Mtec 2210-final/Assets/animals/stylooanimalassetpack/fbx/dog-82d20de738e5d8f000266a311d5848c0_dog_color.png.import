@@ -4,8 +4,9 @@ importer="texture"
 type="CompressedTexture2D"
 uid="uid://bbjo30aifouek"
 path.s3tc="res://.godot/imported/dog-82d20de738e5d8f000266a311d5848c0_dog_color.png-b7c6ccbfac554acfeba35c38ecf39ff3.s3tc.ctex"
+path.etc2="res://.godot/imported/dog-82d20de738e5d8f000266a311d5848c0_dog_color.png-b7c6ccbfac554acfeba35c38ecf39ff3.etc2.ctex"
 metadata={
-"imported_formats": ["s3tc_bptc"],
+"imported_formats": ["s3tc_bptc", "etc2_astc"],
 "vram_texture": true
 }
 generator_parameters={}
@@ -13,7 +14,7 @@ generator_parameters={}
 [deps]
 
 source_file="res://Assets/animals/stylooanimalassetpack/fbx/dog-82d20de738e5d8f000266a311d5848c0_dog_color.png"
-dest_files=["res://.godot/imported/dog-82d20de738e5d8f000266a311d5848c0_dog_color.png-b7c6ccbfac554acfeba35c38ecf39ff3.s3tc.ctex"]
+dest_files=["res://.godot/imported/dog-82d20de738e5d8f000266a311d5848c0_dog_color.png-b7c6ccbfac554acfeba35c38ecf39ff3.s3tc.ctex", "res://.godot/imported/dog-82d20de738e5d8f000266a311d5848c0_dog_color.png-b7c6ccbfac554acfeba35c38ecf39ff3.etc2.ctex"]
 
 [params]
 

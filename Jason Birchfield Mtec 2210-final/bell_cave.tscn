@@ -7,7 +7,7 @@
 [ext_resource type="Texture2D" uid="uid://cvh7401cpfwgm" path="res://Assets/decoration/bones/textures/BONES_LOW_POLY_ASSET_PACK_texture.png" id="4_2uup6"]
 [ext_resource type="Script" path="res://Scripts/PlayGramophone.cs" id="4_pmvhk"]
 [ext_resource type="PackedScene" uid="uid://dwkqtseqht3sg" path="res://Scenes/Decoration/stool.tscn" id="4_xy0tm"]
-[ext_resource type="AudioStream" uid="uid://bbjlg4habgri" path="res://Sounds/Background music/LISA The Painful OST - Blood For S x [ ezmp3.cc ].mp3" id="5_mgsug"]
+[ext_resource type="AudioStream" uid="uid://bbjlg4habgri" path="res://Sounds/Background music/CaveSong.mp3" id="5_mgsug"]
 [ext_resource type="Script" path="res://Scripts/BonesInteract.cs" id="5_v6lyj"]
 [ext_resource type="AudioStream" uid="uid://bt5ifh5wl2bup" path="res://Sounds/Bones sound.mp3" id="6_myxen"]
 [ext_resource type="PackedScene" uid="uid://dpx06jm7empwt" path="res://Scenes/door old metal in cave.tscn" id="8_ylnqs"]
@@ -418,9 +418,9 @@ use_collision = true
 material = SubResource("StandardMaterial3D_xuhb4")
 
 [node name="Floor3" type="CSGBox3D" parent="Floor"]
-transform = Transform3D(-1.42577e-05, 0, -45.1908, 0, 10.3507, 0, 326.179, 0, -1.97535e-06, 3.86031e-06, -14.4041, 98.8303)
+transform = Transform3D(-1.42577e-05, 0, -45.1908, 0, 10.3507, 0, 326.179, 0, -1.97535e-06, 3.92514e-06, -14.4041, 98.9377)
 use_collision = true
-size = Vector3(0.458496, 1, 1)
+size = Vector3(0.46759, 1, 1)
 material = SubResource("StandardMaterial3D_xuhb4")
 
 [node name="Floor4" type="CSGBox3D" parent="Floor"]
@@ -555,7 +555,7 @@ speed_scale = 2.5
 transform = Transform3D(-4.37114e-07, 0, -10, 0, 10, 0, 10, 0, -4.37114e-07, -103.743, -5.1409, -0.540237)
 
 [node name="Bell" parent="." instance=ExtResource("12_0ys3x")]
-transform = Transform3D(-5, 0, -4.37114e-07, 0, 5, 0, 4.37114e-07, 0, -5, 590.545, -371.628, 196.905)
+transform = Transform3D(-5, 0, -4.37114e-07, 0, 5, 0, 4.37114e-07, 0, -5, 590.556, -369.251, 196.131)
 
 [node name="Bar_Bell_Circle_005" type="MeshInstance3D" parent="Bell"]
 transform = Transform3D(100, 0, 0, 0, 100, 7.54979e-06, 0, -7.54979e-06, 100, 0, 0, 0)
@@ -581,3 +581,33 @@ speed_scale = 2.5
 
 [node name="PlayBellAudio" type="AudioStreamPlayer3D" parent="Bell"]
 stream = ExtResource("17_mefmw")
+
+[node name="Light" type="OmniLight3D" parent="."]
+transform = Transform3D(-0.290865, 0.566393, 0.771101, -0.055189, 0.794672, -0.604525, -0.955171, -0.218391, -0.199884, 4.3632, 9.01261, 0.605485)
+light_energy = 13.0
+omni_range = 32.64
+omni_shadow_mode = 0
+
+[node name="Light2" type="OmniLight3D" parent="."]
+transform = Transform3D(-0.290865, 0.566393, 0.771101, -0.055189, 0.794672, -0.604525, -0.955171, -0.218391, -0.199884, 126.235, 9.01261, 0.605485)
+light_energy = 13.0
+omni_range = 32.64
+omni_shadow_mode = 0
+
+[node name="Light4" type="OmniLight3D" parent="."]
+transform = Transform3D(-0.290865, 0.566393, 0.771101, -0.055189, 0.794672, -0.604525, -0.955171, -0.218391, -0.199884, 4.10577, 9.01261, 192.677)
+light_energy = 13.0
+omni_range = 32.64
+omni_shadow_mode = 0
+
+[node name="Light5" type="OmniLight3D" parent="."]
+transform = Transform3D(-0.290865, 0.566393, 0.771101, -0.055189, 0.794672, -0.604525, -0.955171, -0.218391, -0.199884, 363.433, 9.01261, 192.677)
+light_energy = 13.0
+omni_range = 32.64
+omni_shadow_mode = 0
+
+[node name="Light3" type="OmniLight3D" parent="."]
+transform = Transform3D(-0.290865, 0.566393, 0.771101, -0.055189, 0.794672, -0.604525, -0.955171, -0.218391, -0.199884, 126.235, 9.01261, -479.242)
+light_energy = 13.0
+omni_range = 32.64
+omni_shadow_mode = 0
