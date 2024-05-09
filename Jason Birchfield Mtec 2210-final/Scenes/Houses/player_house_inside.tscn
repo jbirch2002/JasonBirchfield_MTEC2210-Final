@@ -1,12 +1,12 @@
-[gd_scene load_steps=54 format=3 uid="uid://hofavx0e2sac"]
+[gd_scene load_steps=58 format=3 uid="uid://hofavx0e2sac"]
 
 [ext_resource type="Texture2D" uid="uid://cnpl1y5wxn78d" path="res://Assets/houses/preset_houses/house1_tex1.png" id="1_5mqmw"]
 [ext_resource type="PackedScene" uid="uid://c6718j7x7jcn6" path="res://OpenDoors.tscn" id="2_0rj88"]
 [ext_resource type="Script" path="res://Scripts/FrontAndExit.cs" id="2_hfhki"]
 [ext_resource type="PackedScene" uid="uid://dr3svsefeldeh" path="res://Scenes/Decoration/trash_bin.tscn" id="4_dool2"]
-[ext_resource type="AudioStream" uid="uid://cloccdln6wif2" path="res://Sounds/Doors Closing.mp3" id="5_2gnm4"]
+[ext_resource type="AudioStream" uid="uid://vvv04bmotuoe" path="res://Sounds/Door Opening.mp3" id="6_4k53i"]
 [ext_resource type="PackedScene" uid="uid://cjhry22ovx6kk" path="res://Scenes/Decoration/bed.tscn" id="6_6e8ri"]
-[ext_resource type="AudioStream" uid="uid://eqa7mpjv001t" path="res://Sounds/Doors Opening.mp3" id="6_l3sv0"]
+[ext_resource type="AudioStream" uid="uid://eqa7mpjv001t" path="res://Sounds/Door Closing.mp3" id="6_l3sv0"]
 [ext_resource type="PackedScene" uid="uid://bn14grvdecwll" path="res://Scenes/Player/player.tscn" id="6_qi3dq"]
 [ext_resource type="PackedScene" uid="uid://dqb7kpm5y1kb0" path="res://Scenes/Decoration/key.tscn" id="7_hicbx"]
 [ext_resource type="PackedScene" uid="uid://djlr3p3tbdxha" path="res://Scenes/Decoration/sink.tscn" id="8_v3xfu"]
@@ -18,6 +18,9 @@
 [ext_resource type="PackedScene" uid="uid://q81kfxrfqh51" path="res://Scenes/Decoration/couch.tscn" id="14_ief32"]
 [ext_resource type="PackedScene" uid="uid://p5kjkg3wbphp" path="res://Scenes/Decoration/cupboard.tscn" id="14_ppku2"]
 [ext_resource type="Script" path="res://OpenDoors.cs" id="15_xwxy6"]
+[ext_resource type="PackedScene" uid="uid://cqel8pam7qhg7" path="res://Scenes/Decoration/Gramophone.tscn" id="19_jcjar"]
+[ext_resource type="AudioStream" uid="uid://c41cvsfa4d4rw" path="res://GramophoneSong.wav" id="20_mcrqy"]
+[ext_resource type="Script" path="res://Scripts/PlayGramophone.cs" id="21_eshrt"]
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_7h143"]
 albedo_texture = ExtResource("1_5mqmw")
@@ -484,6 +487,9 @@ albedo_texture = ExtResource("1_5mqmw")
 [sub_resource type="ConcavePolygonShape3D" id="ConcavePolygonShape3D_lr41g"]
 data = PackedVector3Array(2.7999, 2, 4.95, 2.7999, 3.2, 4.8998, 2.7999, 3.2, 4.95, 2.7999, 2, 4.95, 2.7999, 2, 4.8998, 2.7999, 3.2, 4.8998, 1.5, 3.2, 4.95, 1.5, 3.2, 4.8998, 1.5, 2, 4.8998, 1.5, 3.2, 4.95, 1.5, 2, 4.8998, 1.5, 2, 4.95, 2.7999, 3.2, 4.95, 2.7999, 3.2, 4.8998, 1.5, 3.2, 4.8998, 2.7999, 3.2, 4.95, 1.5, 3.2, 4.8998, 1.5, 3.2, 4.95, 2.7999, 3.2, 4.95, 1.5, 3.2, 4.95, 1.5, 2, 4.95, 1.5, 2, 4.95, 2.7999, 2, 4.95, 2.7999, 3.2, 4.95, 1.5, 3.2, 5.1, 1.5, 3.2, 5.0499, 1.5, 2, 5.0499, 1.5, 2, 5.0499, 1.5, 2, 5.1, 1.5, 3.2, 5.1, 2.7999, 2, 5.1, 2.7999, 2, 5.0499, 2.7999, 3.2, 5.0499, 2.7999, 3.2, 5.0499, 2.7999, 3.2, 5.1, 2.7999, 2, 5.1, 1.5, 3.2, 5.0499, 2.7999, 2, 5.0499, 1.5, 2, 5.0499, 2.7999, 3.2, 5.0499, 2.7999, 2, 5.0499, 1.5, 3.2, 5.0499, 1.5, 2, 5.1, 1.5, 2, 5.0499, 2.7999, 2, 5.0499, 2.7999, 2, 5.0499, 2.7999, 2, 5.1, 1.5, 2, 5.1, 2.7999, 3.2, 5.1, 2.7999, 3.2, 5.0499, 1.5, 3.2, 5.0499, 2.7999, 3.2, 5.1, 1.5, 3.2, 5.0499, 1.5, 3.2, 5.1, 1.5, 2, 4.95, 2.7999, 2, 4.8998, 2.7999, 2, 4.95, 1.5, 2, 4.95, 1.5, 2, 4.8998, 2.7999, 2, 4.8998, 3.8999, 3.2, -1.8001, 3.95, 2.6, -1.8001, 3.8999, 2.6, -1.8001, 3.95, 2.6, -1.8001, 3.8999, 3.2, -1.8001, 3.95, 3.2, -1.8001, 3.8999, 2.6, -1.8001, 3.95, 2.6, -1.8001, 3.95, 2.6, -1.2001, 3.95, 2.6, -1.2001, 3.8999, 2.6, -1.2001, 3.8999, 2.6, -1.8001, 3.8999, 3.2, -1.2001, 3.95, 3.2, -1.8001, 3.8999, 3.2, -1.8001, 3.95, 3.2, -1.8001, 3.8999, 3.2, -1.2001, 3.95, 3.2, -1.2001, 3.95, 2.6, -1.2001, 3.95, 3.2, -1.8001, 3.95, 3.2, -1.2001, 3.95, 2.6, -1.2001, 3.95, 2.6, -1.8001, 3.95, 3.2, -1.8001, 4.1, 2.6, -1.2001, 4.0499, 2.6, -1.8001, 4.1, 2.6, -1.8001, 4.0499, 2.6, -1.8001, 4.1, 2.6, -1.2001, 4.0499, 2.6, -1.2001, 4.1, 3.2, -1.8001, 4.0499, 3.2, -1.8001, 4.0499, 3.2, -1.2001, 4.0499, 3.2, -1.2001, 4.1, 3.2, -1.2001, 4.1, 3.2, -1.8001, 4.1, 2.6, -1.8001, 4.0499, 2.6, -1.8001, 4.0499, 3.2, -1.8001, 4.0499, 3.2, -1.8001, 4.1, 3.2, -1.8001, 4.1, 2.6, -1.8001, 4.0499, 3.2, -1.2001, 4.0499, 2.6, -1.8001, 4.0499, 2.6, -1.2001, 4.0499, 3.2, -1.2001, 4.0499, 3.2, -1.8001, 4.0499, 2.6, -1.8001, 3.8999, 2.6, -1.2001, 3.95, 3.2, -1.2001, 3.8999, 3.2, -1.2001, 3.95, 3.2, -1.2001, 3.8999, 2.6, -1.2001, 3.95, 2.6, -1.2001, 4.1, 3.2, -1.2001, 4.0499, 3.2, -1.2001, 4.0499, 2.6, -1.2001, 4.0499, 2.6, -1.2001, 4.1, 2.6, -1.2001, 4.1, 3.2, -1.2001, -1.0001, 2, -4.9501, -1.0001, 3.2, -4.9501, -1.0001, 3.2, -4.9002, -1.0001, 3.2, -4.9002, -1.0001, 2, -4.9, -1.0001, 2, -4.9501, -3, 2, -4.9, -3, 2, -4.9501, -2, 2, -4.9501, -2, 2, -4.9501, -2, 2, -4.9, -3, 2, -4.9, -2, 2, -4.9, -2, 2, -4.9501, -1.0001, 2, -4.9501, -1.0001, 2, -4.9501, -1.0001, 2, -4.9, -2, 2, -4.9, -3, 3.2, -4.9501, -2, 2, -4.9501, -3, 2, -4.9501, -2, 3.2, -4.9501, -2, 2, -4.9501, -3, 3.2, -4.9501, -2, 3.2, -4.9501, -1.0001, 2, -4.9501, -2, 2, -4.9501, -1.0001, 3.2, -4.9501, -1.0001, 2, -4.9501, -2, 3.2, -4.9501, -1.0001, 2, -5.1, -1.0001, 3.2, -5.1, -1.0001, 3.2, -5.05, -1.0001, 3.2, -5.05, -1.0001, 2, -5.05, -1.0001, 2, -5.1, -2, 2, -5.05, -1.0001, 2, -5.1, -1.0001, 2, -5.05, -2, 2, -5.05, -2, 2, -5.1, -1.0001, 2, -5.1, -3, 2, -5.05, -2, 2, -5.1, -2, 2, -5.05, -3, 2, -5.05, -3, 2, -5.1, -2, 2, -5.1, -3, 2, -5.05, -2, 3.2, -5.05, -3, 3.2, -5.05, -2, 2, -5.05, -2, 3.2, -5.05, -3, 2, -5.05, -2, 2, -5.05, -1.0001, 3.2, -5.05, -2, 3.2, -5.05, -1.0001, 2, -5.05, -1.0001, 3.2, -5.05, -2, 2, -5.05, -2, 3.2, -5.05, -3, 3.2, -5.1, -3, 3.2, -5.05, -2, 3.2, -5.05, -2, 3.2, -5.1, -3, 3.2, -5.1, -1.0001, 3.2, -5.05, -1.0001, 3.2, -5.1, -2, 3.2, -5.1, -1.0001, 3.2, -5.05, -2, 3.2, -5.1, -2, 3.2, -5.05, -2, 3.2, -4.9002, -3, 3.2, -4.9501, -3, 3.2, -4.9002, -2, 3.2, -4.9002, -2, 3.2, -4.9501, -3, 3.2, -4.9501, -1.0001, 3.2, -4.9002, -1.0001, 3.2, -4.9501, -2, 3.2, -4.9501, -1.0001, 3.2, -4.9002, -2, 3.2, -4.9501, -2, 3.2, -4.9002, -3, 3.2, -4.9002, -3, 3.2, -4.9501, -3, 2, -4.9501, -3, 3.2, -4.9002, -3, 2, -4.9501, -3, 2, -4.9, -3, 3.2, -5.05, -3, 3.2, -5.1, -3, 2, -5.1, -3, 3.2, -5.05, -3, 2, -5.1, -3, 2, -5.05, -1.5, 2, 4.95, -1.5, 3.2, 4.8998, -1.5, 3.2, 4.95, -1.5, 2, 4.95, -1.5, 2, 4.8998, -1.5, 3.2, 4.8998, -2.8, 3.2, 4.95, -2.8, 3.2, 4.8998, -2.8, 2, 4.8998, -2.8, 3.2, 4.95, -2.8, 2, 4.8998, -2.8, 2, 4.95, -1.5, 3.2, 4.95, -1.5, 3.2, 4.8998, -2.8, 3.2, 4.8998, -1.5, 3.2, 4.95, -2.8, 3.2, 4.8998, -2.8, 3.2, 4.95, -1.5, 3.2, 4.95, -2.8, 3.2, 4.95, -2.8, 2, 4.95, -2.8, 2, 4.95, -1.5, 2, 4.95, -1.5, 3.2, 4.95, -2.8, 3.2, 5.1, -2.8, 3.2, 5.0499, -2.8, 2, 5.0499, -2.8, 2, 5.0499, -2.8, 2, 5.1, -2.8, 3.2, 5.1, -1.5, 2, 5.1, -1.5, 2, 5.0499, -1.5, 3.2, 5.0499, -1.5, 3.2, 5.0499, -1.5, 3.2, 5.1, -1.5, 2, 5.1, -2.8, 3.2, 5.0499, -1.5, 2, 5.0499, -2.8, 2, 5.0499, -1.5, 3.2, 5.0499, -1.5, 2, 5.0499, -2.8, 3.2, 5.0499, -2.8, 2, 5.1, -2.8, 2, 5.0499, -1.5, 2, 5.0499, -2.8, 2, 5.1, -1.5, 2, 5.0499, -1.5, 2, 5.1, -1.5, 3.2, 5.1, -1.5, 3.2, 5.0499, -2.8, 3.2, 5.0499, -2.8, 3.2, 5.0499, -2.8, 3.2, 5.1, -1.5, 3.2, 5.1, -2.8, 2, 4.95, -1.5, 2, 4.8998, -1.5, 2, 4.95, -2.8, 2, 4.95, -2.8, 2, 4.8998, -1.5, 2, 4.8998)
 
+[sub_resource type="BoxShape3D" id="BoxShape3D_ebqo6"]
+size = Vector3(1.64594, 1.84479, 1.44824)
+
 [node name="player_house" type="Node3D"]
 
 [node name="House" type="Node3D" parent="."]
@@ -520,8 +526,8 @@ transform = Transform3D(-3.61999e-06, 0, -1, 0, 1, 0, 1, 0, -3.61999e-06, 1.0583
 transform = Transform3D(1, 0, 2.27374e-13, 0, 1, 0, -2.27374e-13, 0, 1, 0, 0, 0)
 script = ExtResource("15_xwxy6")
 animationPlayerPath = NodePath("../BathroomDoorAnimation")
-audioStreamPlayer3DPath = NodePath("../BathroomOpenDoorAudio")
-audioStreamPlayer3DPath2 = NodePath("../BathroomCloseDoorAudio")
+openDoorAudioPath = NodePath("../BathroomOpenDoorAudio")
+closeDoorAudioPath = NodePath("../BathroomCloseDoorAudio")
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="House/house1/BathroomDoorHinge/BathroomDoor"]
 transform = Transform3D(1, 0, 3.55271e-15, 0, 1, 0, -3.55271e-15, 0, 1, 0, 0, 0)
@@ -534,10 +540,11 @@ libraries = {
 speed_scale = 2.5
 
 [node name="BathroomCloseDoorAudio" type="AudioStreamPlayer3D" parent="House/house1/BathroomDoorHinge"]
-stream = ExtResource("5_2gnm4")
+stream = ExtResource("6_l3sv0")
+volume_db = 10.0
 
 [node name="BathroomOpenDoorAudio" type="AudioStreamPlayer3D" parent="House/house1/BathroomDoorHinge"]
-stream = ExtResource("6_l3sv0")
+stream = ExtResource("6_4k53i")
 
 [node name="LivingroomDoorHinge" parent="House/house1" groups=["Doors"] instance=ExtResource("2_0rj88")]
 transform = Transform3D(1, 0, 1.74846e-07, 0, 1, 0, -1.74846e-07, 0, 1, -0.498216, 1.00066, -0.0603366)
@@ -546,13 +553,12 @@ transform = Transform3D(1, 0, 1.74846e-07, 0, 1, 0, -1.74846e-07, 0, 1, -0.49821
 transform = Transform3D(1, 0, -7.10543e-15, 0, 1, 0, 7.10543e-15, 0, 1, 0, 0, 0)
 script = ExtResource("15_xwxy6")
 animationPlayerPath = NodePath("../LivingroomAnimation")
-audioStreamPlayer3DPath = NodePath("../BathroomOpenDoor")
-audioStreamPlayer3DPath2 = NodePath("../BathroomCloseDoor")
+openDoorAudioPath = NodePath("../BathroomOpenDoor")
+closeDoorAudioPath = NodePath("../BathroomCloseDoor")
 
 [node name="collisionShape3d" type="CollisionShape3D" parent="House/house1/LivingroomDoorHinge/LivingroomDoor"]
 transform = Transform3D(1, 0, -6.82121e-12, 0, 1, 0, 6.82121e-12, 0, 1, 0.502747, 0.833496, 0.0605774)
 shape = SubResource("BoxShape3D_d5u3r")
-disabled = true
 
 [node name="LivingroomAnimation" type="AnimationPlayer" parent="House/house1/LivingroomDoorHinge"]
 libraries = {
@@ -561,9 +567,11 @@ libraries = {
 speed_scale = 2.5
 
 [node name="BathroomCloseDoor" type="AudioStreamPlayer3D" parent="House/house1/LivingroomDoorHinge"]
+stream = ExtResource("6_l3sv0")
+volume_db = 10.0
 
 [node name="BathroomOpenDoor" type="AudioStreamPlayer3D" parent="House/house1/LivingroomDoorHinge"]
-stream = ExtResource("6_l3sv0")
+stream = ExtResource("6_4k53i")
 
 [node name="ClosetDoorHinge" type="Node3D" parent="House/house1"]
 
@@ -574,8 +582,11 @@ skeleton = NodePath("")
 surface_material_override/0 = SubResource("StandardMaterial3D_4rhy5")
 
 [node name="Door" type="StaticBody3D" parent="House/house1/ClosetDoorHinge/ClosetR"]
+transform = Transform3D(1, 0, 6.82121e-13, 0, 1, 0, -6.82121e-13, 0, 1, 0, 0, 0)
 script = ExtResource("15_xwxy6")
 animationPlayerPath = NodePath("../../ClosetDoorAnimation")
+openDoorAudioPath = NodePath("../../ClosetDoorOpenAudio")
+closeDoorAudioPath = NodePath("../../ClosetDoorCloseAudio")
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="House/house1/ClosetDoorHinge/ClosetR/Door"]
 shape = SubResource("ConcavePolygonShape3D_7spv2")
@@ -587,6 +598,7 @@ skeleton = NodePath("")
 surface_material_override/0 = SubResource("StandardMaterial3D_6y778")
 
 [node name="Door" type="StaticBody3D" parent="House/house1/ClosetDoorHinge/ClosetL"]
+transform = Transform3D(1, 0, 2.27374e-13, 0, 1, 0, -2.27374e-13, 0, 1, 0, 0, 0)
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="House/house1/ClosetDoorHinge/ClosetL/Door"]
 shape = SubResource("ConcavePolygonShape3D_o0kt5")
@@ -596,6 +608,12 @@ libraries = {
 "": SubResource("AnimationLibrary_5gs2m")
 }
 speed_scale = 2.5
+
+[node name="ClosetDoorOpenAudio" type="AudioStreamPlayer3D" parent="House/house1/ClosetDoorHinge"]
+stream = ExtResource("6_4k53i")
+
+[node name="ClosetDoorCloseAudio" type="AudioStreamPlayer3D" parent="House/house1/ClosetDoorHinge"]
+stream = ExtResource("6_l3sv0")
 
 [node name="house1_windows" type="MeshInstance3D" parent="House/house1"]
 mesh = SubResource("ArrayMesh_3wpwf")
@@ -624,6 +642,23 @@ transform = Transform3D(-0.6, 0, -9.05975e-08, 0, 0.6, 0, 9.05975e-08, 0, -0.6, 
 
 [node name="Table" parent="Decoration" instance=ExtResource("10_em7pd")]
 transform = Transform3D(-2.73196e-08, 0, 0.625, 0, 0.625, 0, -0.625, 0, -2.73196e-08, -4.16238, 0.0635151, 0.836957)
+
+[node name="Gramophone" parent="Decoration/Table" instance=ExtResource("19_jcjar")]
+transform = Transform3D(-0.461785, 0, 0.461785, 0, 0.653061, 0, -0.461785, 0, -0.461785, 0.324046, 0.490392, -0.0327635)
+
+[node name="StaticBody3D" type="StaticBody3D" parent="Decoration/Table/Gramophone"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0)
+script = ExtResource("21_eshrt")
+audioStreamPlayer3DPath = NodePath("../PlayGramophoneAudio")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Decoration/Table/Gramophone/StaticBody3D"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.243895, 0.891205, -0.0921917)
+shape = SubResource("BoxShape3D_ebqo6")
+
+[node name="PlayGramophoneAudio" type="AudioStreamPlayer3D" parent="Decoration/Table/Gramophone"]
+transform = Transform3D(0.25, 0, 0, 0, 0.25, 0, 0, 0, 0.25, -1.38296, 1.59632, 0.960169)
+stream = ExtResource("20_mcrqy")
+volume_db = -12.0
 
 [node name="Fridge" parent="Decoration" instance=ExtResource("11_sei4t")]
 transform = Transform3D(8.19589e-08, 0, -0.625, 0, 0.625, 0, 0.625, 0, 8.19589e-08, -2.49827, 0.570752, -4.06258)

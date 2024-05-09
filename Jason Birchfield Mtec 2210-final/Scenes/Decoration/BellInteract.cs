@@ -4,11 +4,14 @@ using System;
 public partial class BellInteract : Node3D
 {
 	[Export] NodePath animationPlayerPath;
+	[Export] NodePath audioStreamPlayer3DPath;
 	AnimationPlayer animationPlayer;
+	AudioStreamPlayer3D audioStreamPlayer3D;
 	bool hasBeenRung = false;
 	public override void _Ready()
 	{
 		animationPlayer = GetNode<AnimationPlayer>(animationPlayerPath);
+		audioStreamPlayer3D = GetNode<AudioStreamPlayer3D>(audioStreamPlayer3DPath);
 	}
 
 	public void RingBell()
@@ -16,6 +19,7 @@ public partial class BellInteract : Node3D
 		if(!hasBeenRung)
 		{
 			animationPlayer.Play("Ring");
+			audioStreamPlayer3D.Play();
 			hasBeenRung = true;
 		}
 	}

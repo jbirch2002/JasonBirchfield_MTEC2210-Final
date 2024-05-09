@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://vvv04bmotuoe"
+path="res://.godot/imported/Door Opening.mp3-92b5d63f95b6e66eaa0ee2a51a1b65af.mp3str"
+
+[deps]
+
+source_file="res://Sounds/Door Opening.mp3"
+dest_files=["res://.godot/imported/Door Opening.mp3-92b5d63f95b6e66eaa0ee2a51a1b65af.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

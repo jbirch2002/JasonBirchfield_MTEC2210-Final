@@ -1,11 +1,13 @@
-[gd_scene load_steps=40 format=3 uid="uid://cyoh78wennj37"]
+[gd_scene load_steps=44 format=3 uid="uid://cyoh78wennj37"]
 
 [ext_resource type="Texture2D" uid="uid://dp4o0y55wdwkj" path="res://cavetexture.png" id="1_kv34w"]
 [ext_resource type="PackedScene" uid="uid://bn14grvdecwll" path="res://Scenes/Player/player.tscn" id="2_kjnsl"]
 [ext_resource type="PackedScene" uid="uid://2c3fffmnel4f" path="res://Scenes/Decoration/shaft_entrance.tscn" id="3_m62nh"]
 [ext_resource type="Script" path="res://TrapDoor.cs" id="3_xh7ft"]
 [ext_resource type="Texture2D" uid="uid://cvh7401cpfwgm" path="res://Assets/decoration/bones/textures/BONES_LOW_POLY_ASSET_PACK_texture.png" id="4_2uup6"]
+[ext_resource type="Script" path="res://Scripts/PlayGramophone.cs" id="4_pmvhk"]
 [ext_resource type="PackedScene" uid="uid://dwkqtseqht3sg" path="res://Scenes/Decoration/stool.tscn" id="4_xy0tm"]
+[ext_resource type="AudioStream" uid="uid://bbjlg4habgri" path="res://Sounds/Background music/LISA The Painful OST - Blood For S x [ ezmp3.cc ].mp3" id="5_mgsug"]
 [ext_resource type="Script" path="res://Scripts/BonesInteract.cs" id="5_v6lyj"]
 [ext_resource type="AudioStream" uid="uid://bt5ifh5wl2bup" path="res://Sounds/Bones sound.mp3" id="6_myxen"]
 [ext_resource type="PackedScene" uid="uid://dpx06jm7empwt" path="res://Scenes/door old metal in cave.tscn" id="8_ylnqs"]
@@ -14,6 +16,7 @@
 [ext_resource type="PackedScene" uid="uid://cy76kmqt0qln7" path="res://Scenes/Decoration/bell.tscn" id="12_0ys3x"]
 [ext_resource type="Texture2D" uid="uid://bygkbq4j2kwy5" path="res://Assets/decoration/bell/Material 1/Bar Bell/bar_bell_base_color 1.png" id="13_r3x5p"]
 [ext_resource type="Script" path="res://Scenes/Decoration/BellInteract.cs" id="13_v74bs"]
+[ext_resource type="AudioStream" uid="uid://dgeo35ewwwmvb" path="res://Sounds/Sound of Ringing bell [ ezmp3.cc ].mp3" id="17_mefmw"]
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_8ldnw"]
 cull_mode = 2
@@ -23,6 +26,9 @@ texture_repeat = false
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_xuhb4"]
 albedo_texture = ExtResource("1_kv34w")
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_n5fxy"]
+size = Vector3(1.64594, 1.84479, 1.44824)
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_o5irl"]
 resource_name = "DefaultMaterial"
@@ -442,6 +448,17 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 128.967, -9.10304, -508.477)
 [node name="Gramophone" parent="Decoration/Stool" instance=ExtResource("10_t0alh")]
 transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, 0.548126, 4.80792, 0.0682373)
 
+[node name="StaticBody3D" type="StaticBody3D" parent="Decoration/Stool/Gramophone"]
+script = ExtResource("4_pmvhk")
+audioStreamPlayer3DPath = NodePath("../PlayGramophoneAudio")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Decoration/Stool/Gramophone/StaticBody3D"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.243896, 0.891205, -0.0921936)
+shape = SubResource("BoxShape3D_n5fxy")
+
+[node name="PlayGramophoneAudio" type="AudioStreamPlayer3D" parent="Decoration/Stool/Gramophone"]
+stream = ExtResource("5_mgsug")
+
 [node name="ShaftEntrance" parent="Decoration" instance=ExtResource("3_m62nh")]
 transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 3.5178, -140.274, 2.7469, 0)
 
@@ -456,13 +473,13 @@ surface_material_override/0 = SubResource("StandardMaterial3D_onao8")
 
 [node name="StaticBody3D" type="StaticBody3D" parent="Decoration/Skull" groups=["Bones"]]
 script = ExtResource("5_v6lyj")
-audioStreamPlayerPath = NodePath("../audioStreamPlayer3d")
+audioStreamPlayerPath = NodePath("../BonesAudio")
 
 [node name="collisionShape3d" type="CollisionShape3D" parent="Decoration/Skull/StaticBody3D"]
 transform = Transform3D(0.965895, 0.258843, 1.13143e-08, -0.258843, 0.965895, -1.49059e-09, -1.13135e-08, -1.49033e-09, 1, 0.00021401, 0.00019972, 0.00174936)
 shape = SubResource("BoxShape3D_nxpdd")
 
-[node name="audioStreamPlayer3d" type="AudioStreamPlayer3D" parent="Decoration/Skull"]
+[node name="BonesAudio" type="AudioStreamPlayer3D" parent="Decoration/Skull"]
 stream = ExtResource("6_myxen")
 
 [node name="Bone_3" type="MeshInstance3D" parent="Decoration"]
@@ -473,13 +490,13 @@ surface_material_override/0 = SubResource("StandardMaterial3D_hkm1q")
 
 [node name="StaticBody3D" type="StaticBody3D" parent="Decoration/Bone_3" groups=["Bones"]]
 script = ExtResource("5_v6lyj")
-audioStreamPlayerPath = NodePath("../audioStreamPlayer3d")
+audioStreamPlayerPath = NodePath("../BonesAudio")
 
 [node name="collisionShape3d" type="CollisionShape3D" parent="Decoration/Bone_3/StaticBody3D"]
 transform = Transform3D(0.965895, 0.258843, 1.11759e-08, -0.258843, 0.965957, -1.49059e-09, 1.72413e-09, 7.79472e-10, 1, -0.000246697, 0.000315219, 0.00155194)
 shape = SubResource("BoxShape3D_nxpdd")
 
-[node name="audioStreamPlayer3d" type="AudioStreamPlayer3D" parent="Decoration/Bone_3"]
+[node name="BonesAudio" type="AudioStreamPlayer3D" parent="Decoration/Bone_3"]
 transform = Transform3D(0.00125, 1.00782e-17, -1.81899e-12, -3.90064e-20, 0.00125, 1.38778e-17, 1.81899e-12, 1.04083e-17, 0.00125, 0, 0, 0)
 stream = ExtResource("6_myxen")
 
@@ -535,7 +552,7 @@ libraries = {
 speed_scale = 2.5
 
 [node name="Player" parent="." instance=ExtResource("2_kjnsl")]
-transform = Transform3D(-4.37114e-07, 0, -10, 0, 10, 0, 10, 0, -4.37114e-07, 213.943, -2.2549, 196.15)
+transform = Transform3D(-4.37114e-07, 0, -10, 0, 10, 0, 10, 0, -4.37114e-07, -103.743, -5.1409, -0.540237)
 
 [node name="Bell" parent="." instance=ExtResource("12_0ys3x")]
 transform = Transform3D(-5, 0, -4.37114e-07, 0, 5, 0, 4.37114e-07, 0, -5, 590.545, -371.628, 196.905)
@@ -550,6 +567,7 @@ surface_material_override/0 = SubResource("StandardMaterial3D_ngjwi")
 transform = Transform3D(1, 3.12797e-29, 0, -4.23516e-22, 1, 0, -7.10543e-15, -2.52435e-29, 1, 0, 0, 0)
 script = ExtResource("13_v74bs")
 animationPlayerPath = NodePath("../../animationPlayer2")
+audioStreamPlayer3DPath = NodePath("../../PlayBellAudio")
 
 [node name="collisionShape3d" type="CollisionShape3D" parent="Bell/Bar_Bell_Circle_005/staticBody3d"]
 transform = Transform3D(0.999954, -2.72321e-19, 1.56319e-13, -3.998e-19, 0.999954, 1.49214e-13, -1.56319e-13, -1.49214e-13, 0.999954, -0.00194275, -0.00135809, 0.000653327)
@@ -560,3 +578,6 @@ libraries = {
 "": SubResource("AnimationLibrary_vg8lr")
 }
 speed_scale = 2.5
+
+[node name="PlayBellAudio" type="AudioStreamPlayer3D" parent="Bell"]
+stream = ExtResource("17_mefmw")

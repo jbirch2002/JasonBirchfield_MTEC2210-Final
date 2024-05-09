@@ -1,10 +1,14 @@
-[gd_scene load_steps=42 format=3 uid="uid://d1uapxdqjypdi"]
+[gd_scene load_steps=46 format=3 uid="uid://d1uapxdqjypdi"]
 
 [ext_resource type="Texture2D" uid="uid://cfipv208lae60" path="res://Assets/houses/preset_houses/house3_tex3.png" id="1_tgm43"]
+[ext_resource type="Script" path="res://Scripts/FrontAndExit.cs" id="2_4wilq"]
 [ext_resource type="Script" path="res://OpenDoors.cs" id="2_g2yrp"]
 [ext_resource type="PackedScene" uid="uid://2c3fffmnel4f" path="res://Scenes/Decoration/shaft_entrance.tscn" id="2_qvlua"]
 [ext_resource type="PackedScene" uid="uid://bn14grvdecwll" path="res://Scenes/Player/player.tscn" id="4_dgh7x"]
+[ext_resource type="AudioStream" uid="uid://vvv04bmotuoe" path="res://Sounds/Door Opening.mp3" id="4_dudpb"]
+[ext_resource type="PackedScene" uid="uid://lhqcpk8b2e0f" path="res://Scenes/Animals/chicken.tscn" id="5_8nvui"]
 [ext_resource type="PackedScene" uid="uid://40d3r4rmgsp4" path="res://Scenes/door old metal.tscn" id="5_46fg1"]
+[ext_resource type="AudioStream" uid="uid://eqa7mpjv001t" path="res://Sounds/Door Closing.mp3" id="5_o7n8x"]
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_jm1ii"]
 resource_name = "house3"
@@ -468,96 +472,126 @@ _data = {
 [node name="House2" type="Node3D"]
 transform = Transform3D(10, 0, 0, 0, 10, 0, 0, 0, 10, 0, 0, 0)
 
-[node name="RootNode" type="Node3D" parent="."]
+[node name="House2Inside" type="Node3D" parent="."]
 
-[node name="house3" type="MeshInstance3D" parent="RootNode"]
+[node name="house3" type="MeshInstance3D" parent="House2Inside"]
 mesh = SubResource("ArrayMesh_n8g8d")
 skeleton = NodePath("")
 surface_material_override/0 = SubResource("StandardMaterial3D_i0x5y")
 
-[node name="StaticBody3D" type="StaticBody3D" parent="RootNode/house3"]
+[node name="StaticBody3D" type="StaticBody3D" parent="House2Inside/house3"]
 
-[node name="CollisionShape3D" type="CollisionShape3D" parent="RootNode/house3/StaticBody3D"]
+[node name="CollisionShape3D" type="CollisionShape3D" parent="House2Inside/house3/StaticBody3D"]
 shape = SubResource("ConcavePolygonShape3D_j7s16")
 
-[node name="house3_door1" type="MeshInstance3D" parent="RootNode/house3"]
+[node name="house3_door1" type="MeshInstance3D" parent="House2Inside/house3"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.8, 1, 2.9)
 mesh = SubResource("ArrayMesh_o3a25")
 skeleton = NodePath("")
 surface_material_override/0 = SubResource("StandardMaterial3D_ov2ab")
 
-[node name="StaticBody3D" type="StaticBody3D" parent="RootNode/house3/house3_door1" groups=["ExitDoorHouse2"]]
+[node name="StaticBody3D" type="StaticBody3D" parent="House2Inside/house3/house3_door1" groups=["ExitDoorHouse2"]]
+script = ExtResource("2_4wilq")
 
-[node name="CollisionShape3D" type="CollisionShape3D" parent="RootNode/house3/house3_door1/StaticBody3D"]
+[node name="CollisionShape3D" type="CollisionShape3D" parent="House2Inside/house3/house3_door1/StaticBody3D"]
 shape = SubResource("ConvexPolygonShape3D_g588c")
 
-[node name="LivingroomDoor" type="MeshInstance3D" parent="RootNode/house3"]
+[node name="LivingroomDoor" type="MeshInstance3D" parent="House2Inside/house3"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.2, 1, -0.0999999)
 mesh = SubResource("ArrayMesh_h4omf")
 skeleton = NodePath("")
 surface_material_override/0 = SubResource("StandardMaterial3D_lfp61")
 
-[node name="StaticBody3D" type="StaticBody3D" parent="RootNode/house3/LivingroomDoor" groups=["Doors"]]
+[node name="StaticBody3D" type="StaticBody3D" parent="House2Inside/house3/LivingroomDoor" groups=["Doors"]]
 script = ExtResource("2_g2yrp")
 animationPlayerPath = NodePath("../LivingroomDoorAnimation")
+openDoorAudioPath = NodePath("../LivingroomDoorOpenDoorAudio")
+closeDoorAudioPath = NodePath("../LivingroomDoorCloseDoorAudio")
 
-[node name="CollisionShape3D" type="CollisionShape3D" parent="RootNode/house3/LivingroomDoor/StaticBody3D"]
+[node name="CollisionShape3D" type="CollisionShape3D" parent="House2Inside/house3/LivingroomDoor/StaticBody3D"]
 shape = SubResource("ConvexPolygonShape3D_ue5ui")
 
-[node name="LivingroomDoorAnimation" type="AnimationPlayer" parent="RootNode/house3/LivingroomDoor"]
+[node name="LivingroomDoorAnimation" type="AnimationPlayer" parent="House2Inside/house3/LivingroomDoor"]
 libraries = {
 "": SubResource("AnimationLibrary_v7ec5")
 }
 speed_scale = 2.5
 
-[node name="house3_windows" type="MeshInstance3D" parent="RootNode/house3"]
+[node name="LivingroomDoorOpenDoorAudio" type="AudioStreamPlayer3D" parent="House2Inside/house3/LivingroomDoor"]
+stream = ExtResource("4_dudpb")
+
+[node name="LivingroomDoorCloseDoorAudio" type="AudioStreamPlayer3D" parent="House2Inside/house3/LivingroomDoor"]
+stream = ExtResource("5_o7n8x")
+
+[node name="house3_windows" type="MeshInstance3D" parent="House2Inside/house3"]
 mesh = SubResource("ArrayMesh_pae76")
 skeleton = NodePath("")
 surface_material_override/0 = SubResource("StandardMaterial3D_74gof")
 
-[node name="BathroomDoor" type="MeshInstance3D" parent="RootNode/house3"]
+[node name="BathroomDoor" type="MeshInstance3D" parent="House2Inside/house3"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.2, 1, -2.1)
 mesh = SubResource("ArrayMesh_3fm2x")
 skeleton = NodePath("")
 surface_material_override/0 = SubResource("StandardMaterial3D_06wjr")
 
-[node name="StaticBody3D" type="StaticBody3D" parent="RootNode/house3/BathroomDoor" groups=["Doors"]]
+[node name="StaticBody3D" type="StaticBody3D" parent="House2Inside/house3/BathroomDoor" groups=["Doors"]]
 script = ExtResource("2_g2yrp")
 animationPlayerPath = NodePath("../BathroomDoorAnimation")
+openDoorAudioPath = NodePath("../BathroomDoorOpenAudio")
+closeDoorAudioPath = NodePath("../BathroomDoorCloseAudio")
 
-[node name="CollisionShape3D" type="CollisionShape3D" parent="RootNode/house3/BathroomDoor/StaticBody3D"]
+[node name="CollisionShape3D" type="CollisionShape3D" parent="House2Inside/house3/BathroomDoor/StaticBody3D"]
 shape = SubResource("ConvexPolygonShape3D_36ne0")
 
-[node name="BathroomDoorAnimation" type="AnimationPlayer" parent="RootNode/house3/BathroomDoor"]
+[node name="BathroomDoorAnimation" type="AnimationPlayer" parent="House2Inside/house3/BathroomDoor"]
 libraries = {
 "": SubResource("AnimationLibrary_dgbmq")
 }
 speed_scale = 2.5
 
-[node name="CaveRoomDoor" type="MeshInstance3D" parent="RootNode/house3"]
+[node name="BathroomDoorOpenAudio" type="AudioStreamPlayer3D" parent="House2Inside/house3/BathroomDoor"]
+stream = ExtResource("4_dudpb")
+
+[node name="BathroomDoorCloseAudio" type="AudioStreamPlayer3D" parent="House2Inside/house3/BathroomDoor"]
+stream = ExtResource("5_o7n8x")
+
+[node name="CaveRoomDoor" type="MeshInstance3D" parent="House2Inside/house3"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.6, 1, -1.5)
 mesh = SubResource("ArrayMesh_ik4hf")
 skeleton = NodePath("")
 surface_material_override/0 = SubResource("StandardMaterial3D_tryh3")
 
-[node name="StaticBody3D" type="StaticBody3D" parent="RootNode/house3/CaveRoomDoor" groups=["Doors"]]
+[node name="StaticBody3D" type="StaticBody3D" parent="House2Inside/house3/CaveRoomDoor" groups=["Doors"]]
 script = ExtResource("2_g2yrp")
 animationPlayerPath = NodePath("../CaveRoomDoorAnimation")
+openDoorAudioPath = NodePath("../CaveroomDoorOpenAudio")
+closeDoorAudioPath = NodePath("../CaveroomDoorCloseAudio")
 
-[node name="CollisionShape3D2" type="CollisionShape3D" parent="RootNode/house3/CaveRoomDoor/StaticBody3D"]
+[node name="CollisionShape3D2" type="CollisionShape3D" parent="House2Inside/house3/CaveRoomDoor/StaticBody3D"]
 shape = SubResource("ConvexPolygonShape3D_cqbsv")
 
-[node name="CaveRoomDoorAnimation" type="AnimationPlayer" parent="RootNode/house3/CaveRoomDoor"]
+[node name="CaveRoomDoorAnimation" type="AnimationPlayer" parent="House2Inside/house3/CaveRoomDoor"]
 libraries = {
 "": SubResource("AnimationLibrary_j0gtd")
 }
 speed_scale = 2.5
 
+[node name="CaveroomDoorOpenAudio" type="AudioStreamPlayer3D" parent="House2Inside/house3/CaveRoomDoor"]
+stream = ExtResource("4_dudpb")
+
+[node name="CaveroomDoorCloseAudio" type="AudioStreamPlayer3D" parent="House2Inside/house3/CaveRoomDoor"]
+stream = ExtResource("5_o7n8x")
+
+[node name="Decoration" type="Node3D" parent="House2Inside"]
+
+[node name="Chicken" parent="House2Inside/Decoration" instance=ExtResource("5_8nvui")]
+transform = Transform3D(-1, 0, 8.74228e-08, 0, 1, 0, -8.74228e-08, 0, -1, 1.68893, 0.9999, -4.29056)
+
 [node name="ShaftEntrance" parent="." instance=ExtResource("2_qvlua")]
 transform = Transform3D(-8.74228e-09, 0, -0.2, 0, 0.2, 0, 0.2, 0, -8.74228e-09, -0.852953, 2.13277, -7.21187)
 
+[node name="OldMetalDoor" parent="ShaftEntrance" instance=ExtResource("5_46fg1")]
+transform = Transform3D(5.0985e-09, 0, -0.18, 0, 0.03888, 0, 0.03888, 0, 2.36042e-08, 10.9687, -5.94403, 0.464839)
+
 [node name="Player" parent="." instance=ExtResource("4_dgh7x")]
 transform = Transform3D(1, 0, 1.74846e-07, 0, 1, 0, -1.74846e-07, 0, 1, -1.34145, 1.40295, 1.9287)
-
-[node name="OldMetalDoor" parent="." instance=ExtResource("5_46fg1")]
-transform = Transform3D(-0.007776, 0, -3.14722e-09, 0, 0.007776, 0, 6.798e-10, 0, -0.036, -0.945921, 0.943964, -5.01814)

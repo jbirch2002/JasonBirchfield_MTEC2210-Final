@@ -4,8 +4,8 @@ using System;
 public partial class OpenDoors : Node3D
 {
     [Export] NodePath animationPlayerPath;
-    [Export] NodePath audioStreamPlayer3DPath;
-    [Export] NodePath audioStreamPlayer3DPath2;
+    [Export] NodePath openDoorAudioPath;
+    [Export] NodePath closeDoorAudioPath;
     AnimationPlayer animationPlayer;
     AudioStreamPlayer3D audioStreamPlayer3D;
     AudioStreamPlayer3D audioStreamPlayer3D2;
@@ -14,8 +14,8 @@ public partial class OpenDoors : Node3D
     public override void _Ready()
     {
         animationPlayer = GetNode<AnimationPlayer>(animationPlayerPath);
-        audioStreamPlayer3D = GetNode<AudioStreamPlayer3D>(audioStreamPlayer3DPath);
-        audioStreamPlayer3D2 = GetNode<AudioStreamPlayer3D>(audioStreamPlayer3DPath2);
+        audioStreamPlayer3D = GetNode<AudioStreamPlayer3D>(openDoorAudioPath);
+        audioStreamPlayer3D2 = GetNode<AudioStreamPlayer3D>(closeDoorAudioPath);
     }
 
     public void ToggleDoor()
