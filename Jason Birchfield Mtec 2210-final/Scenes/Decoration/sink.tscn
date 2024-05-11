@@ -85,6 +85,7 @@ surface_material_override/0 = SubResource("StandardMaterial3D_7qtrb")
 surface_material_override/1 = SubResource("StandardMaterial3D_10kpf")
 
 [node name="StaticBody3D" type="StaticBody3D" parent="SinkFrame"]
+transform = Transform3D(1, 0, 0, 0, 1, -1.77635e-15, 0, -5.29396e-23, 1, 0, 0, 0)
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="SinkFrame/StaticBody3D"]
 shape = SubResource("ConcavePolygonShape3D_bkgde")

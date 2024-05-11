@@ -29,7 +29,15 @@ public partial class InteractionComponent : Node
         {
             var interactable = interactionRaycast.GetCollider() as Node;
             isReset = false;
-            if(interactable.IsInGroup("Doors") || interactable.IsInGroup("EntranceDoorPlayerHouse") || interactable.IsInGroup("EntranceDoorHouse2"))
+            if(interactable.IsInGroup("Doors"))
+            {
+                if (interactable != null && interactable.HasMethod("Interact"))
+                {
+                    interactionLabel.Text = "Use door\n[E]";
+                    centerContainer.Visible = true;
+                }
+            }
+            if(interactable.IsInGroup("EntranceDoorPlayerHouse") || interactable.IsInGroup("EntranceDoorHouse2"))
             {
                 if (interactable != null && interactable.HasMethod("Interact"))
                 {
@@ -37,12 +45,12 @@ public partial class InteractionComponent : Node
                     centerContainer.Visible = true;
                 }
             }
-            
+
             if(interactable.IsInGroup("ExitDoorPlayerHouse") || interactable.IsInGroup("ExitDoorHouse2"))
             {
                 if (interactable != null && interactable.HasMethod("Interact"))
                 {
-                    interactionLabel.Text = "Leave\n[E]";
+                    interactionLabel.Text = "Leave?\n[E]";
                     centerContainer.Visible = true;
                 }
             }
@@ -51,6 +59,14 @@ public partial class InteractionComponent : Node
                 if (interactable != null && interactable.HasMethod("Interact"))
                 {
                     interactionLabel.Text = "Enter...?\n[E]";
+                    centerContainer.Visible = true;
+                }
+            }
+            if (interactable.IsInGroup("Oven") || interactable.IsInGroup("Cupboard") || interactable.IsInGroup("Fridge"))
+            {
+                if (interactable != null && interactable.HasMethod("Interact"))
+                {
+                    interactionLabel.Text = "Open\n[E]";
                     centerContainer.Visible = true;
                 }
             }
@@ -67,6 +83,14 @@ public partial class InteractionComponent : Node
                 if (interactable != null && interactable.HasMethod("Interact"))
                 {
                     interactionLabel.Text = "Ring?\n[E]";
+                    centerContainer.Visible = true;
+                }
+            }
+            if(interactable.IsInGroup("Toilet"))
+            {
+                if (interactable != null && interactable.HasMethod("Interact"))
+                {
+                    interactionLabel.Text = "Flush\n[E]";
                     centerContainer.Visible = true;
                 }
             }
