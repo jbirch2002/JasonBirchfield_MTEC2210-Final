@@ -590,6 +590,7 @@ closeDoorAudioPath = NodePath("../../ClosetDoorCloseAudio")
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="House/house1/ClosetDoorHinge/ClosetR/Door"]
 shape = SubResource("ConcavePolygonShape3D_7spv2")
+disabled = true
 
 [node name="ClosetL" type="MeshInstance3D" parent="House/house1/ClosetDoorHinge"]
 transform = Transform3D(-3.61999e-06, 0, -1, 0, 1, 0, 1, 0, -3.61999e-06, 0.9, 1, -3.68244)

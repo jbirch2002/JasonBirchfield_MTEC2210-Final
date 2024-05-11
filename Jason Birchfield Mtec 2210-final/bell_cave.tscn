@@ -567,7 +567,6 @@ surface_material_override/0 = SubResource("StandardMaterial3D_ngjwi")
 transform = Transform3D(1, 3.12797e-29, 0, -4.23516e-22, 1, 0, -7.10543e-15, -2.52435e-29, 1, 0, 0, 0)
 script = ExtResource("13_v74bs")
 animationPlayerPath = NodePath("../../animationPlayer2")
-audioStreamPlayer3DPath = NodePath("../../PlayBellAudio")
 
 [node name="collisionShape3d" type="CollisionShape3D" parent="Bell/Bar_Bell_Circle_005/staticBody3d"]
 transform = Transform3D(0.999954, -2.72321e-19, 1.56319e-13, -3.998e-19, 0.999954, 1.49214e-13, -1.56319e-13, -1.49214e-13, 0.999954, -0.00194275, -0.00135809, 0.000653327)
