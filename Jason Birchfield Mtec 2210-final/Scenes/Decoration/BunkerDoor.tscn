@@ -1,11 +1,10 @@
-[gd_scene load_steps=8 format=3 uid="uid://bb8l05q1rev10"]
+[gd_scene load_steps=9 format=3 uid="uid://bb8l05q1rev10"]
 
 [ext_resource type="Texture2D" uid="uid://dgy50sgqw8uu6" path="res://Assets/decoration/bunker door/textures/Door_noas_L_Door_Roughness.tga.png" id="1_kainu"]
 [ext_resource type="Texture2D" uid="uid://baqin5jc5cbm2" path="res://Assets/decoration/Models pack psx/Texture/Metal_06.jpg" id="2_d605o"]
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_k287x"]
 resource_name = "Door"
-albedo_color = Color(1, 1, 1, 1)
 metallic = 0.4
 roughness = 0.272166
 
@@ -44,6 +43,9 @@ shadow_mesh = SubResource("ArrayMesh_2auwu")
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_dotxt"]
 albedo_texture = ExtResource("1_kainu")
 
+[sub_resource type="BoxShape3D" id="BoxShape3D_bhhrm"]
+size = Vector3(0.0305939, 0.0176697, 0.0080719)
+
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_ned5i"]
 albedo_texture = ExtResource("2_d605o")
 
@@ -52,10 +54,16 @@ albedo_texture = ExtResource("2_d605o")
 [node name="RootNode" type="Node3D" parent="."]
 
 [node name="Door" type="MeshInstance3D" parent="RootNode"]
-transform = Transform3D(5.96046e-06, 8.9407e-06, 100, -100, 0, 8.9407e-06, 0, -100, 5.96046e-06, 0.389654, 1.38265, -0.00383186)
+transform = Transform3D(5.96046e-06, 8.9407e-06, 100, -100, 0, 8.9407e-06, 0, -100, 5.96046e-06, 0.389654, 1.38265, 0.0471895)
 mesh = SubResource("ArrayMesh_r1w0f")
 skeleton = NodePath("")
 surface_material_override/0 = SubResource("StandardMaterial3D_dotxt")
+
+[node name="StaticBody3D" type="StaticBody3D" parent="RootNode/Door"]
+
+[node name="collisionShape3d" type="CollisionShape3D" parent="RootNode/Door/StaticBody3D"]
+transform = Transform3D(1, 1.08759e-18, 4.76456e-22, 2.71898e-19, 1, 0, -2.42906e-26, 0, 1, -0.00148422, -0.000676817, -0.00393651)
+shape = SubResource("BoxShape3D_bhhrm")
 
 [node name="csgBox3d" type="CSGBox3D" parent="."]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2.48687, 1.85774, 0.113953)

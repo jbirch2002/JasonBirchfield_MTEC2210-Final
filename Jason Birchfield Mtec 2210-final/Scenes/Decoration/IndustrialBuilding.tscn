@@ -1,4 +1,4 @@
-[gd_scene load_steps=5 format=3 uid="uid://cogo2fyyq4m1t"]
+[gd_scene load_steps=6 format=3 uid="uid://cogo2fyyq4m1t"]
 
 [ext_resource type="Texture2D" uid="uid://bx6krwt3eanvv" path="res://Assets/houses/buildings/exports/IndustrialBuilding_industrial_building_front_lowres.png" id="1_h7fix"]
 
@@ -42,8 +42,16 @@ _surfaces = [{
 blend_shape_mode = 0
 shadow_mesh = SubResource("ArrayMesh_jj70m")
 
+[sub_resource type="ConvexPolygonShape3D" id="ConvexPolygonShape3D_gfmap"]
+points = PackedVector3Array(-3.80893, 0.445538, -0.134642, 4.06349, 8.0619, 0.119226, 4.06349, -0.0619011, 0.119226, -4.06349, 8.0619, 0.119226, 3.80893, 7.55446, -0.134642, -4.06349, -0.0619011, 0.119226, 3.80893, 0.445538, -0.134642, -3.80893, 7.55446, -0.134642, -4.06349, 8.0619, -0.00770793, 4.06349, -0.0619011, -0.00770793, 4.06349, 8.0619, -0.00770793, -4.06349, -0.0619011, -0.00770793)
+
 [node name="IndustrialBuilding" type="Node3D"]
 
 [node name="IndustrialBuildingFront" type="MeshInstance3D" parent="."]
 mesh = SubResource("ArrayMesh_f8tbg")
 skeleton = NodePath("")
+
+[node name="StaticBody3D" type="StaticBody3D" parent="IndustrialBuildingFront"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="IndustrialBuildingFront/StaticBody3D"]
+shape = SubResource("ConvexPolygonShape3D_gfmap")

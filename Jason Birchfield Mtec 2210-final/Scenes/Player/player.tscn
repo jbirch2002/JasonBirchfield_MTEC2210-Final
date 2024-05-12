@@ -13,10 +13,10 @@ font_size = 8
 
 [node name="Player" type="CharacterBody3D" groups=["Player"]]
 transform = Transform3D(19.2188, 0, 0, 0, 12.1827, 0, 0, 0, 10, 0, 5.53805, 0)
-floor_max_angle = 1.309
+floor_max_angle = 0.523599
 script = ExtResource("1_64u7i")
-walkingSpeed = 40.0
-runningSpeed = 48.0
+walkingSpeed = 50.0
+runningSpeed = 59.0
 jumpVelocity = 68.0
 
 [node name="InteractionComponent" parent="." instance=ExtResource("2_i84db")]

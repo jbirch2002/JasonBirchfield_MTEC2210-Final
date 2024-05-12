@@ -324,12 +324,12 @@ use_collision = true
 material = SubResource("StandardMaterial3D_8ldnw")
 
 [node name="CaveSections5" type="CSGSphere3D" parent="CaveSections"]
-transform = Transform3D(-4.37114e-08, 0, 0.138546, 0, 0.999999, 0, -7.21783, 0, -4.37114e-08, 0.391658, 0, -2.54487)
+transform = Transform3D(-4.37114e-08, 0, 0.138546, 0, 0.999999, 0, -7.21783, 0, -4.37114e-08, 0.420538, 0, -2.56341)
 use_collision = true
 material = SubResource("StandardMaterial3D_8ldnw")
 
 [node name="CaveSections6" type="CSGSphere3D" parent="CaveSections"]
-transform = Transform3D(-4.37114e-08, 0, 0.138546, 0, 0.999998, 0, -7.21783, 0, -4.37114e-08, 0.391658, 0, -8.3736)
+transform = Transform3D(-4.37114e-08, 0, 0.138546, 0, 0.999997, 0, -7.21783, 0, -4.37114e-08, 0.420538, 0, -7.84373)
 use_collision = true
 material = SubResource("StandardMaterial3D_8ldnw")
 
@@ -383,6 +383,18 @@ use_collision = true
 size = Vector3(1, 1, 10.8408)
 material = SubResource("StandardMaterial3D_xuhb4")
 
+[node name="Wall8" type="CSGBox3D" parent="Walls"]
+transform = Transform3D(2.07247e-12, -3.74695e-06, 4.51908, -12.6433, -4.52444e-08, -4.8996e-20, 5.52655e-07, -1.03507, -1.6359e-05, -46.7956, -0.38922, 29.7542)
+use_collision = true
+size = Vector3(1, 1, 11.4297)
+material = SubResource("StandardMaterial3D_xuhb4")
+
+[node name="Wall9" type="CSGBox3D" parent="Walls"]
+transform = Transform3D(2.07247e-12, -3.74695e-06, 4.51908, -12.6433, -4.52444e-08, -4.8996e-20, 5.52655e-07, -1.03507, -1.6359e-05, -46.8386, -0.38922, 26.336)
+use_collision = true
+size = Vector3(1, 1, 11.4487)
+material = SubResource("StandardMaterial3D_xuhb4")
+
 [node name="Wall5" type="CSGBox3D" parent="Walls"]
 transform = Transform3D(-5.52655e-07, 1.03507, 1.61615e-05, -12.6433, -4.52444e-08, 0, 2.01238e-12, -3.7017e-06, 4.51908, 1.95315, -35.132, 0.328602)
 use_collision = true
@@ -403,7 +415,7 @@ use_collision = true
 material = SubResource("StandardMaterial3D_xuhb4")
 
 [node name="Floor6" type="CSGBox3D" parent="Floor"]
-transform = Transform3D(-2.25364e-05, 0, 45.1908, 0, 10.3507, 0, -515.573, 0, -1.97535e-06, 131.03, -14.4041, -280.424)
+transform = Transform3D(-2.25364e-05, 0, 45.1908, 0, 10.3507, 0, -515.573, 0, -1.97535e-06, 132.974, -14.4041, -280.424)
 use_collision = true
 material = SubResource("StandardMaterial3D_xuhb4")
 
@@ -443,7 +455,7 @@ material = SubResource("StandardMaterial3D_xuhb4")
 [node name="Decoration" type="Node3D" parent="."]
 
 [node name="Stool" parent="Decoration" instance=ExtResource("4_xy0tm")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 128.967, -9.10304, -508.477)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 137.221, -9.10304, -477.05)
 
 [node name="Gramophone" parent="Decoration/Stool" instance=ExtResource("10_t0alh")]
 transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, 0.548126, 4.80792, 0.0682373)

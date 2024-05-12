@@ -591,8 +591,8 @@ shadow_mesh = SubResource("ArrayMesh_qy3xu")
 [sub_resource type="BoxShape3D" id="BoxShape3D_lumjw"]
 size = Vector3(0.013382, 0.00338364, 0.0188456)
 
-[sub_resource type="Animation" id="Animation_nhrhu"]
-resource_name = "Open"
+[sub_resource type="Animation" id="Animation_nq622"]
+resource_name = "Close"
 tracks/0/type = "value"
 tracks/0/imported = false
 tracks/0/enabled = true
@@ -603,7 +603,7 @@ tracks/0/keys = {
 "times": PackedFloat32Array(0, 1),
 "transitions": PackedFloat32Array(1, 1),
 "update": 0,
-"values": [Vector3(-1.5708, 0, 0), Vector3(-1.5708, -1.5708, 0)]
+"values": [Vector3(-1.5708, -1.5708, 0), Vector3(-1.5708, -1.36424e-14, 0)]
 }
 tracks/1/type = "value"
 tracks/1/imported = false
@@ -618,8 +618,8 @@ tracks/1/keys = {
 "values": [true, false]
 }
 
-[sub_resource type="Animation" id="Animation_nq622"]
-resource_name = "Close"
+[sub_resource type="Animation" id="Animation_nhrhu"]
+resource_name = "Open"
 tracks/0/type = "value"
 tracks/0/imported = false
 tracks/0/enabled = true
@@ -630,7 +630,7 @@ tracks/0/keys = {
 "times": PackedFloat32Array(0, 1),
 "transitions": PackedFloat32Array(1, 1),
 "update": 0,
-"values": [Vector3(-1.5708, -1.5708, 0), Vector3(-1.5708, -1.36424e-14, 0)]
+"values": [Vector3(-1.5708, 0, 0), Vector3(-1.5708, -1.5708, 0)]
 }
 tracks/1/type = "value"
 tracks/1/imported = false
@@ -711,8 +711,8 @@ shadow_mesh = SubResource("ArrayMesh_o0aj8")
 [sub_resource type="BoxShape3D" id="BoxShape3D_arodl"]
 size = Vector3(0.0130768, 0.00354671, 0.0185299)
 
-[sub_resource type="Animation" id="Animation_boefm"]
-resource_name = "Open"
+[sub_resource type="Animation" id="Animation_u5wdw"]
+resource_name = "Close"
 tracks/0/type = "value"
 tracks/0/imported = false
 tracks/0/enabled = true
@@ -723,7 +723,7 @@ tracks/0/keys = {
 "times": PackedFloat32Array(0, 1),
 "transitions": PackedFloat32Array(1, 1),
 "update": 0,
-"values": [Vector3(-1.5708, 0, 0), Vector3(-1.5708, 1.5708, 0)]
+"values": [Vector3(-1.5708, 1.5708, 0), Vector3(-1.5708, -1.36424e-14, 0)]
 }
 tracks/1/type = "value"
 tracks/1/imported = false
@@ -738,8 +738,8 @@ tracks/1/keys = {
 "values": [true, false]
 }
 
-[sub_resource type="Animation" id="Animation_u5wdw"]
-resource_name = "Close"
+[sub_resource type="Animation" id="Animation_boefm"]
+resource_name = "Open"
 tracks/0/type = "value"
 tracks/0/imported = false
 tracks/0/enabled = true
@@ -750,7 +750,7 @@ tracks/0/keys = {
 "times": PackedFloat32Array(0, 1),
 "transitions": PackedFloat32Array(1, 1),
 "update": 0,
-"values": [Vector3(-1.5708, 1.5708, 0), Vector3(-1.5708, -1.36424e-14, 0)]
+"values": [Vector3(-1.5708, 0, 0), Vector3(-1.5708, 1.5708, 0)]
 }
 tracks/1/type = "value"
 tracks/1/imported = false
@@ -897,8 +897,8 @@ shadow_mesh = SubResource("ArrayMesh_oi22a")
 [sub_resource type="BoxShape3D" id="BoxShape3D_evdys"]
 size = Vector3(0.0160561, 0.00336266, 0.0225906)
 
-[sub_resource type="Animation" id="Animation_s16d7"]
-resource_name = "Open"
+[sub_resource type="Animation" id="Animation_sbs8t"]
+resource_name = "Close"
 tracks/0/type = "value"
 tracks/0/imported = false
 tracks/0/enabled = true
@@ -909,7 +909,7 @@ tracks/0/keys = {
 "times": PackedFloat32Array(0, 1),
 "transitions": PackedFloat32Array(1, 1),
 "update": 0,
-"values": [Vector3(-3.29847e-28, 8.47033e-22, -3.14159), Vector3(4.37114e-08, -4.37114e-08, -1.5708)]
+"values": [Vector3(4.37114e-08, -4.37114e-08, -1.5708), Vector3(-1.69407e-21, 3.91192e-15, -3.14159)]
 }
 tracks/1/type = "value"
 tracks/1/imported = false
@@ -924,8 +924,8 @@ tracks/1/keys = {
 "values": [true, false]
 }
 
-[sub_resource type="Animation" id="Animation_sbs8t"]
-resource_name = "Close"
+[sub_resource type="Animation" id="Animation_s16d7"]
+resource_name = "Open"
 tracks/0/type = "value"
 tracks/0/imported = false
 tracks/0/enabled = true
@@ -936,7 +936,7 @@ tracks/0/keys = {
 "times": PackedFloat32Array(0, 1),
 "transitions": PackedFloat32Array(1, 1),
 "update": 0,
-"values": [Vector3(4.37114e-08, -4.37114e-08, -1.5708), Vector3(-1.69407e-21, 3.91192e-15, -3.14159)]
+"values": [Vector3(-3.29847e-28, 8.47033e-22, -3.14159), Vector3(4.37114e-08, -4.37114e-08, -1.5708)]
 }
 tracks/1/type = "value"
 tracks/1/imported = false
@@ -1018,8 +1018,8 @@ shadow_mesh = SubResource("ArrayMesh_fq1nl")
 [sub_resource type="BoxShape3D" id="BoxShape3D_e66ro"]
 size = Vector3(0.0155678, 0.00585938, 0.0109973)
 
-[sub_resource type="Animation" id="Animation_ovbhb"]
-resource_name = "Open"
+[sub_resource type="Animation" id="Animation_snfss"]
+resource_name = "Close"
 tracks/0/type = "value"
 tracks/0/imported = false
 tracks/0/enabled = true
@@ -1030,7 +1030,7 @@ tracks/0/keys = {
 "times": PackedFloat32Array(0, 1),
 "transitions": PackedFloat32Array(1, 1),
 "update": 0,
-"values": [Vector3(2.64698e-23, -2.31409e-30, -3.14159), Vector3(4.37114e-08, -4.37114e-08, -1.5708)]
+"values": [Vector3(4.37114e-08, -4.37114e-08, -1.5708), Vector3(2.84217e-14, -1.0378e-15, -3.14159)]
 }
 tracks/1/type = "value"
 tracks/1/imported = false
@@ -1045,8 +1045,8 @@ tracks/1/keys = {
 "values": [true, false]
 }
 
-[sub_resource type="Animation" id="Animation_snfss"]
-resource_name = "Close"
+[sub_resource type="Animation" id="Animation_ovbhb"]
+resource_name = "Open"
 tracks/0/type = "value"
 tracks/0/imported = false
 tracks/0/enabled = true
@@ -1057,7 +1057,7 @@ tracks/0/keys = {
 "times": PackedFloat32Array(0, 1),
 "transitions": PackedFloat32Array(1, 1),
 "update": 0,
-"values": [Vector3(4.37114e-08, -4.37114e-08, -1.5708), Vector3(2.84217e-14, -1.0378e-15, -3.14159)]
+"values": [Vector3(2.64698e-23, -2.31409e-30, -3.14159), Vector3(4.37114e-08, -4.37114e-08, -1.5708)]
 }
 tracks/1/type = "value"
 tracks/1/imported = false
@@ -1245,8 +1245,8 @@ albedo_color = Color(0, 0, 0, 1)
 [sub_resource type="BoxShape3D" id="BoxShape3D_gll1j"]
 size = Vector3(0.0100676, 0.00300598, 0.0113239)
 
-[sub_resource type="Animation" id="Animation_o0fo8"]
-resource_name = "Open"
+[sub_resource type="Animation" id="Animation_8dnll"]
+resource_name = "Close"
 tracks/0/type = "value"
 tracks/0/imported = false
 tracks/0/enabled = true
@@ -1257,7 +1257,7 @@ tracks/0/keys = {
 "times": PackedFloat32Array(0, 1),
 "transitions": PackedFloat32Array(1, 1),
 "update": 0,
-"values": [Vector3(6.77626e-21, 1.44445e-34, 1.42109e-14), Vector3(-1.5708, -1.94707e-07, 0)]
+"values": [Vector3(-1.5708, -1.94707e-07, 0), Vector3(-8.52651e-14, 1.94707e-07, 2.84217e-14)]
 }
 tracks/1/type = "value"
 tracks/1/imported = false
@@ -1272,8 +1272,8 @@ tracks/1/keys = {
 "values": [true, false]
 }
 
-[sub_resource type="Animation" id="Animation_8dnll"]
-resource_name = "Close"
+[sub_resource type="Animation" id="Animation_o0fo8"]
+resource_name = "Open"
 tracks/0/type = "value"
 tracks/0/imported = false
 tracks/0/enabled = true
@@ -1284,7 +1284,7 @@ tracks/0/keys = {
 "times": PackedFloat32Array(0, 1),
 "transitions": PackedFloat32Array(1, 1),
 "update": 0,
-"values": [Vector3(-1.5708, -1.94707e-07, 0), Vector3(-8.52651e-14, 1.94707e-07, 2.84217e-14)]
+"values": [Vector3(6.77626e-21, 1.44445e-34, 1.42109e-14), Vector3(-1.5708, -1.94707e-07, 0)]
 }
 tracks/1/type = "value"
 tracks/1/imported = false
@@ -1534,7 +1534,7 @@ transform = Transform3D(-0.55, 0, -8.30477e-08, 0, 0.55, 0, 8.30477e-08, 0, -0.5
 transform = Transform3D(-0.6, 0, -9.05975e-08, 0, 0.6, 0, 9.05975e-08, 0, -0.6, -3.37976, -0.37168, -5.73708)
 
 [node name="Flusher" type="MeshInstance3D" parent="Decoration/Toilet"]
-transform = Transform3D(-0.0466673, -1.15075e-08, -1.88345e-08, -7.04657e-09, 0.0762109, 8.47033e-22, -7.04657e-09, -1.73759e-15, 0.124735, 0.528, 0.976, 0.438)
+transform = Transform3D(-0.0466673, -1.15075e-08, -1.88345e-08, -7.04657e-09, 0.0762109, 8.37143e-21, -7.04657e-09, -1.73759e-15, 0.124735, 0.528, 0.976, 0.438)
 mesh = SubResource("BoxMesh_din0a")
 surface_material_override/0 = SubResource("StandardMaterial3D_2cjhr")
 
@@ -1637,7 +1637,7 @@ skeleton = NodePath("")
 shape = SubResource("ConvexPolygonShape3D_7q52l")
 
 [node name="Fridge" type="MeshInstance3D" parent="Decoration/Fridge/Cube_221"]
-transform = Transform3D(-1, 3.89414e-07, 8.47033e-22, -3.89414e-07, -1, 3.29846e-28, 8.47033e-22, -3.37038e-34, 1, -0.00792626, 0.00861989, -0.00584391)
+transform = Transform3D(-1, 3.89414e-07, 8.47033e-22, -3.89414e-07, -1, 3.29846e-28, 8.47033e-22, -6.50001e-34, 1, -0.00792626, 0.00861989, -0.00584391)
 mesh = SubResource("ArrayMesh_gwmqn")
 skeleton = NodePath("")
 
@@ -1686,7 +1686,6 @@ surface_material_override/0 = SubResource("StandardMaterial3D_oqsmn")
 surface_material_override/1 = SubResource("StandardMaterial3D_3mm5e")
 
 [node name="staticBody3d" type="StaticBody3D" parent="Decoration/Oven/Cube_099"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0)
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="Decoration/Oven/Cube_099/staticBody3d"]
 shape = SubResource("ConvexPolygonShape3D_lhck4")

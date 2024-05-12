@@ -1,11 +1,10 @@
-[gd_scene load_steps=30 format=3 uid="uid://cvrb6sg5ja8hw"]
+[gd_scene load_steps=18 format=3 uid="uid://cvrb6sg5ja8hw"]
 
 [ext_resource type="PackedScene" uid="uid://d0sydkych26ag" path="res://Scenes/World/day_night_cycle.tscn" id="1_7gc6d"]
 [ext_resource type="PackedScene" uid="uid://p733h2j6anis" path="res://Scenes/NPC/Trees/tree01.tscn" id="1_tch2r"]
 [ext_resource type="PackedScene" uid="uid://ri70xwlu6enn" path="res://Scenes/NPC/Trees/tree02.tscn" id="2_ej0q5"]
 [ext_resource type="PackedScene" uid="uid://cjrs4vb51re2n" path="res://Scenes/Foliage/grass_patch.tscn" id="3_tyv35"]
 [ext_resource type="PackedScene" uid="uid://b2kkjsavyliha" path="res://Scenes/Houses/player_house.tscn" id="4_kly6o"]
-[ext_resource type="PackedScene" uid="uid://bnbv8b0uo8nog" path="res://Scenes/Houses/house1.tscn" id="5_3t0ov"]
 [ext_resource type="PackedScene" uid="uid://dksn5g6khypq6" path="res://Scenes/Houses/house2.tscn" id="7_mu0je"]
 [ext_resource type="Terrain3DStorage" uid="uid://hwvm6wqejttr" path="res://new_terrain_3d_storage.res" id="8_lwqsl"]
 [ext_resource type="Terrain3DMaterial" uid="uid://dwqwclqp5tp41" path="res://new_terrain_3d_material.tres" id="9_s27bb"]
@@ -13,20 +12,9 @@
 [ext_resource type="PackedScene" uid="uid://bn14grvdecwll" path="res://Scenes/Player/player.tscn" id="11_m86le"]
 [ext_resource type="PackedScene" uid="uid://cogo2fyyq4m1t" path="res://Scenes/Decoration/IndustrialBuilding.tscn" id="12_vf5jr"]
 [ext_resource type="PackedScene" uid="uid://bb8l05q1rev10" path="res://Scenes/Decoration/BunkerDoor.tscn" id="13_pbkqb"]
-[ext_resource type="PackedScene" uid="uid://dvl5a4qilg2co" path="res://Scenes/NPC/npc.tscn" id="14_266qm"]
-[ext_resource type="PackedScene" uid="uid://bg0c26x16wh05" path="res://Scenes/Animals/cow.tscn" id="15_paw76"]
-[ext_resource type="PackedScene" uid="uid://q81kfxrfqh51" path="res://Scenes/Decoration/couch.tscn" id="16_q8trx"]
-[ext_resource type="PackedScene" uid="uid://cpbeypvodfk1h" path="res://Scenes/Decoration/bookcase.tscn" id="18_cnkog"]
-[ext_resource type="PackedScene" uid="uid://d3ccfh3mixgun" path="res://Scenes/Decoration/wardrobe.tscn" id="18_yv735"]
-[ext_resource type="PackedScene" uid="uid://cjhry22ovx6kk" path="res://Scenes/Decoration/bed.tscn" id="19_bt7xv"]
-[ext_resource type="PackedScene" uid="uid://brb42fn2mbi8i" path="res://Scenes/Decoration/table.tscn" id="20_ea6n2"]
-[ext_resource type="PackedScene" uid="uid://bm753tnfxvodf" path="res://Scenes/Decoration/table_2.tscn" id="21_gyfuu"]
 [ext_resource type="PackedScene" uid="uid://o4gusyafhvcu" path="res://Scenes/NPC/Trees/tree03.tscn" id="23_xpkrd"]
-[ext_resource type="PackedScene" uid="uid://c2rpp72lxx575" path="res://Scenes/Decoration/cage.tscn" id="24_vhryk"]
-[ext_resource type="PackedScene" uid="uid://lhqcpk8b2e0f" path="res://Scenes/Animals/chicken.tscn" id="25_ah1jh"]
 [ext_resource type="PackedScene" uid="uid://cqel8pam7qhg7" path="res://Scenes/Decoration/Gramophone.tscn" id="26_7aqtd"]
 [ext_resource type="Script" path="res://Scripts/PlayGramophone.cs" id="27_3uqq5"]
-[ext_resource type="PackedScene" uid="uid://p5kjkg3wbphp" path="res://Scenes/Decoration/cupboard.tscn" id="28_67q3e"]
 [ext_resource type="AudioStream" uid="uid://d1ush3o3ooau0" path="res://Sounds/Background music/OverworldSong.wav" id="28_gs8mt"]
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_7jbvg"]
@@ -35,9 +23,6 @@ size = Vector3(1.64594, 1.84479, 1.44824)
 [node name="World1" type="Node3D"]
 
 [node name="NPCs" type="Node3D" parent="."]
-
-[node name="NPC1" parent="NPCs" instance=ExtResource("14_266qm")]
-transform = Transform3D(8, 0, 0, 0, 8, 0, 0, 0, 8, 344.363, 0.149928, -360.366)
 
 [node name="DayNightCycle" parent="." instance=ExtResource("1_7gc6d")]
 dayLength = 500.0
@@ -167,14 +152,8 @@ transform = Transform3D(10, 0, 0, 0, 10, 0, 0, 0, 10, -421.447, 199.426, -244.40
 [node name="player_house" parent="Houses" instance=ExtResource("4_kly6o")]
 transform = Transform3D(10, 0, 0, 0, 10, 0, 0, 0, 10, 5.56559, 0, -504.182)
 
-[node name="House1" parent="Houses" instance=ExtResource("5_3t0ov")]
-transform = Transform3D(-4.37114e-07, 0, -10, 0, 10, 0, 10, 0, -4.37114e-07, 561.643, 0.81235, -273.63)
-
 [node name="House2" parent="Houses" instance=ExtResource("7_mu0je")]
 transform = Transform3D(-10, 0, 8.74228e-07, 0, 10, 0, -8.74228e-07, 0, -10, -232.527, -0.260742, -75.4248)
-
-[node name="house3" parent="Houses" instance=ExtResource("7_mu0je")]
-transform = Transform3D(10, 0, 0, 0, 10, 0, 0, 0, 10, 347.315, -0.101612, -444.943)
 
 [node name="terrain3d" type="Terrain3D" parent="."]
 storage = ExtResource("8_lwqsl")
@@ -197,40 +176,13 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4.8061, 14.532, -449.431)
 [node name="IndustrialBuilding" parent="Decoration" instance=ExtResource("12_vf5jr")]
 transform = Transform3D(100, 0, 0, 0, 100, 0, 0, 0, 100, 19.4728, -1.76649, -935.678)
 
-[node name="Cow" parent="Decoration" instance=ExtResource("15_paw76")]
-transform = Transform3D(-6.36396, 0, 6.36396, 0, 9, 0, -6.36396, 0, -6.36396, 365.822, 0.255272, -359.476)
-
 [node name="Blockade" type="Node3D" parent="Decoration"]
-
-[node name="Couch" parent="Decoration/Blockade" instance=ExtResource("16_q8trx")]
-transform = Transform3D(3.83183, 0, 9.23672, 0, 10, 0, -9.23672, 0, 3.83183, 442.008, 6.28676, -146.676)
-
-[node name="Bookcase" parent="Decoration/Blockade" instance=ExtResource("18_cnkog")]
-transform = Transform3D(-1.42667, 0, 11.9149, 0, 12, 0, -11.9149, 0, -1.42667, 433.658, 22.5657, -207.838)
-
-[node name="Wardrobe" parent="Decoration/Blockade" instance=ExtResource("18_yv735")]
-transform = Transform3D(0.320191, 0, 11.9957, 0, 12, 0, -11.9957, 0, 0.320191, 420.636, 19.044, -286.342)
-
-[node name="Bed" parent="Decoration/Blockade" instance=ExtResource("19_bt7xv")]
-transform = Transform3D(4.60701, 6.5403, 2.85885e-07, 0, -3.49691e-07, 8, 6.5403, -4.60701, -2.01379e-07, 422.097, 12.062, -258.324)
-
-[node name="Table" parent="Decoration/Blockade" instance=ExtResource("20_ea6n2")]
-transform = Transform3D(4, -6.9282, 0, 6.9282, 4, 0, 0, 0, 8, 429.196, 9.50513, -233.8)
-
-[node name="table2" parent="Decoration/Blockade" instance=ExtResource("21_gyfuu")]
-transform = Transform3D(5, -7.5, -4.33013, 0, 5, -8.66026, 8.66026, 4.33013, 2.5, 421.707, 9.22328, -367.409)
 
 [node name="BunkerDoor" parent="Decoration" instance=ExtResource("13_pbkqb")]
 transform = Transform3D(-4.37114e-07, 0, -10, 0, 10, 0, 10, 0, -4.37114e-07, -3.30109, 8.95366, -893.567)
 
-[node name="BirdCage" parent="." instance=ExtResource("24_vhryk")]
-transform = Transform3D(0.1, 0, 0, 0, 0.1, 0, 0, 0, 0.1, 298.659, -2.25898, -403.279)
-
-[node name="Chicken" parent="." instance=ExtResource("25_ah1jh")]
-transform = Transform3D(-8.99321, 0, 4.37288, 0, 10, 0, -4.37288, 0, -8.99321, 297.12, 2.73185, -404.075)
-
 [node name="Gramophone" parent="." instance=ExtResource("26_7aqtd")]
-transform = Transform3D(3.264, 0, -3.78765, 0, 5, 0, 3.78765, 0, 3.264, 438.703, 8.49403, -148.122)
+transform = Transform3D(3.264, 0, -3.78765, 0, 5, 0, 3.78765, 0, 3.264, 32.1906, 8.49403, -148.122)
 
 [node name="staticBody3d" type="StaticBody3D" parent="Gramophone"]
 script = ExtResource("27_3uqq5")
@@ -242,6 +194,3 @@ shape = SubResource("BoxShape3D_7jbvg")
 
 [node name="GramophoneSong" type="AudioStreamPlayer3D" parent="Gramophone"]
 stream = ExtResource("28_gs8mt")
-
-[node name="Cupboard" parent="." instance=ExtResource("28_67q3e")]
-transform = Transform3D(-1.81173, 0, 6.76148, 0, 7, 0, -6.76148, 0, -1.81173, 436.819, 3.06163, -181.03)
