@@ -5,13 +5,13 @@
 [ext_resource type="PackedScene" uid="uid://ri70xwlu6enn" path="res://Scenes/NPC/Trees/tree02.tscn" id="2_ej0q5"]
 [ext_resource type="PackedScene" uid="uid://cjrs4vb51re2n" path="res://Scenes/Foliage/grass_patch.tscn" id="3_tyv35"]
 [ext_resource type="PackedScene" uid="uid://b2kkjsavyliha" path="res://Scenes/Houses/player_house.tscn" id="4_kly6o"]
-[ext_resource type="PackedScene" uid="uid://dksn5g6khypq6" path="res://Scenes/Houses/house2.tscn" id="7_mu0je"]
 [ext_resource type="Terrain3DStorage" uid="uid://hwvm6wqejttr" path="res://new_terrain_3d_storage.res" id="8_lwqsl"]
 [ext_resource type="Terrain3DMaterial" uid="uid://dwqwclqp5tp41" path="res://new_terrain_3d_material.tres" id="9_s27bb"]
 [ext_resource type="Terrain3DTextureList" uid="uid://cdq1x5gbkk5aw" path="res://texture_list.tres" id="10_4mlmo"]
 [ext_resource type="PackedScene" uid="uid://bn14grvdecwll" path="res://Scenes/Player/player.tscn" id="11_m86le"]
 [ext_resource type="PackedScene" uid="uid://cogo2fyyq4m1t" path="res://Scenes/Decoration/IndustrialBuilding.tscn" id="12_vf5jr"]
 [ext_resource type="PackedScene" uid="uid://bb8l05q1rev10" path="res://Scenes/Decoration/BunkerDoor.tscn" id="13_pbkqb"]
+[ext_resource type="PackedScene" uid="uid://d1uapxdqjypdi" path="res://Scenes/Houses/house2_inside.tscn" id="16_rhk8g"]
 [ext_resource type="PackedScene" uid="uid://o4gusyafhvcu" path="res://Scenes/NPC/Trees/tree03.tscn" id="23_xpkrd"]
 [ext_resource type="PackedScene" uid="uid://cqel8pam7qhg7" path="res://Scenes/Decoration/Gramophone.tscn" id="26_7aqtd"]
 [ext_resource type="Script" path="res://Scripts/PlayGramophone.cs" id="27_3uqq5"]
@@ -152,9 +152,6 @@ transform = Transform3D(10, 0, 0, 0, 10, 0, 0, 0, 10, -421.447, 199.426, -244.40
 [node name="player_house" parent="Houses" instance=ExtResource("4_kly6o")]
 transform = Transform3D(10, 0, 0, 0, 10, 0, 0, 0, 10, 5.56559, 0, -504.182)
 
-[node name="House2" parent="Houses" instance=ExtResource("7_mu0je")]
-transform = Transform3D(-10, 0, 8.74228e-07, 0, 10, 0, -8.74228e-07, 0, -10, -232.527, -0.260742, -75.4248)
-
 [node name="terrain3d" type="Terrain3D" parent="."]
 storage = ExtResource("8_lwqsl")
 material = ExtResource("9_s27bb")
@@ -194,3 +191,6 @@ shape = SubResource("BoxShape3D_7jbvg")
 
 [node name="GramophoneSong" type="AudioStreamPlayer3D" parent="Gramophone"]
 stream = ExtResource("28_gs8mt")
+
+[node name="House2" parent="." instance=ExtResource("16_rhk8g")]
+transform = Transform3D(-11, 0, -1.66095e-06, 0, 11, 0, 1.66095e-06, 0, -11, -232.232, -0.168613, -69.7736)

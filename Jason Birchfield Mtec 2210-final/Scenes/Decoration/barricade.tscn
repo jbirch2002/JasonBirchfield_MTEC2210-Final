@@ -1,0 +1,29 @@
+[gd_scene load_steps=4 format=3 uid="uid://caxr50ab5p4vv"]
+
+[ext_resource type="Texture2D" uid="uid://bnrff3cbtspky" path="res://Assets/decoration/crate/Crate22.jpg" id="1_2no6i"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_pr63y"]
+albedo_texture = ExtResource("1_2no6i")
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_of1vt"]
+albedo_color = Color(0.501961, 0.501961, 0.501961, 1)
+
+[node name="Barricade" type="Node3D"]
+
+[node name="Plank" type="CSGBox3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.267578, 0.446777, 0.455017)
+use_collision = true
+size = Vector3(1.53516, 0.106445, 0.0899658)
+material = SubResource("StandardMaterial3D_pr63y")
+
+[node name="Nail1" type="CSGSphere3D" parent="Plank"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.695742, 0.00121796, 0.0423247)
+use_collision = true
+radius = 0.0192355
+material = SubResource("StandardMaterial3D_of1vt")
+
+[node name="Nail2" type="CSGSphere3D" parent="Plank"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.69573, 0.00121796, 0.0423247)
+use_collision = true
+radius = 0.0192355
+material = SubResource("StandardMaterial3D_of1vt")
