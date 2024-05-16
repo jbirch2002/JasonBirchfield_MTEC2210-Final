@@ -1,6 +1,0 @@
-[gd_scene load_steps=2 format=3 uid="uid://d30h4ncbo7k5l"]
-
-[ext_resource type="Script" path="res://SpawnManager.cs" id="1_ea0g5"]
-
-[node name="SpawnManager" type="Node"]
-script = ExtResource("1_ea0g5")

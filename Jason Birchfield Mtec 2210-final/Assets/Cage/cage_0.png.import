@@ -3,8 +3,8 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://d0m3q0khp8gax"
-path.s3tc="res://.godot/imported/cage_0.png-29e07fbb6194e33b267e2e94a2f37600.s3tc.ctex"
-path.etc2="res://.godot/imported/cage_0.png-29e07fbb6194e33b267e2e94a2f37600.etc2.ctex"
+path.s3tc="res://.godot/imported/cage_0.png-1ca1c9d9c4ca7f96b17c8ebfd8f3a4b9.s3tc.ctex"
+path.etc2="res://.godot/imported/cage_0.png-1ca1c9d9c4ca7f96b17c8ebfd8f3a4b9.etc2.ctex"
 metadata={
 "imported_formats": ["s3tc_bptc", "etc2_astc"],
 "vram_texture": true
@@ -13,8 +13,8 @@ generator_parameters={}
 
 [deps]
 
-source_file="res://Assets/Cage/cage_0.png"
-dest_files=["res://.godot/imported/cage_0.png-29e07fbb6194e33b267e2e94a2f37600.s3tc.ctex", "res://.godot/imported/cage_0.png-29e07fbb6194e33b267e2e94a2f37600.etc2.ctex"]
+source_file="res://Assets/cage/cage_0.png"
+dest_files=["res://.godot/imported/cage_0.png-1ca1c9d9c4ca7f96b17c8ebfd8f3a4b9.s3tc.ctex", "res://.godot/imported/cage_0.png-1ca1c9d9c4ca7f96b17c8ebfd8f3a4b9.etc2.ctex"]
 
 [params]
 

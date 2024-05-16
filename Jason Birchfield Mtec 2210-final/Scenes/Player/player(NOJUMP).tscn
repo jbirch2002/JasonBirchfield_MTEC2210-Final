@@ -1,0 +1,85 @@
+[gd_scene load_steps=8 format=3 uid="uid://b4wbejc0q4jke"]
+
+[ext_resource type="Script" path="res://Scripts/PlayerNoJump.cs" id="1_yh02c"]
+[ext_resource type="PackedScene" uid="uid://c2pf5628tx2g7" path="res://Interaction/Interaction Area/InteractionArea.tscn" id="2_se7vm"]
+[ext_resource type="Script" path="res://Interaction/Interaction Area/InteractionComponent.cs" id="3_vpbpm"]
+[ext_resource type="Script" path="res://Scripts/Crosshair.cs" id="4_notgw"]
+[ext_resource type="AudioStream" uid="uid://bt5ifh5wl2bup" path="res://Sounds/Bones sound.mp3" id="5_m1j8m"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_or6r1"]
+
+[sub_resource type="LabelSettings" id="LabelSettings_y5dbo"]
+font_size = 8
+
+[node name="Player" type="CharacterBody3D" groups=["Player"]]
+transform = Transform3D(19.2188, 0, 0, 0, 12.1827, 0, 0, 0, 10, 0, 5.53805, 0)
+floor_max_angle = 0.523599
+script = ExtResource("1_yh02c")
+walkingSpeed = 50.0
+runningSpeed = 59.0
+
+[node name="InteractionComponent" parent="." instance=ExtResource("2_se7vm")]
+script = ExtResource("3_vpbpm")
+interactionRaycastPath = NodePath("../head/InteractRay")
+interactionLabelPath = NodePath("../head/InteractRay/Prompt")
+interactionAudioPath = NodePath("../head/InteractRay/Audio")
+interactionCrosshairPath = NodePath("../control/centerContainer")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="."]
+transform = Transform3D(0.094, 0, 0, 0, 1.433, 0, 0, 0, 0.165, 0, 0.439752, 0.000816131)
+shape = SubResource("BoxShape3D_or6r1")
+
+[node name="control" type="Control" parent="."]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 1
+metadata/_edit_use_anchors_ = true
+
+[node name="centerContainer" type="CenterContainer" parent="control"]
+visible = false
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.5
+anchor_top = 0.407
+anchor_right = 0.5
+anchor_bottom = 0.407
+offset_top = -0.0499992
+offset_right = 20.0
+offset_bottom = 19.95
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("4_notgw")
+metadata/_edit_use_anchors_ = true
+
+[node name="head" type="Node3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.10526, 0)
+
+[node name="Camera3D" type="Camera3D" parent="head"]
+transform = Transform3D(0.1, 0, 0, 0, 0.1, 0, 0, 0, 0.1, 0, 0, 0)
+
+[node name="InteractRay" type="RayCast3D" parent="head"]
+target_position = Vector3(0, 0, -1)
+
+[node name="Prompt" type="Label" parent="head/InteractRay"]
+anchors_preset = 7
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = -125.5
+offset_top = -67.0
+offset_right = 125.5
+offset_bottom = 102.0
+grow_horizontal = 2
+grow_vertical = 0
+label_settings = SubResource("LabelSettings_y5dbo")
+horizontal_alignment = 1
+metadata/_edit_use_anchors_ = true
+
+[node name="Audio" type="AudioStreamPlayer3D" parent="head/InteractRay"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -1.10526, 0)
+stream = ExtResource("5_m1j8m")

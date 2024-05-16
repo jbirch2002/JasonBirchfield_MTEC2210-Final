@@ -38,6 +38,7 @@ sky_material = SubResource("ProceduralSkyMaterial_so478")
 [sub_resource type="Environment" id="Environment_3almg"]
 background_mode = 2
 sky = SubResource("Sky_kb3qp")
+reflected_light_source = 1
 
 [node name="DayNightCycle" type="Node3D"]
 script = ExtResource("1_pyoqa")
@@ -52,8 +53,10 @@ skyHorizonColor = SubResource("Gradient_jwewv")
 environment = SubResource("Environment_3almg")
 
 [node name="sun" type="DirectionalLight3D" parent="."]
-shadow_enabled = true
+shadow_bias = 10.0
+shadow_normal_bias = 10.0
+shadow_reverse_cull_face = true
+shadow_opacity = 0.3
 
 [node name="moon" type="DirectionalLight3D" parent="."]
-shadow_enabled = true
 sky_mode = 1

@@ -44,7 +44,7 @@ shadow_mesh = SubResource("ArrayMesh_2auwu")
 albedo_texture = ExtResource("1_kainu")
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_bhhrm"]
-size = Vector3(0.0305939, 0.0176697, 0.0080719)
+size = Vector3(0.0305939, 0.0176697, 0.00904083)
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_ned5i"]
 albedo_texture = ExtResource("2_d605o")
@@ -62,7 +62,7 @@ surface_material_override/0 = SubResource("StandardMaterial3D_dotxt")
 [node name="StaticBody3D" type="StaticBody3D" parent="RootNode/Door"]
 
 [node name="collisionShape3d" type="CollisionShape3D" parent="RootNode/Door/StaticBody3D"]
-transform = Transform3D(1, 1.08759e-18, 4.76456e-22, 2.71898e-19, 1, 0, -2.42906e-26, 0, 1, -0.00148422, -0.000676817, -0.00393651)
+transform = Transform3D(1, 1.09606e-18, 4.76456e-22, 2.74016e-19, 1, 0, -2.448e-26, 0, 1, -0.00148422, -0.000676817, -0.00345204)
 shape = SubResource("BoxShape3D_bhhrm")
 
 [node name="csgBox3d" type="CSGBox3D" parent="."]
