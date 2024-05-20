@@ -19,7 +19,7 @@ public partial class FrontAndExit : Node3D
             if (IsInGroup("ExitDoorPlayerHouse"))
             {
                 EmitSignal("DoorToggled", "ExitDoorPlayerHouse");
-                GetTree().ChangeSceneToPacked(ResourceLoader.Load<PackedScene>("res://WorldDay1.tscn"));
+                GetTree().ChangeSceneToPacked(ResourceLoader.Load<PackedScene>("res://Scenes/World/WorldDay1.tscn"));
             }
             if (IsInGroup("EntranceDoorHouse2"))
             {
@@ -34,7 +34,7 @@ public partial class FrontAndExit : Node3D
             if (IsInGroup("ShaftEntrance"))
             {
                 EmitSignal("DoorToggled", "ShaftEntrance");
-                GetTree().ChangeSceneToPacked(ResourceLoader.Load<PackedScene>("res://bell_cave.tscn"));
+                GetTree().ChangeSceneToPacked(ResourceLoader.Load<PackedScene>("res://Scenes/World/bell_cave.tscn"));
             }
                 
         }

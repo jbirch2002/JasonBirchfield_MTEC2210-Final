@@ -1568,7 +1568,7 @@ transform = Transform3D(-0.55, 0, -8.30477e-08, 0, 0.55, 0, 8.30477e-08, 0, -0.5
 transform = Transform3D(-0.6, 0, -9.05975e-08, 0, 0.6, 0, 9.05975e-08, 0, -0.6, -3.37976, -0.37168, -5.73708)
 
 [node name="Flusher" type="MeshInstance3D" parent="Decoration/Toilet"]
-transform = Transform3D(-0.0466673, 1.93208e-07, 3.16226e-07, 1.1831e-07, 0.0762109, 6.55399e-18, 1.1831e-07, -4.89823e-13, 0.124735, 0.528, 0.976, 0.438)
+transform = Transform3D(-0.0466673, 1.93208e-07, 3.16226e-07, 1.1831e-07, 0.0762109, 1.63037e-17, 1.1831e-07, -4.89829e-13, 0.124735, 0.528, 0.976, 0.438)
 mesh = SubResource("BoxMesh_din0a")
 surface_material_override/0 = SubResource("StandardMaterial3D_2cjhr")
 

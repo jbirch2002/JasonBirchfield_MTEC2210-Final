@@ -4,12 +4,12 @@ importer="scene"
 importer_version=1
 type="PackedScene"
 uid="uid://cseu60oogb7ml"
-path="res://.godot/imported/cage.glb-eaf436d3120be0a40c810d6ec921ef9b.scn"
+path="res://.godot/imported/cage.glb-86687e7a500f6ef2baea0b51ffc2e8fe.scn"
 
 [deps]
 
-source_file="res://Assets/cage/cage.glb"
-dest_files=["res://.godot/imported/cage.glb-eaf436d3120be0a40c810d6ec921ef9b.scn"]
+source_file="res://Assets/Cage/cage.glb"
+dest_files=["res://.godot/imported/cage.glb-86687e7a500f6ef2baea0b51ffc2e8fe.scn"]
 
 [params]
 

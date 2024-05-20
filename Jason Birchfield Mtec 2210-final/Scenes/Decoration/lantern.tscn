@@ -83,4 +83,4 @@ spot_range = 30.921
 [node name="omniLight3d" type="OmniLight3D" parent="."]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.71354, 0.497283, 0)
 light_color = Color(0.937255, 0.482353, 0.219608, 1)
-light_energy = 4.0
+light_energy = 8.0
