@@ -1,0 +1,92 @@
+[gd_scene load_steps=6 format=3 uid="uid://jic0ccr3p1l0"]
+
+[ext_resource type="Script" path="res://EndDemoScene.cs" id="1_wtu7o"]
+[ext_resource type="FontFile" uid="uid://bumek6k822ayg" path="res://Assets/fonts/linux-libertine/LinLibertine_5.3.0_2012_07_02/LinLibertineOTF_5.3.0_2012_07_02/LinLibertine_DR.otf" id="2_fwtv1"]
+[ext_resource type="FontFile" uid="uid://c2px8db2wy5ui" path="res://Assets/fonts/xolonium/xolonium-fonts-4.1/ttf/Xolonium-Regular.ttf" id="3_f6k17"]
+
+[sub_resource type="LabelSettings" id="LabelSettings_m2jd1"]
+font = ExtResource("2_fwtv1")
+font_size = 42
+
+[sub_resource type="LabelSettings" id="LabelSettings_woqtl"]
+font = ExtResource("3_f6k17")
+font_size = 24
+
+[node name="EndDemoScene" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 1
+script = ExtResource("1_wtu7o")
+
+[node name="colorRect" type="ColorRect" parent="."]
+layout_mode = 0
+offset_right = 513.0
+offset_bottom = 289.0
+color = Color(0.188235, 0.211765, 0.364706, 1)
+
+[node name="label" type="Label" parent="."]
+layout_mode = 1
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -48.5
+offset_right = 48.5
+offset_bottom = 28.0
+grow_horizontal = 2
+text = "You Won!
+"
+label_settings = SubResource("LabelSettings_m2jd1")
+
+[node name="label2" type="Label" parent="."]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -58.5
+offset_top = -89.5
+offset_right = 58.5
+offset_bottom = -66.5
+grow_horizontal = 2
+grow_vertical = 2
+text = "(end of demo)"
+label_settings = SubResource("LabelSettings_woqtl")
+
+[node name="button" type="Button" parent="."]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -65.5
+offset_top = -32.0
+offset_right = 65.5
+offset_bottom = 32.0
+grow_horizontal = 2
+grow_vertical = 2
+text = "Restart"
+
+[node name="button2" type="Button" parent="."]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -65.5
+offset_top = 47.0
+offset_right = 65.5
+offset_bottom = 111.0
+grow_horizontal = 2
+grow_vertical = 2
+text = "Quit
+"
+
+[connection signal="pressed" from="button" to="." method="_On_Restart_Button_Pressed"]
+[connection signal="pressed" from="button2" to="." method="_On_Quit_Button_Pressed"]

@@ -4,10 +4,10 @@
 [ext_resource type="Script" path="res://Scripts/FrontAndExit.cs" id="2_4wilq"]
 [ext_resource type="Script" path="res://Scripts/OpenDoors.cs" id="2_g2yrp"]
 [ext_resource type="PackedScene" uid="uid://2c3fffmnel4f" path="res://Scenes/Decoration/shaft_entrance.tscn" id="2_qvlua"]
-[ext_resource type="AudioStream" uid="uid://vvv04bmotuoe" path="res://Sounds/Door Opening.mp3" id="4_dudpb"]
+[ext_resource type="AudioStream" uid="uid://vvv04bmotuoe" path="res://Sounds/Doors/Door Opening.mp3" id="4_dudpb"]
 [ext_resource type="PackedScene" uid="uid://lhqcpk8b2e0f" path="res://Scenes/Animals/chicken.tscn" id="5_8nvui"]
 [ext_resource type="PackedScene" uid="uid://40d3r4rmgsp4" path="res://Scenes/door old metal.tscn" id="5_46fg1"]
-[ext_resource type="AudioStream" uid="uid://eqa7mpjv001t" path="res://Sounds/Door Closing.mp3" id="5_o7n8x"]
+[ext_resource type="AudioStream" uid="uid://eqa7mpjv001t" path="res://Sounds/Doors/Door Closing.mp3" id="5_o7n8x"]
 [ext_resource type="Script" path="res://Scripts/FallingDoor.cs" id="6_860of"]
 [ext_resource type="PackedScene" uid="uid://caxr50ab5p4vv" path="res://Scenes/Decoration/barricade.tscn" id="10_hhd6d"]
 

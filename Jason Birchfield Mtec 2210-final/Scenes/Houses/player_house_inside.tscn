@@ -1,12 +1,12 @@
-[gd_scene load_steps=126 format=3 uid="uid://hofavx0e2sac"]
+[gd_scene load_steps=130 format=3 uid="uid://hofavx0e2sac"]
 
 [ext_resource type="Texture2D" uid="uid://cnpl1y5wxn78d" path="res://Assets/houses/preset_houses/house1_tex1.png" id="1_5mqmw"]
 [ext_resource type="PackedScene" uid="uid://c6718j7x7jcn6" path="res://Scenes/OpenDoors.tscn" id="2_0rj88"]
 [ext_resource type="Script" path="res://Scripts/FrontAndExit.cs" id="2_hfhki"]
 [ext_resource type="PackedScene" uid="uid://dr3svsefeldeh" path="res://Scenes/Decoration/trash_bin.tscn" id="4_dool2"]
-[ext_resource type="AudioStream" uid="uid://vvv04bmotuoe" path="res://Sounds/Door Opening.mp3" id="6_4k53i"]
+[ext_resource type="AudioStream" uid="uid://vvv04bmotuoe" path="res://Sounds/Doors/Door Opening.mp3" id="6_4k53i"]
 [ext_resource type="PackedScene" uid="uid://cjhry22ovx6kk" path="res://Scenes/Decoration/bed.tscn" id="6_6e8ri"]
-[ext_resource type="AudioStream" uid="uid://eqa7mpjv001t" path="res://Sounds/Door Closing.mp3" id="6_l3sv0"]
+[ext_resource type="AudioStream" uid="uid://eqa7mpjv001t" path="res://Sounds/Doors/Door Closing.mp3" id="6_l3sv0"]
 [ext_resource type="PackedScene" uid="uid://dqb7kpm5y1kb0" path="res://Scenes/Decoration/key.tscn" id="7_hicbx"]
 [ext_resource type="PackedScene" uid="uid://djlr3p3tbdxha" path="res://Scenes/Decoration/sink.tscn" id="8_v3xfu"]
 [ext_resource type="PackedScene" uid="uid://bqypcc0u1w5u4" path="res://Scenes/Decoration/toilet.tscn" id="9_fu2pc"]
@@ -19,10 +19,14 @@
 [ext_resource type="Script" path="res://Scripts/OpenDoors.cs" id="15_xwxy6"]
 [ext_resource type="Texture2D" uid="uid://cjnold3uyltff" path="res://Assets/decoration/Models pack psx/Texture/Wood_06.jpg" id="19_4t4da"]
 [ext_resource type="PackedScene" uid="uid://cqel8pam7qhg7" path="res://Scenes/Decoration/Gramophone.tscn" id="19_jcjar"]
+[ext_resource type="AudioStream" uid="uid://da4xnv7r7iivy" path="res://Sounds/Doors/Cupboard Opening.mp3" id="20_e1tqo"]
 [ext_resource type="AudioStream" uid="uid://c41cvsfa4d4rw" path="res://Sounds/Background music/PlayerHouseSong.wav" id="20_mcrqy"]
+[ext_resource type="AudioStream" uid="uid://nh7shmdq6h56" path="res://Sounds/Doors/Cupboard Closing.mp3" id="21_1v5s5"]
 [ext_resource type="Script" path="res://Scripts/PlayGramophone.cs" id="21_eshrt"]
 [ext_resource type="Texture2D" uid="uid://dj1y00stqmyjj" path="res://Assets/decoration/Models pack psx/Texture/Metal_04.jpg" id="21_n7ljo"]
+[ext_resource type="AudioStream" uid="uid://gjavgmh1aoy4" path="res://Sounds/Doors/Opening Oven Sound Effect.mp3" id="23_3h3er"]
 [ext_resource type="PackedScene" uid="uid://b4wbejc0q4jke" path="res://Scenes/Player/player(NOJUMP).tscn" id="23_ekg1u"]
+[ext_resource type="AudioStream" uid="uid://cslwixtl2lcst" path="res://Sounds/Doors/Closing Oven Sound Effect.mp3" id="24_ofsv6"]
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_7h143"]
 albedo_texture = ExtResource("1_5mqmw")
@@ -1568,7 +1572,7 @@ transform = Transform3D(-0.55, 0, -8.30477e-08, 0, 0.55, 0, 8.30477e-08, 0, -0.5
 transform = Transform3D(-0.6, 0, -9.05975e-08, 0, 0.6, 0, 9.05975e-08, 0, -0.6, -3.37976, -0.37168, -5.73708)
 
 [node name="Flusher" type="MeshInstance3D" parent="Decoration/Toilet"]
-transform = Transform3D(-0.0466673, 1.93208e-07, 3.16226e-07, 1.1831e-07, 0.0762109, 1.63037e-17, 1.1831e-07, -4.89829e-13, 0.124735, 0.528, 0.976, 0.438)
+transform = Transform3D(-0.0466673, 1.93208e-07, 3.16226e-07, 1.1831e-07, 0.0762109, 2.61076e-17, 1.1831e-07, -4.89835e-13, 0.124735, 0.528, 0.976, 0.438)
 mesh = SubResource("BoxMesh_din0a")
 surface_material_override/0 = SubResource("StandardMaterial3D_2cjhr")
 
@@ -1639,10 +1643,12 @@ libraries = {
 speed_scale = 2.5
 
 [node name="CupboardLOpeningAudio" type="AudioStreamPlayer3D" parent="Decoration/Cupboard/CupboardL"]
-stream = ExtResource("6_4k53i")
+stream = ExtResource("20_e1tqo")
+volume_db = 80.0
 
 [node name="CupboardLClosingAudio" type="AudioStreamPlayer3D" parent="Decoration/Cupboard/CupboardL"]
-stream = ExtResource("6_l3sv0")
+stream = ExtResource("21_1v5s5")
+volume_db = 30.0
 
 [node name="CupboardR" type="MeshInstance3D" parent="Decoration/Cupboard"]
 transform = Transform3D(100, 0, 0, 0, -4.37114e-06, 100, 0, -100, -4.37114e-06, -1.494, 0.627697, -0.165895)
@@ -1654,7 +1660,7 @@ skeleton = NodePath("")
 script = ExtResource("15_xwxy6")
 animationPlayerPath = NodePath("../CupboardAnimationR")
 openDoorAudioPath = NodePath("../CupboardROpeningAudio")
-closeDoorAudioPath = NodePath("../CupboardLClosingAudio")
+closeDoorAudioPath = NodePath("../CupboardRClosingAudio")
 
 [node name="collisionShape3d" type="CollisionShape3D" parent="Decoration/Cupboard/CupboardR/staticBody3d"]
 transform = Transform3D(1, 0, 0, 0, 1, 8.35185e-23, 1.63054e-20, 8.35185e-23, 1, 0.00595856, 0.000230346, 0.00154022)
@@ -1667,10 +1673,12 @@ libraries = {
 speed_scale = 2.5
 
 [node name="CupboardROpeningAudio" type="AudioStreamPlayer3D" parent="Decoration/Cupboard/CupboardR"]
-stream = ExtResource("6_4k53i")
+stream = ExtResource("20_e1tqo")
+volume_db = 80.0
 
-[node name="CupboardLClosingAudio" type="AudioStreamPlayer3D" parent="Decoration/Cupboard/CupboardR"]
-stream = ExtResource("6_l3sv0")
+[node name="CupboardRClosingAudio" type="AudioStreamPlayer3D" parent="Decoration/Cupboard/CupboardR"]
+stream = ExtResource("21_1v5s5")
+volume_db = 30.0
 
 [node name="Couch" parent="Decoration" instance=ExtResource("14_ief32")]
 transform = Transform3D(0.8, 0, 3.55271e-15, 0, 0.8, 0, -3.55271e-15, 0, 0.8, -0.272988, -0.19039, 1.11206)
@@ -1766,7 +1774,7 @@ surface_material_override/1 = SubResource("StandardMaterial3D_3mm5e")
 shape = SubResource("ConvexPolygonShape3D_lhck4")
 
 [node name="OvenDoor" type="MeshInstance3D" parent="Decoration/Oven/Cube_099"]
-transform = Transform3D(1, -1.42109e-14, 1.44445e-34, 1.42109e-14, 1, -6.77626e-21, -4.81482e-35, 6.77627e-21, 1, 6.93873e-05, 0.00481881, -0.00827515)
+transform = Transform3D(1, -2.84217e-14, 1.94707e-07, 2.84217e-14, 1, 8.52651e-14, -1.94707e-07, -8.52651e-14, 1, 6.93873e-05, 0.00481881, -0.00827515)
 mesh = SubResource("ArrayMesh_74pbo")
 skeleton = NodePath("")
 surface_material_override/0 = SubResource("StandardMaterial3D_taikm")
@@ -1787,14 +1795,16 @@ shape = SubResource("BoxShape3D_gll1j")
 libraries = {
 "": SubResource("AnimationLibrary_tslng")
 }
-speed_scale = 2.5
+speed_scale = 3.0
 
 [node name="OvenOpeningAudio" type="AudioStreamPlayer3D" parent="Decoration/Oven/Cube_099/OvenDoor"]
-stream = ExtResource("6_4k53i")
+stream = ExtResource("23_3h3er")
+volume_db = 30.0
 
 [node name="OvenClosingAudio" type="AudioStreamPlayer3D" parent="Decoration/Oven/Cube_099/OvenDoor"]
 transform = Transform3D(0.00136054, 0, -6.61744e-24, 0, 0.00136054, -4.16334e-16, 0, 1.38778e-17, 0.00191807, 0, 0, 0)
-stream = ExtResource("6_l3sv0")
+stream = ExtResource("24_ofsv6")
+volume_db = 30.0
 
 [node name="Cube_101" type="MeshInstance3D" parent="Decoration/Oven/Cube_099"]
 transform = Transform3D(1, 0, 0, 0, 1, 2.64698e-23, 0, -2.64698e-23, 1, 0.00215303, -0.000987015, 0.00558253)

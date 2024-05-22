@@ -1,5 +1,6 @@
-[gd_scene load_steps=8 format=3 uid="uid://cji4cbotqfayk"]
+[gd_scene load_steps=9 format=3 uid="uid://cji4cbotqfayk"]
 
+[ext_resource type="Script" path="res://Scripts/ButterflyWandering.cs" id="1_cctk1"]
 [ext_resource type="Texture2D" uid="uid://egxfxybh1c78" path="res://Assets/animals/stylooanimalassetpack/fbx/butterfly-8ad2195e905bbd0556f94d414fb41e4a_butterflytexture.png" id="1_noa8p"]
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_eqijp"]
@@ -107,6 +108,10 @@ _data = {
 
 [node name="Butterfly" type="Node3D"]
 
+[node name="Butterfly" type="CharacterBody3D" parent="."]
+motion_mode = 1
+script = ExtResource("1_cctk1")
+
 [node name="RootNode" type="Node3D" parent="."]
 
 [node name="butterfly_root" type="Node3D" parent="RootNode"]
@@ -139,7 +144,7 @@ bones/3/parent = 2
 bones/3/rest = Transform3D(0.759426, -0.650453, -0.0135273, 0.650334, 0.758371, 0.0440285, -0.0183798, -0.0422336, 0.998939, -1.5425e-11, 0.000202506, 4.80213e-11)
 bones/3/enabled = true
 bones/3/position = Vector3(-1.5425e-11, 0.000202506, 4.80213e-11)
-bones/3/rotation = Quaternion(0.0385813, -0.020364, 0.341773, 0.938769)
+bones/3/rotation = Quaternion(0.00126932, -0.00726213, 0.345038, 0.93856)
 bones/3/scale = Vector3(1, 1, 1)
 bones/4/name = "wingsupper.l.001_end"
 bones/4/parent = 3
@@ -174,7 +179,7 @@ bones/8/parent = 7
 bones/8/rest = Transform3D(0.759426, 0.650453, 0.0135275, -0.650334, 0.758371, 0.0440279, 0.0183792, -0.0422334, 0.998939, -8.73115e-13, 0.000202506, 1.27329e-11)
 bones/8/enabled = true
 bones/8/position = Vector3(-8.73115e-13, 0.000202506, 1.27329e-11)
-bones/8/rotation = Quaternion(0.0385816, 0.0203642, -0.341773, 0.938769)
+bones/8/rotation = Quaternion(0.00126958, 0.00726234, -0.345038, 0.93856)
 bones/8/scale = Vector3(1, 1, 1)
 bones/9/name = "wingsupper.r.001_end"
 bones/9/parent = 8
@@ -195,7 +200,7 @@ bones/11/parent = 10
 bones/11/rest = Transform3D(0.987539, 0.157377, -0.00053962, -0.157293, 0.987112, 0.029475, 0.00517134, -0.0290228, 0.999565, -2.79397e-11, 0.000156067, -1.16415e-11)
 bones/11/enabled = true
 bones/11/position = Vector3(-2.79397e-11, 0.000156067, -1.16415e-11)
-bones/11/rotation = Quaternion(0.0498604, 0.00847293, -0.0830086, 0.995265)
+bones/11/rotation = Quaternion(0.0107751, 0.00247332, -0.080589, 0.996686)
 bones/11/scale = Vector3(1, 1, 1)
 bones/12/name = "wingdlower.l.001_end"
 bones/12/parent = 11
@@ -216,7 +221,7 @@ bones/14/parent = 13
 bones/14/rest = Transform3D(0.987538, -0.157377, 0.000539856, 0.157293, 0.987112, 0.029475, -0.00517159, -0.0290228, 0.999565, -3.0268e-11, 0.000156067, 3.49246e-11)
 bones/14/enabled = true
 bones/14/position = Vector3(-3.0268e-11, 0.000156067, 3.49246e-11)
-bones/14/rotation = Quaternion(0.0498604, -0.00847274, 0.0830089, 0.995265)
+bones/14/rotation = Quaternion(0.0107751, -0.00247319, 0.0805893, 0.996686)
 bones/14/scale = Vector3(1, 1, 1)
 bones/15/name = "wingdlower.r.001_end"
 bones/15/parent = 14
@@ -236,3 +241,5 @@ libraries = {
 "": SubResource("AnimationLibrary_5w5hd")
 }
 speed_scale = 2.0
+
+[node name="navigationAgent3d" type="NavigationAgent3D" parent="."]

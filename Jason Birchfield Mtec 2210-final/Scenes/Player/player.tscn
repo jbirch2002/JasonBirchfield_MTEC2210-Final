@@ -9,7 +9,7 @@
 [sub_resource type="BoxShape3D" id="BoxShape3D_or6r1"]
 
 [sub_resource type="LabelSettings" id="LabelSettings_y5dbo"]
-font_size = 8
+font_size = 24
 
 [node name="Player" type="CharacterBody3D" groups=["Player"]]
 transform = Transform3D(19.2188, 0, 0, 0, 12.1827, 0, 0, 0, 10, 0, 5.53805, 0)
@@ -72,9 +72,9 @@ anchor_top = 1.0
 anchor_right = 0.5
 anchor_bottom = 1.0
 offset_left = -125.5
-offset_top = -67.0
+offset_top = -113.0
 offset_right = 125.5
-offset_bottom = 102.0
+offset_bottom = 56.0
 grow_horizontal = 2
 grow_vertical = 0
 label_settings = SubResource("LabelSettings_y5dbo")

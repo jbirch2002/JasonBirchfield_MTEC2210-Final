@@ -1,4 +1,4 @@
-[gd_scene load_steps=14 format=3 uid="uid://duhvhdsfr8tno"]
+[gd_scene load_steps=16 format=3 uid="uid://duhvhdsfr8tno"]
 
 [ext_resource type="Texture2D" uid="uid://dd57vbwuwdqmy" path="res://Assets/lever/textures/MetalMain_basecolor.png" id="1_iof6u"]
 [ext_resource type="Texture2D" uid="uid://cwh4n3y7glish" path="res://Assets/lever/textures/lever_BaseColor.png" id="2_buam8"]
@@ -91,8 +91,21 @@ albedo_texture = ExtResource("1_iof6u")
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_ge814"]
 albedo_texture = ExtResource("2_buam8")
 
+[sub_resource type="BoxShape3D" id="BoxShape3D_m17r8"]
+size = Vector3(0.001, 0.001, 0.00152779)
+
 [sub_resource type="Animation" id="Animation_rsm8x"]
 resource_name = "PullDown"
+tracks/0/type = "rotation_3d"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("RootNode/kissy_reveal_lever__1__ao/Skeleton3D:handle_JNT")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = PackedFloat32Array(0, 1, 0, 0, 0, 1, 1, 1, 6.52018e-22, 5.40682e-22, 0.638325, 0.769767)
+
+[sub_resource type="Animation" id="Animation_3vpa7"]
+resource_name = "PullDown_2"
 tracks/0/type = "rotation_3d"
 tracks/0/imported = true
 tracks/0/enabled = true
@@ -117,11 +130,13 @@ length = 0.001
 [sub_resource type="AnimationLibrary" id="AnimationLibrary_sviyk"]
 _data = {
 "PullDown": SubResource("Animation_rsm8x"),
+"PullDown_2": SubResource("Animation_3vpa7"),
 "PullUp": SubResource("Animation_jn85a"),
 "RESET": SubResource("Animation_fimis")
 }
 
 [node name="Lever" type="Node3D"]
+transform = Transform3D(30, 0, 0, 0, 30, 0, 0, 0, 30, 0, 0, 0)
 
 [node name="RootNode" type="Node3D" parent="."]
 
@@ -141,7 +156,7 @@ bones/1/parent = 0
 bones/1/rest = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 3.43425e-11, 6.85031e-11)
 bones/1/enabled = true
 bones/1/position = Vector3(0, 3.43425e-11, 6.85031e-11)
-bones/1/rotation = Quaternion(0, 0, 0, 1)
+bones/1/rotation = Quaternion(6.52018e-22, 5.40682e-22, 0.638325, 0.769767)
 bones/1/scale = Vector3(1, 1, 1)
 bones/2/name = "handle_JNT_end"
 bones/2/parent = 1
@@ -157,6 +172,12 @@ mesh = SubResource("ArrayMesh_u4f8e")
 skin = SubResource("Skin_mh8ti")
 surface_material_override/0 = SubResource("StandardMaterial3D_ifxhs")
 surface_material_override/1 = SubResource("StandardMaterial3D_ge814")
+
+[node name="staticBody3d" type="StaticBody3D" parent="RootNode/kissy_reveal_lever__1__ao/Skeleton3D/kissy_reveal_lever__1__mo"]
+
+[node name="collisionShape3d" type="CollisionShape3D" parent="RootNode/kissy_reveal_lever__1__ao/Skeleton3D/kissy_reveal_lever__1__mo/staticBody3d"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.00183354, -0.0150188, 0.00181209)
+shape = SubResource("BoxShape3D_m17r8")
 
 [node name="LeverAnimation2" type="AnimationPlayer" parent="."]
 libraries = {

@@ -1,0 +1,12 @@
+[gd_scene load_steps=3 format=3 uid="uid://bi4in04nhm054"]
+
+[ext_resource type="Texture2D" uid="uid://dp4o0y55wdwkj" path="res://cavetexture.png" id="1_divad"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_xuhb4"]
+albedo_texture = ExtResource("1_divad")
+
+[node name="Wall34" type="CSGBox3D"]
+transform = Transform3D(-5.52655e-07, 1.03507, 1.02348e-05, -12.6433, -4.52444e-08, -2.94445e-20, 2.01238e-12, -3.70171e-06, 2.86185, 0, 0, 0)
+use_collision = true
+size = Vector3(0.190918, 1, 0.646087)
+material = SubResource("StandardMaterial3D_xuhb4")

@@ -9,7 +9,7 @@
 [sub_resource type="BoxShape3D" id="BoxShape3D_or6r1"]
 
 [sub_resource type="LabelSettings" id="LabelSettings_y5dbo"]
-font_size = 8
+font_size = 24
 
 [node name="Player" type="CharacterBody3D" groups=["Player"]]
 transform = Transform3D(19.2188, 0, 0, 0, 12.1827, 0, 0, 0, 10, 0, 5.53805, 0)
@@ -17,6 +17,8 @@ floor_max_angle = 0.523599
 script = ExtResource("1_yh02c")
 walkingSpeed = 50.0
 runningSpeed = 59.0
+crouchingSpeed = 30.0
+crouchingHeight = 2.5
 
 [node name="InteractionComponent" parent="." instance=ExtResource("2_se7vm")]
 script = ExtResource("3_vpbpm")
@@ -25,7 +27,7 @@ interactionLabelPath = NodePath("../head/InteractRay/Prompt")
 interactionAudioPath = NodePath("../head/InteractRay/Audio")
 interactionCrosshairPath = NodePath("../control/centerContainer")
 
-[node name="CollisionShape3D" type="CollisionShape3D" parent="."]
+[node name="Collider" type="CollisionShape3D" parent="."]
 transform = Transform3D(0.094, 0, 0, 0, 1.433, 0, 0, 0, 0.165, 0, 0.439752, 0.000816131)
 shape = SubResource("BoxShape3D_or6r1")
 
@@ -71,9 +73,9 @@ anchor_top = 1.0
 anchor_right = 0.5
 anchor_bottom = 1.0
 offset_left = -125.5
-offset_top = -67.0
+offset_top = -113.0
 offset_right = 125.5
-offset_bottom = 102.0
+offset_bottom = 56.0
 grow_horizontal = 2
 grow_vertical = 0
 label_settings = SubResource("LabelSettings_y5dbo")

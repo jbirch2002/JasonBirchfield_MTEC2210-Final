@@ -94,6 +94,14 @@ public partial class InteractionComponent : Node
                     centerContainer.Visible = true;
                 }
             }
+            if(interactable.IsInGroup("Lever"))
+            {
+                if (interactable != null && interactable.HasMethod("Interact"))
+                {
+                    interactionLabel.Text = "Pull Lever\n[E]";
+                    centerContainer.Visible = true;
+                }
+            }
         }
         else
         {

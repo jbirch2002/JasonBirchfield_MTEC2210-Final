@@ -1,4 +1,4 @@
-[gd_scene load_steps=19 format=3 uid="uid://cvrb6sg5ja8hw"]
+[gd_scene load_steps=20 format=3 uid="uid://cvrb6sg5ja8hw"]
 
 [ext_resource type="PackedScene" uid="uid://d0sydkych26ag" path="res://Scenes/World/day_night_cycle.tscn" id="1_7gc6d"]
 [ext_resource type="PackedScene" uid="uid://p733h2j6anis" path="res://Scenes/NPC/Trees/tree01.tscn" id="1_tch2r"]
@@ -17,6 +17,8 @@
 [ext_resource type="PackedScene" uid="uid://cqel8pam7qhg7" path="res://Scenes/Decoration/Gramophone.tscn" id="26_7aqtd"]
 [ext_resource type="Script" path="res://Scripts/PlayGramophone.cs" id="27_3uqq5"]
 [ext_resource type="AudioStream" uid="uid://d1ush3o3ooau0" path="res://Sounds/Background music/OverworldSong.wav" id="28_gs8mt"]
+
+[sub_resource type="NavigationMesh" id="NavigationMesh_l8fxc"]
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_7jbvg"]
 size = Vector3(1.64594, 1.84479, 1.44824)
@@ -150,7 +152,10 @@ transform = Transform3D(10, 0, 0, 0, 10, 0, 0, 0, 10, -421.447, 199.426, -244.40
 [node name="player_house" parent="Houses" instance=ExtResource("4_kly6o")]
 transform = Transform3D(10, 0, 0, 0, 10, 0, 0, 0, 10, 5.56559, 0, -504.182)
 
-[node name="terrain3d" type="Terrain3D" parent="."]
+[node name="NavigationRegion3D" type="NavigationRegion3D" parent="."]
+navigation_mesh = SubResource("NavigationMesh_l8fxc")
+
+[node name="terrain3d" type="Terrain3D" parent="NavigationRegion3D"]
 storage = ExtResource("8_lwqsl")
 material = ExtResource("9_s27bb")
 texture_list = ExtResource("10_4mlmo")
